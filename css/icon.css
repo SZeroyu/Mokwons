@@ -1,0 +1,131 @@
+/*아이콘 햄버거*/
+input[id=menu_icon]{display: none;}
+
+input[id="menu_icon"]+label{
+    display: block;
+    width: 40px;
+    height: 30px;
+    position: fixed;
+    transform: all .35s; /*움직이는 속도*/
+    top:175px; /*위치*/
+    right: 10px;
+    cursor: pointer; /*커서*/
+    z-index: 12;
+}
+input[id="menu_icon"]:checked+label{
+    z-index: 12;
+    right: 300px;
+}
+input[id="menu_icon"]+label span{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    border-radius: 30px;
+    background: white;
+    transition: all .35s;
+}
+input[id="menu_icon"] + label span:nth-child(1){top:0}
+input[id="menu_icon"] + label span:nth-child(2){
+    top:50%;
+    transform: translateY(-50%);/*정확한 가운데로 하기 위해서 -50%*/
+}
+input[id="menu_icon"] + label span:nth-child(3){bottom: 0;}
+
+
+input[id="menu_icon"]:checked + label span:nth-child(1){
+    top:50%;
+    transform: translateY(-50%) rotate(45deg);
+}
+input[id="menu_icon"]:checked + label span:nth-child(2){
+    opacity: 0;
+}
+input[id="menu_icon"]:checked + label span:nth-child(3){
+    bottom: 50%;
+    transform: translateY(50%) rotate(-45deg);
+}
+
+/*사이드바 배경*/
+div[class="sidebar"]{
+    width:300px;
+    height: 100%;
+    background:rgb(167, 43, 67);
+    position: fixed;
+    top:0;
+    right: -300px;
+    z-index: 20;
+    transition: all .35s;
+}
+input[id="menu_icon"]:checked + label + div{right: 0;}
+
+input[id*="answer"]{
+    display: none;
+}
+input[id*="answer"]+label{
+    display: block;
+    padding: 20px;
+    border: 1px solid rgb(133, 34, 54);
+    color:white;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+input[id*="answer"] + label +div{
+    max-height: 0;
+    transition: all .35s;
+    overflow: hidden;
+    font-size: 11px;
+}
+
+input[id*="answer"]:checked + label + div {
+    max-height: 900px ;
+}
+
+/*메인메뉴 및 서비메뉴*/
+input[id*="submn"]{
+    display: none;
+}
+
+input[id*="submn"] + label{
+    display: block;
+    padding: 15px;
+    border: 1px solid rgb(119, 33, 50);
+    color: white;
+    font-weight: 900;
+    background: rgb(129, 35, 54);
+    cursor: pointer;
+    font-size: 12pt;
+}
+input[id*="submn"] + label +div{
+    max-height: 0;
+    transition: all .35s;
+    overflow: hidden;
+    background: rgba(253, 253, 253, 0.514);
+    
+}
+
+input[id*="submn"] + label + div li{
+    display: block;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 12pt;
+    width:200px;
+    border-radius: 25px;
+    text-align: center;
+}
+input[id*="submn"] + label + div li a{
+    color:white; 
+    
+}
+input[id*="submn"] + label + div li:hover{
+    background: rgba(194, 51, 80, 0.589); 
+    
+}
+input[id*="submn"] + label + div a:hover{
+     color:white;
+}
+
+input[id*="submn"]:checked + label + div {
+    max-height: 500px ;
+}
+

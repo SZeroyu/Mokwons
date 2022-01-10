@@ -1,0 +1,105 @@
+html,
+*{margin: 0px; padding: 0px;}
+ul{list-style: none;}
+
+
+body {
+  width:960px;
+  margin: 0 auto;
+  height: 100%; 
+
+}
+body {
+  display: flex;
+  align-items: center; 
+}
+
+/*맨위에 있는 헤더*/
+.top_header{
+    height: 25px; width: 100%;
+    background-color: rgb(167, 43, 67);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index:50;
+}
+/*학교 로고*/
+.top_img{
+  position: fixed;
+  left: 0; top:45px; right: 0;
+  z-index:50;
+}
+
+.background_img{
+  position: fixed;
+  left: 0;
+  top: 25%; 
+  z-index:1;
+}
+
+/*로그인 background*/
+.background_box{
+  position:fixed;
+  height: 500px; width: 700px;
+  background-color: rgba(255, 249, 249, 0.7);
+  z-index:5;
+  border-radius: 20px;
+  top: 50%; left: 50%;
+  margin: -150px 0 0 -350px; /*margin : (height/2)px 0 0 (width/2)px <-중앙배열 */
+  
+}
+
+/*로그인 테이블*/
+.box1{
+  position:relative;
+  top: 45px;
+  
+}
+
+table{
+  margin-left:auto; 
+  margin-right:auto;
+  font-size: 15pt;
+  z-index:1;
+  padding: 0 25px 0 25px;}
+
+  .inph{
+    z-index:1;
+    height: 50px;
+    font-size: 12pt;
+    width: 320px;
+    padding-left: 4px;
+    border:none;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid rgb(153, 153, 153);
+    margin-top: 5px;
+    }
+    .inph:hover{ border: 1px solid rgb(167, 43, 67);}
+    td{
+      padding: 5px;
+    }
+
+ /*버튼*/ 
+ input[class*=btn]{
+     border-radius: 10px;
+     height: 50px;
+     position: absolute;
+     background:rgb(167, 43, 67);
+     border: solid 1px rgb(167, 43, 67);
+     top : 300px;
+     color: white;
+     font-size: 15pt;
+     z-index:1;
+   
+ }
+.btn{left: 190px;}
+
+.btn1{ right: 190px;}
+
+/*전화번호*/
+.pn{
+  position:relative;
+  top:80px;
+  z-index:5;
+  text-align: center;
+}

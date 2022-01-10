@@ -1,0 +1,14 @@
+.top_pass4{
+    position:fixed;
+    top:45px;
+    right:80px;
+    z-index:2;}
+
+.my-box{
+    border:1px solid gray; 
+    padding:5px;
+    width:210px;
+    border-radius: 10px;
+}
+
+
