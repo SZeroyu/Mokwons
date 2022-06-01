@@ -39,62 +39,104 @@ body {
 /*로그인 background*/
 .background_box{
   position:fixed;
-  height: 600px; width: 900px;
-  background-color: rgba(255, 249, 249, 0.7);
+  height: 500px; width: 700px;
+  background-color: rgba(255, 249, 249, 0.808);
   z-index:5;
   border-radius: 20px;
   top: 50%; left: 50%;
-  margin: -150px 0 0 -450px; /*margin : (height/2)px 0 0 (width/2)px <-중앙배열 */
+  margin: -150px 0 0 -350px; /*margin : (height/2)px 0 0 (width/2)px <-중앙배열 */
   
 }
 
 /*로그인 테이블*/
-table{
-    position: absolute;
-    top: 50px;
-    font-size: 15pt;
-    z-index:1;
+.box1{
+  position:relative;
+  top: 50px;
+  
 }
-.box1{padding-left: 100px;}
-.box2{padding-left: 470px;}
 
-th{padding-bottom: 20px;}
-td{padding: 15px;}
+table{
+  margin-left:auto; 
+  margin-right:auto;
+  font-size: 15pt;
+  z-index:1;
+  padding: 0 28px 0 28px;
+}
 
-.inph{
+  .inph{
     z-index:1;
     height: 50px;
     font-size: 12pt;
-    width: 290px;
+    width: 280px;
     padding-left: 4px;
     border:none;
-    border-radius: 5px;
     outline: none;
-    border: 1px solid rgb(153, 153, 153);
+    border-bottom: 3px solid rgb(122, 122, 122);
+    background-color: rgba(255, 249, 249, 0.014);
     margin-top: 5px;
     }
-.inph:hover{ border: 1px solid rgb(167, 43, 67);}
-
+    .inph:hover{ border-bottom: 3px solid #a72b43;}
+    td{padding: 12px;}
 
  /*버튼*/ 
- input[class*=btn]{
-     border-radius: 10px;
-     height: 50px;
-     position: absolute;
-     background:rgb(167, 43, 67);
-     border: solid 1px rgb(167, 43, 67);
-     color: white;
-     font-size: 15pt;
-     z-index:10;
- }
- .btn{left:90px;}
- .btn1{left:100px;}
+ .num_btn{
+  margin-top: 10px;
+  transform: translateX(-50%);
+  margin-bottom: 50px;
+   border-radius: 20px;
+   width: 280px; height:40px;
+   position:relative;
+   left:140px;
+   background: linear-gradient(125deg,#a72b43,#f04164,#c43451);
+  background-position: left;
+   background-size: 200%;
+   color: white;
+   font-size: 15pt;
+   font-weight: bold;
+   border:none;
+   cursor:pointer;
+   transition: 0.4s;
+   display:inline;
+   text-align: center;
+}
+
+.num_btn:hover {background-position: right;}
+
+
+/*로그인/비밀번호 찾기*/
+p{
+position:relative;
+font-size: 13pt;
+color: rgba(47, 53, 63, 0.39);
+display:inline;
+padding:0px 0px 0px 10px;
+left:240px;
+cursor: pointer;
+border-left: 2px solid gray;
+text-align: center; 
+margin: 0px 0px 0px 10px;
+top:10px;
+}
+
+
+p:hover{
+ color:  rgb(167, 43, 67);
+font-weight: bold;
+  transition: 0.4s;
+
+}
+
+.login{
+  border-left: none;
+}
+
 
 
 /*전화번호*/
 .pn{
   position:relative;
-  top:500px;
+  top:90px;
   z-index:5;
   text-align: center;
 }
+

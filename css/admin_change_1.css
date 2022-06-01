@@ -1,0 +1,107 @@
+html,
+*{margin: 0px; padding: 0px;}
+ul{list-style: none;}
+a{text-decoration: none;}
+/*맨위에 있는 헤더*/
+body{font-family: initial;}
+.top_header{
+    height: 25px; width: 100%;
+    background-color: rgb(167, 43, 67);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index:50;
+}
+
+/*타이틀*/
+h2{
+  text-align: center;
+  padding: 40px 0px 10px 0px;
+  border-bottom: 1px solid gray;
+  background:#DFE6F7;
+}
+
+/*테이블*/
+  #table_1{
+    width: 800px;
+    height: 25px;
+    z-index:1;
+    position:absolute;
+    font-size: 15pt;
+    padding: 40px 0px 10px 30px; 
+  }
+  
+  #table_1 th{
+    border: 1px solid gray; 
+    border-radius: 3%; 
+    width: 160px;
+    background: #DFE6F7;
+  }
+    
+  #table_1 td{
+    width:150px;
+    height: 10px;
+    padding-right: -5px;
+    padding: 5px 0px 5px 0px;
+
+}
+
+  /*텍스트 입력란*/
+  .inph_1{
+    width: 150px;
+    height: 20px;
+  font-size: 12pt;
+  margin-left: 5px;
+  vertical-align: middle;
+  border: none;
+  border-bottom: 1px solid gray;
+  outline:none; 
+}
+  
+  .inph_3{
+      width: 100%;
+    height: 30px;
+    font-size: 12pt;
+    margin-left: 5px;
+    vertical-align: middle;
+    border: none;
+    border-bottom: 1px solid gray;
+    outline:none; 
+  }
+
+
+  
+/*우편번호 찾기 버튼*/
+  .btn_1{
+    width: 130px; height: 40px;
+    background:#DFE6F7;
+    color: black;
+    font-size: 13pt;
+    border: solid 1px #DFE6F7;
+    margin-left:8px;
+    font-weight: bold;
+    vertical-align: middle;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .btn_1:hover{background-color: #d4dae9;}
+
+  /*수정 버튼 및 팝업창 닫기 버튼*/
+  input[class*="change"]{
+    width: 100px; height: 40px;
+    position: absolute;
+    background:rgb(255, 255, 255);
+    border: solid 2px rgb(219, 68, 99);
+    font-size: 13pt;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+  }
+  input[class*="change"]:hover{
+    color:white;
+    background-color: rgb(219, 68, 99);
+  }
+  .change_btn{right: 120px;}   /*수정 버튼*/
+  .change_btn_close{right: 0px;}   /*팝업창 닫기 버튼*/
+

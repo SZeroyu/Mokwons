@@ -42,7 +42,7 @@ body {
   height: 500px; width: 700px;
   background-color: rgba(255, 249, 249, 0.7);
   z-index:5;
-  border-radius: 20px;
+  border-radius: 3%;
   top: 50%; left: 50%;
   margin: -150px 0 0 -350px; /*margin : (height/2)px 0 0 (width/2)px <-중앙배열 */
   
@@ -51,7 +51,7 @@ body {
 /*로그인 테이블*/
 .box1{
   position:relative;
-  top: 45px;
+  top:50px;
   
 }
 
@@ -66,40 +66,37 @@ table{
     z-index:1;
     height: 50px;
     font-size: 12pt;
-    width: 320px;
-    padding-left: 4px;
-    border:none;
-    border-radius: 5px;
-    outline: none;
-    border: 1px solid rgb(153, 153, 153);
-    margin-top: 5px;
-    }
-    .inph:hover{ border: 1px solid rgb(167, 43, 67);}
-    td{
-      padding: 5px;
-    }
+    width: 320px;}
 
  /*버튼*/ 
- input[class*=btn]{
-     border-radius: 10px;
-     height: 50px;
-     position: absolute;
-     background:rgb(167, 43, 67);
-     border: solid 1px rgb(167, 43, 67);
-     top : 300px;
-     color: white;
-     font-size: 15pt;
-     z-index:1;
-   
- }
-.btn{left: 190px;}
+.btn{
+  height: 50px;
+  position: absolute;
+  background:rgb(167, 43, 67);
+  border: solid 1px rgb(167, 43, 67);
+  top : 290px;
+  color: white;
+  font-size: 15pt;
+  z-index:1;
+  left: 190px;
+}
 
-.btn1{ right: 190px;}
+.btn1{
+  height: 50px;
+  position: absolute;
+  background:rgb(167, 43, 67);
+  border: solid 1px rgb(167, 43, 67);
+  top : 290px;
+  color: white;
+  font-size: 15pt;
+  right: 190px;
+  z-index:7;
+}
 
 /*전화번호*/
 .pn{
   position:relative;
-  top:80px;
+  top:100px;
   z-index:5;
   text-align: center;
 }

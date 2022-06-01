@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="icon.css">
+    <link rel="stylesheet" href="./css/icon.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     
@@ -25,8 +25,8 @@
         <label for="submn_01">개인정보</label>
         <div>
           <ul>
-          <li><a href="#" onclick="location.href='registration.php'">회원가입 페이지</a></li>
-            <li><a href="#" onclick="location.href='change_personal_data.php'">개인정보변경</a></li>
+            <li><a href="#" onclick="location.href='registration.php'">회원추가</a></li>
+            <li><a href="#" onclick="location.href='search_data.php'">학생 검색 및 수정</a></li>
             <li><a href="#" onclick="location.href='personal_data_1.php'">개인정보변경(졸업생)</a></li>
             <li><a href="#" onclick="location.href='password_new.php'">비밀번호변경</a></li>
             <li><a href="#">비밀번호이력</a></li>

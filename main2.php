@@ -2,15 +2,14 @@
 <!--main_2.php -> 테이블 없는 메인화면 및 대학일반-->
 <!--main2.php -> 학사일정-->
 <!--main2_2.php -> 테이블 없는 학사일정-->
-
+<?php include "db.php"; ?>
 <!DOCTYPE html>
 <html>
 <head>
     <title>목원대학교 종합정보시스템</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/main1.css">
-    <link rel="stylesheet" href="./css/icon.css">
-    <link rel="stylesheet" href="./css/pass1.css">
+    <link rel="stylesheet" href="./css/pass_data.css">
     
     <style>img{right: 50px;}</style>
 </head>
@@ -58,7 +57,7 @@
                     <ul class="sub">
                         <li><a href="#">공결관리</a></li>
                         <li><a href="#">강의평가입력</a></li>
-                        <li><a href="#">시간표조회</a></li>
+                        <li><a href="#" onclick="location.href='schedule.php'">시간표조회</a></li>
                         <li><a href="#" onclick="location.href='app_class.php'">수강신청</a></li>
                         </ul></li>
 
@@ -112,7 +111,7 @@
     <!--부서전화번호 테이블-->
     <body>
     <div>
-        <table border="1" width="50%" height=200 bordercolor="gray" cellspacing="0">
+        <table class="main_table" border="1" width="50%" height=200 bordercolor="gray" cellspacing="0">
             <tr align="center" bgcolor="#DFE6F7" style="font-weight: bold;">
                 <td>구분</td>
                 <td>프로그램</td>
@@ -166,23 +165,30 @@
         </table>
     </div>
 </body>
-<?php
-    session_start();
-    $ip = file_get_contents('https://api.ipify.org');
-    $user_number = $_SESSION["user_number"];
+<body>
+    <div class="top_pass4">
+   
+    <img src="./img/user.png" alt="Logo" width="100">
+  <?php
+    if(isset($_SESSION['user_number'])){
+      $user_number = $_SESSION['user_number'];
+    }
     $con = mysqli_connect("localhost", "root", "", "project") or die("fail");
-    $sql = "select u.user_major, u.user_grade, u.user_status, p.user_name
-    from personal_data AS p LEFT JOIN users AS u on p.user_number = '$user_number' and  u.user_number = '$user_number' ; ";
-      $res = mysqli_query($con, $sql) or die(mysqli_error($con));
-      $row = mysqli_fetch_assoc($res)?>
+    $sql = "select * from users where user_number='$user_number'; ";
+    $res = mysqli_query($con, $sql);
+    $row = mysqli_fetch_array($res);
+    $user_name = $row["user_name"];
+    $user_status = $row["user_status"];
+    $user_major= $row["user_major"];
+  ?>
+   <ul class="my-box">
 
-      <div class="top_pass4">
-      <ul class="my-box">
-      <ins><li><?php echo $row["user_major"] ; ?></li></ins>
-      <li><?php echo "[".$row["user_status"]."] > ".$row["user_name"]."(".$row["user_grade"].")"?></li>
-      <li><?php echo "접속 ip : " . $ip;?></li>
-      <button><a href="#" onclick="location.href='login_out.php'"> 로그아웃 </a></button>
-    </ul>
+<li><?=$user_major?></li>
+<li><?=$user_name?> | <?=$user_status?></li>	
+<li><?="접속 ip : " . $ip?></li>
+
+</ul>
+<button><a href="#" onclick="location.href='login_out.php'"> 로그아웃 </a></button>
 </div>
 </body>
 </html>

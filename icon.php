@@ -25,8 +25,8 @@
         <label for="submn_01">개인정보</label>
         <div>
           <ul>
-            <li><a href="#" onclick="location.href='change_personal_data.php'">개인정보변경</a></li>
-            <li><a href="#" onclick="location.href='personal_data_1.php'">개인정보변경(졸업생)</a></li>
+            <li><a href="#" onclick="location.href='check_pwd.php'">개인정보변경</a></li>
+            <li><a href="#" onclick="location.href='change_graduate_data.php'">개인정보변경(졸업생)</a></li>
             <li><a href="#" onclick="location.href='password_new.php'">비밀번호변경</a></li>
             <li><a href="#">비밀번호이력</a></li>
             <li><a href="#">접속이력조회</a></li>
@@ -56,7 +56,7 @@
          <ul>
          <li><a href="#">공결관리</a></li>
          <li><a href="#">강의평가입력</a></li>
-         <li><a href="#">시간표조회</a></li>
+         <li><a href="#" onclick="location.href='schedule.php'">시간표조회</a></li>
          <li><a href="#" onclick="location.href='app_class.php'">수강신청</a></li>
          </ul>
         </div>

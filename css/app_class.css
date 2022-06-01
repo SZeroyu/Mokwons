@@ -1,0 +1,73 @@
+html,
+*{margin: 0px; padding: 0px;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+.table_box{
+    position: absolute;
+    width: 95%;
+    height: 50%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -30%);
+    overflow-y: scroll;
+    border: 1px solid gray;
+    z-index:2;
+}
+
+/*테이블*/
+  #table_1{
+    width: 95%;
+    left: 50%; top: 10%;
+    padding-bottom: 5%;
+    margin: 0 0 0 -35%;
+    z-index:1;
+    background: white;
+  }
+
+  #table_1 th, td{
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#table_1 th{
+    font-size:15pt;
+    border: 1px solid gray;
+  }
+ 
+    
+  #table_1 td{
+    width: 170px;
+    height: 20px;
+    padding-right: -5px;
+    border-style: solid;
+    border-width: 0 1px  1px 1px; 
+    border-color: rgb(190, 188, 188) rgb(190, 188, 188); 
+    text-align: center;
+    font-size:12pt;
+}
+  
+/*버튼*/
+.btn_2{
+  position:fixed;
+  width: 100px; height: 40px;
+  background:rgb(167, 43, 67);
+  border: solid 1px rgb(167, 43, 67);
+  color: white;
+  font-size: 15pt;
+  border-radius: 10px;
+  font-weight: bold;
+  top:90%; left: 90%;
+  margin-bottom: 10px;
+
+}
+.btn_2:hover{background-color: rgb(156, 45, 68);}
+
+/*체크 박스*/
+.check input{
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+}
+
+.check input:checked ~ .icon_1::before{height: 50px; transition: all .35s ease;}
+.check input:checked ~ .icon_1::after{height: 120px; transition: all .35s ease .35s;}

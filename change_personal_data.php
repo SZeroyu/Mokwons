@@ -1,11 +1,11 @@
 <!--personal_data.php-> 회원가입 정보 입력-->
+
 <!DOCTYPE html>
 <html lang='en' dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/main1.css">
-    <link rel="stylesheet" href="./css/personal_data_3.css">
+    <link rel="stylesheet" href="./css/change_personal_data.css">
     <title>개인정보 입력 페이지</title>
 
     <!--우편 번호 찾기-->
@@ -55,12 +55,12 @@
 
   <body>
   <?php
-    session_start();
+session_start();
     if(isset($_SESSION['user_number'])){
       $user_number = $_SESSION['user_number'];
     }
     $con = mysqli_connect("localhost", "root", "", "project") or die("fail");
-    $sql = "select * from personal_data where user_number='$user_number'; ";
+    $sql = "select * from users where user_number='$user_number'; ";
     $res = mysqli_query($con, $sql);
     $row = mysqli_fetch_array($res);
     $user_name = $row["user_name"];
@@ -69,13 +69,10 @@
     $user_pnumber = $row["user_pnumber"];
     $user_hnumber = $row["user_hnumber"];
     $user_email = $row["user_email"];
-    $user_bank_number = $row["user_bank_number"];
-    $user_bank = $row["user_bank"];
     $user_birthday = $row["user_birthday"];
 
   ?>
   <div><?php include "main_2.php";?></div>
-  <div id="header_1" style="display: inline;"><ul><li>개인정보변경</li></ul></div>
     <div>
     <form action="change_personal_data_check.php" method="post">
       <table id="table_1" align=center cellspacing="10">
@@ -117,24 +114,6 @@
           </tr>
           </div>
 
-          <div>
-          <tr><th  rowspan="3" bgcolor="#DFE6F7">은행</th>
-          <tr> <td colspan="3"><select type="text" class="inph_2" name="user_bank" value="<?=$user_bank?>" placeholder="은행" >
-          <option>은행선택</option>
-            <option>농협</option>
-            <option>신한</option>
-            <option>카카오뱅크</option>
-            <option>우리은행</option>
-            <option>KB국민은행</option>
-            <option>IBK기업은행</option>
-            <option>KEB하나은행</option>
-            <option>새마을금고</option>
-            <option>SC제일은행</option>
-          </select>
-          </td></tr>
-          <tr><td colspan="3"><input type="text" class="inph_2" name="user_bank_number" value="<?=$user_bank_number?>" placeholder="계좌번호" ></td></tr>
-          </tr>
-         </div>
          <div>
           <tr>
           <td colspan="4"><input type="submit" class="btn_2" value="저장"></td>

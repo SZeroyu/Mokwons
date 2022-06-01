@@ -1,0 +1,142 @@
+html,
+*{margin: 0px; padding: 0px;}
+ul{list-style: none;}
+
+
+body {
+  width:960px;
+  margin: 0 auto;
+  height: 100%; 
+
+}
+body {
+  display: flex;
+  align-items: center; 
+}
+
+/*맨위에 있는 헤더*/
+.top_header{
+    height: 25px; width: 100%;
+    background-color: rgb(167, 43, 67);
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index:50;
+}
+/*학교 로고*/
+.top_img{
+  position: fixed;
+  left: 0; top:45px; right: 0;
+  z-index:50;
+}
+
+.background_img{
+  position: fixed;
+  left: 0;
+  top: 25%; 
+  z-index:1;
+}
+
+/*로그인 background*/
+.background_box{
+  position:fixed;
+  height: 500px; width: 700px;
+  background-color: rgba(255, 249, 249, 0.808);
+  z-index:5;
+  border-radius: 20px;
+  top: 50%; left: 50%;
+  margin: -150px 0 0 -350px; /*margin : (height/2)px 0 0 (width/2)px <-중앙배열 */
+  
+}
+
+/*로그인 테이블*/
+.box1{
+  position:relative;
+  top: 50px;
+  
+}
+
+table{
+  margin-left:auto; 
+  margin-right:auto;
+  font-size: 15pt;
+  z-index:1;
+  padding: 0 28px 0 28px;
+}
+
+  .inph{
+    z-index:1;
+    height: 50px;
+    font-size: 12pt;
+    width: 280px;
+    padding-left: 4px;
+    border:none;
+    outline: none;
+    border-bottom: 3px solid rgb(122, 122, 122);
+    background-color: rgba(255, 249, 249, 0.014);
+    margin-top: 5px;
+    }
+    .inph:hover{ border-bottom: 3px solid #a72b43;}
+    td{padding: 12px;}
+
+ /*버튼*/ 
+ .num_btn{
+  margin-top: 10px;
+  transform: translateX(-50%);
+  margin-bottom: 50px;
+   border-radius: 20px;
+   width: 280px; height:40px;
+   position:relative;
+   left:140px;
+   background: linear-gradient(125deg,#a72b43,#f04164,#c43451);
+  background-position: left;
+   background-size: 200%;
+   color: white;
+   font-size: 15pt;
+   font-weight: bold;
+   border:none;
+   cursor:pointer;
+   transition: 0.4s;
+   display:inline;
+   text-align: center;
+}
+
+.num_btn:hover {background-position: right;}
+
+
+/*로그인/비밀번호 재설정*/
+p{
+position:relative;
+font-size: 13pt;
+color: rgba(47, 53, 63, 0.39);
+display:inline;
+padding:0px 0px 0px 10px;
+left:235px;
+cursor: pointer;
+border-left: 2px solid gray;
+text-align: center; 
+margin: 0px 5px 0px 5px;
+top:10px;
+}
+
+
+p:hover{
+ color:  rgb(167, 43, 67);
+font-weight: bold;
+  transition: 0.4s;
+
+}
+
+.login{
+  border-left: none;
+}
+
+
+
+/*전화번호*/
+.pn{
+  position:relative;
+  top:90px;
+  z-index:5;
+  text-align: center;
+}
+

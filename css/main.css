@@ -1,0 +1,105 @@
+
+html,
+*{margin: 0px; padding: 0px;}
+ul{list-style: none;}
+a{text-decoration: none;}
+
+.top_header{
+    width: 100%; height: 20px;
+    top:0 ;
+    background-color: rgb(167, 43, 67);
+    position: fixed;
+    z-index: 5;
+  }
+  .back_header{
+    width: 100%; height: 150px;
+    top:20px;
+    background-color: white;
+    position: fixed;
+    z-index: 2;
+  }
+
+.logo{
+    position: fixed;
+    top: 35px;
+    z-index: 5;}
+
+/*메인 메뉴1->top_menu*/
+#top_menu{
+        width: 100%; height: 43px;
+        background-color: rgb(167, 43, 67);
+        position: fixed;
+        top: 170px;
+        color: rgb(167, 43, 67);
+        z-index: 5;
+    }
+
+#top_menu  li a {
+    margin: 5px 0px 5px 0px;
+    margin-left: 30px;
+    float: left;
+    color: white;
+    text-align: center;
+    }
+
+
+/*서브 메뉴1->sub_menu*/
+#sub_menu{
+    width: 100%; height: 43px;
+    background-color: white;
+    position: fixed;
+    top: 210px;
+    border: 1px solid rgb(146, 144, 144);
+    z-index:11;
+    }
+
+#sub_menu ul{width: 100%; margin: 0 auto;  font-size: 20px;}
+#sub_menu ul li a{color:black; }
+#sub_menu .main>li{
+    border-left: 2px solid gray;
+    padding: 0px 8px 0px 8px;
+    margin: 8px 0px 8px 0px;
+    text-align: center; 
+    position: relative;
+    display: inline;
+    float:left;
+}
+
+
+#sub_menu ul li:first-child{border-left: none;}
+#sub_menu .main>li:hover .sub{display: block;}
+#sub_menu .main>li a{display: block; }
+
+/*서브 메뉴2->sub*/
+#sub_menu .main .sub{
+    position: absolute;
+    top: 27px; left: 0;
+    width: 241px; display: none;
+}
+
+#sub_menu .main .sub li{background: rgba(240, 165, 196, 0.384); }
+#sub_menu .main .sub li a:hover{background: rgba(194, 51, 80, 0.589);  color: white;}
+
+/*테이블 중앙 정렬*/
+.main_table{
+    position:absolute;
+    height: 350px; width: 700px;
+    z-index:5;
+    top: 50%; left: 50%;
+    margin: -150px 0 0 -350px;
+    z-index: 1; 
+  }
+
+
+  /*반응형 메뉴판*/
+  @media screen and (max-width: 1040px){
+    #sub_menu {display: none;}
+    #header_1{
+      top:230px;
+    }
+   
+  }
+
+
+
+

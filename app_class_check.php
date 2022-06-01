@@ -1,10 +1,19 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>어떻게 하는지 모름</title>
-  </head>
-  <body>
-    <h1>아잉! >_< 어떻게 하는지 몰라</h1>
-  </body>
-</html>
+<?php
+$con = mysqli_connect("localhost", "root", "", "project") or die("fail");
+
+
+if(isset($_SESSION["user_number"])){
+  $user_number = $_SESSION["user_number"];
+  $sql = "insert into subject_data(user_number, class_code)";
+  $sql .= "values('$user_number', '$class_code')";
+  
+    mysqli_query($con, $sql);
+    mysqli_close($con);
+    
+}
+?>
+<script>
+alert("신청되었습니다");
+location.href='app_class.php';
+</script>
+           

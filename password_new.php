@@ -6,7 +6,7 @@
     <title>비밀번호변경</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/main1.css">
-    <link rel="stylesheet" href="./css/personal_data_3.css">
+    <link rel="stylesheet" href="./css/new_pwd.css">
 </head>
 
 <body>

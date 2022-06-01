@@ -5,14 +5,38 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>목원대학교 종합정보시스템</title>
-
-    <link rel="stylesheet" href="./css/pass1.css">
     <link rel="stylesheet" href="./css/main1.css">
+    <link rel="stylesheet" href="./css/dormitory.css">
+    <script language="JavaScript">
+    var initBody
+    function beforePrint()
+    {
+    initBody = document.body.innerHTML;
+    document.body.innerHTML = idPrint.innerHTML;
+    }
 
+    function afterPrint()
+    {
+    document.body.innerHTML = initBody;
+    }
+
+    function printArea()
+    {
+    window.print();
+    }
+
+    window.onbeforeprint = beforePrint;
+    window.onafterprint = afterPrint;
+    </script>
+    </head>
 
   <body>
-  <div><?php include "main2_2.php";?></div>
-<!DOCTYPE html>
+  <div><?php include "main2_2.php";?></div>  
+  기본 문서 내용...<br> . <br> . <br> . <br> 인쇄할 때 제외될 영역 입니다.
+    <br><br>
+
+    <div class="print_table">
+    <div id="idPrint">
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -110,5 +134,7 @@
 </tbody>
 </table>
 
-
-</html>
+</div>
+      </div>
+  <input type="button" value="인쇄" class="print_btn" onclick="printArea();">
+  </BODY> </HTML>

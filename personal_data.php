@@ -70,7 +70,7 @@
       <div>
           <tr>
             <th bgcolor="#DFE6F7">이름</th>
-            <td><input type="text" name="user_name" value=""  class="inph_1" placeholder="이름"></td>
+            <td><input type="text" name="user_number" value=""  class="inph_1" placeholder="이름"></td>
           </tr>
           </div>
           <div>

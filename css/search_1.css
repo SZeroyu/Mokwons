@@ -1,0 +1,57 @@
+html,
+*{margin: 0px; padding: 0px;}
+ul{list-style: none;}
+a{text-decoration: none;}
+body{font-family: initial;}
+/*검색*/
+.search_box_1{
+  position: absolute;
+  top:50%; left: 81%;
+  transform: translate(-50%, -50%);
+  height: 40px; width: 620px;
+  z-index: 1;
+}
+
+.search_status{
+    font-size: 12pt;
+    width: 200px; 
+    padding: 10px;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid rgb(224, 134, 134);
+    cursor:pointer;
+  }
+  
+  .search_minor{
+    font-size: 12pt;
+    width: 200px; 
+    padding: 10px;
+    outline: none;
+    border-radius: 20px;
+    border: 2px solid rgb(224, 134, 134);
+    cursor:pointer;
+  }
+.search_ip{
+   font-size: 12pt;
+  width: 300px; height: 18px;
+  padding: 10px;
+  outline: none;
+  border-radius: 20px;
+  border: 2px solid rgb(224, 134, 134);
+}
+.search_btn{
+  width: 50px; height: 100%;
+  outline: none;
+  float: right;
+  background: fixed;
+  border-radius: 100%;
+  border: 2px solid rgb(224, 134, 134);
+  cursor:pointer;
+}
+
+.excel{
+  padding-top: 3px;
+  border: none;
+  background: white;
+  position: absolute;
+}

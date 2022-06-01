@@ -5,13 +5,38 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>목원대학교 종합정보시스템</title>
+    <link rel="stylesheet" href="./css/main1.css" />
+    <link rel="stylesheet" href="./css/dormitory.css">
+    <div><?php include "main2_2.php";?></div>
 
-    <link rel="stylesheet" href="./css/pass4.css">
 
+    <script language="JavaScript">
+    var initBody
+    function beforePrint()
+    {
+    initBody = document.body.innerHTML;
+    document.body.innerHTML = idPrint.innerHTML;
+    }
 
+    function afterPrint()
+    {
+    document.body.innerHTML = initBody;
+    }
 
-  <body>
-  <div><?php include "main2_2.php";?></div>
+    function printArea()
+    {
+    window.print();
+    }
+
+    window.onbeforeprint = beforePrint;
+    window.onafterprint = afterPrint;
+    </script>
+    </HEAD>
+    <BODY> 기본 문서 내용...<br> . <br> . <br> . <br> 인쇄할 때 제외될 영역 입니다.
+    <br><br>
+
+    <div class="print_table">
+    <div id="idPrint">
       <style type="text/css">
       .tg  {border-collapse:collapse;border-spacing:0;}
       .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
@@ -33,35 +58,35 @@
         <tr>
           <td class="tg-c3ow" rowspan="13"></td>
           <td class="tg-c3ow" colspan="2">학 번 /&nbsp;&nbsp;학 년</td>
-          <td class="tg-c3ow">19510**</td>
-          <td class="tg-c3ow" colspan="2">3 학 년</td>
+          <td class="tg-c3ow">        </td>
+          <td class="tg-c3ow" colspan="2">      </td>
           <td class="tg-c3ow" colspan="3">성 명</td>
-          <td class="tg-c3ow" colspan="4">홍 길 동</td>
+          <td class="tg-c3ow" colspan="4">     </td>
           <td class="tg-0pky" colspan="2" rowspan="13"></td>
         </tr>
         <tr>
           <td class="tg-c3ow" colspan="2">소 속</td>
           <td class="tg-c3ow" colspan="3">공과대학 융합컴퓨터 미디어학부</td>
           <td class="tg-c3ow" colspan="3">전 공</td>
-          <td class="tg-c3ow" colspan="4">융합미디어전공</td>
+          <td class="tg-c3ow" colspan="4">              </td>
         </tr>
         <tr>
           <td class="tg-c3ow" colspan="2">전 화 번 호</td>
-          <td class="tg-c3ow" colspan="3">010 - 1234 - 5678</td>
+          <td class="tg-c3ow" colspan="3">            </td>
           <td class="tg-c3ow" colspan="3">이 수 학 기</td>
-          <td class="tg-c3ow" colspan="4">5 학 기</td>
+          <td class="tg-c3ow" colspan="4">      </td>
         </tr>
         <tr>
           <td class="tg-c3ow" colspan="2">보호자연락처</td>
-          <td class="tg-c3ow" colspan="3">010 - 9876 - 5432</td>
+          <td class="tg-c3ow" colspan="3">            </td>
           <td class="tg-c3ow" colspan="3">생 년 월 일</td>
-          <td class="tg-c3ow" colspan="4">****/**/**</td>
+          <td class="tg-c3ow" colspan="4">             </td>
         </tr>
         <tr>
           <td class="tg-c3ow" colspan="2">병 력 사 항</td>
           <td class="tg-c3ow" colspan="6">민방위 * 예비군 * 입영대상 * 현역 * 여학생 * 기타</td>
           <td class="tg-c3ow" colspan="3">국 적</td>
-          <td class="tg-c3ow">한국</td>
+          <td class="tg-c3ow">            </td>
         </tr>
         <tr>
           <td class="tg-c3ow" colspan="2"><br>자 퇴 사 유</td>
@@ -103,3 +128,7 @@
         </tr>
       </tbody>
       </table>
+    </div>
+      </div>
+  <input type="button" value="인쇄" class="print_btn" onclick="printArea();">
+  </BODY> </HTML>

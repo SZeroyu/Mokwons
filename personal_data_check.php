@@ -24,7 +24,3 @@
   mysqli_close($con);
   // 향후 회원가입은 관리자만 가능하게 수;
  ?>
-           <script>
-            alert("완료했습니다");
-            history.back();
-          </script>'
