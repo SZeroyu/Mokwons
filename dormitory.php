@@ -7,6 +7,9 @@
     <title>목원대학교 종합정보시스템</title>
     <link rel="stylesheet" href="./css/main1.css">
     <link rel="stylesheet" href="./css/dormitory.css">
+    <link rel="stylesheet" href="./css/download.css" />
+    <link rel="stylesheet" href="./css/mail.css" />
+    <div><?php include "main2_2.php";?></div>
 
     <script language="JavaScript">
     var initBody
@@ -30,8 +33,7 @@
     window.onafterprint = afterPrint;
     </script>
     </HEAD>
-    <BODY> 기본 문서 내용...<br> . <br> . <br> . <br> 인쇄할 때 제외될 영역 입니다.
-    <br><br>
+    <BODY> <br>
     <div><?php include "main2_2.php";?></div>
     <div class="print_table">
     <div id="idPrint">
@@ -131,4 +133,7 @@
       </div>
       </div>
       <input type="button" value="인쇄" class="print_btn" onclick="printArea();">
-      </BODY> </HTML>
+      <input type="button" value="다운로드" class="download_btn" onclick="location.href='downloaddomitory.php'">
+      <input type="button" value="메일" class="mail_btn" onclick="location.href='maildomitory.php'">
+
+    </HTML>

@@ -1,14 +1,5 @@
 
-.print_btn:focus{
-  outline:0;
-}
 
-.print_btn:hover{
-  background-color:rgba(0, 79, 255, 0.9);
-  cursor:pointer;
-  box-shadow:0 2px 4px rgba(0, 79, 255, 0.6);
-
-}
 .tg{
   position: absolute;
   top:50%; left: 50%;
@@ -29,6 +20,13 @@
     z-index:2;
 }
 
+/*버튼*/
+.btn_box{
+    width: 450px; height: 40px;
+    position: absolute;
+    top:30%; left: 75%;
+    transform:translateY(-50%, -50%);
+}
 button[class*=btn]{
   width:120px;
   height:40px;
@@ -39,9 +37,11 @@ button[class*=btn]{
   font-size:16px;
   font-weight:bold;
   border-radius: 20px;
-  position: absolute;
-  top:32%;
-  left:90%;
-  transform:translate(-50%, -50%);
   transition:0.3s;
 }
+button[class*=btn]:hover{
+    background-color:rgba(0, 79, 255, 0.9);
+    cursor:pointer;
+    box-shadow:0 2px 4px rgba(0, 79, 255, 0.6);
+}
+button[class*=btn]:focus{outline:0;}

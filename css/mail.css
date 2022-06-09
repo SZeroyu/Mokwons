@@ -1,9 +1,24 @@
-
-.print_btn:focus{
+.mail_btn{
+  width:120px;
+  height:40px;
+  background-color:#004fff;
+  border:none;
+  color:white;
+  box-shadow:0 4px 16px rgba(0, 79, 255, 0.3);
+  font-size:16px;
+  font-weight:bold;
+  border-radius: 20px;
+  position: absolute;
+  top:32%;
+  left:76%;
+  transform:translate(-50%, -50%);
+  transition:0.3s;
+}
+.mail_btn:focus{
   outline:0;
 }
 
-.print_btn:hover{
+.mail_btn:hover{
   background-color:rgba(0, 79, 255, 0.9);
   cursor:pointer;
   box-shadow:0 2px 4px rgba(0, 79, 255, 0.6);
@@ -17,7 +32,7 @@
   padding-bottom: 10%;
 
 }
-.print_table{
+.mail_table{
     position: absolute;
     width: 95%;
     height: 50%;
@@ -27,21 +42,4 @@
     overflow-y: scroll;
     border: 1px solid gray;
     z-index:2;
-}
-
-button[class*=btn]{
-  width:120px;
-  height:40px;
-  background-color:#004fff;
-  border:none;
-  color:white;
-  box-shadow:0 4px 16px rgba(0, 79, 255, 0.3);
-  font-size:16px;
-  font-weight:bold;
-  border-radius: 20px;
-  position: absolute;
-  top:32%;
-  left:90%;
-  transform:translate(-50%, -50%);
-  transition:0.3s;
 }

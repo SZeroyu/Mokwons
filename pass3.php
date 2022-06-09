@@ -1,12 +1,14 @@
-<!--휴학원-->
+<!--휴학신청-->
 
 <!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>목원대학교 종합정보시스템</title>
-    <link rel="stylesheet" href="./css/main1.css">
-    <link rel="stylesheet" href="./css/dormitory.css">
+    <link rel="stylesheet" href="./css/print_1.css" />
+    <div><?php include "main2_2.php";?></div>
+
+
     <script language="JavaScript">
     var initBody
     function beforePrint()
@@ -28,16 +30,14 @@
     window.onbeforeprint = beforePrint;
     window.onafterprint = afterPrint;
     </script>
-    </head>
-
-  <body>
-  <div><?php include "main2_2.php";?></div>  
-  기본 문서 내용...<br> . <br> . <br> . <br> 인쇄할 때 제외될 영역 입니다.
+    </HEAD>
+    <BODY> 기본 문서 내용...<br> . <br> . <br> . <br> 인쇄할 때 제외될 영역 입니다.
     <br><br>
 
     <div class="print_table">
     <div id="idPrint">
-<style type="text/css">
+
+      <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}
 .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
   overflow:hidden;padding:10px 5px;word-break:normal;}
@@ -60,10 +60,10 @@
   <tr>
     <td class="tg-baqh" rowspan="14"></td>
     <td class="tg-baqh">학 번 / 학 년</td>
-    <td class="tg-baqh">  19510**</td>
-    <td class="tg-baqh"> 3 학 년 </td>
+    <td class="tg-baqh">              </td>
+    <td class="tg-baqh">           </td>
     <td class="tg-baqh">성&nbsp;&nbsp;명</td>
-    <td class="tg-baqh" colspan="3"> 홍 길 동</td>
+    <td class="tg-baqh" colspan="3">         </td>
     <td class="tg-0lax" colspan="7" rowspan="14"></td>
   </tr>
   <tr>
@@ -74,9 +74,9 @@
   </tr>
   <tr>
     <td class="tg-baqh">전 화 번 호</td>
-    <td class="tg-baqh" colspan="2">010 - 1234 - 5678</td>
+    <td class="tg-baqh" colspan="2">            </td>
     <td class="tg-baqh">이 수 학 기</td>
-    <td class="tg-baqh" colspan="3">5 학기</td>
+    <td class="tg-baqh" colspan="3">  학기</td>
   </tr>
   <tr>
     <td class="tg-baqh">휴 학 기 간</td>
@@ -86,15 +86,15 @@
   </tr>
   <tr>
     <td class="tg-baqh">복 학 예 정 학 기</td>
-    <td class="tg-baqh" colspan="2">2022년도 2학기            </td>
+    <td class="tg-baqh" colspan="2">              </td>
     <td class="tg-baqh">생 년 월 일</td>
-    <td class="tg-baqh" colspan="3">211118-*******</td>
+    <td class="tg-baqh" colspan="3">         -          </td>
   </tr>
   <tr>
     <td class="tg-baqh">병 역 사 항</td>
     <td class="tg-baqh" colspan="2">민방위 * 예비군 * 입영대상 * 현역 * 여학생 * 기타</td>
     <td class="tg-baqh">국 적</td>
-    <td class="tg-baqh" colspan="3">한국</td>
+    <td class="tg-baqh" colspan="3">        </td>
   </tr>
   <tr>
     <td class="tg-0lax" rowspan="2">휴 학 사 유</td>
@@ -133,8 +133,15 @@
   </tr>
 </tbody>
 </table>
+</table>
 
 </div>
-      </div>
-  <input type="button" value="인쇄" class="print_btn" onclick="printArea();">
-  </BODY> </HTML>
+  </div>
+  <!--버튼-->
+  <div class="btn_box">
+    <a href="mailto:rgy0409@gmail.com" title="문의메일보내기"><button type="button" class="mail_btn">메일보내기</button></a>
+    <a href="img/휴학계.hwp" download><button type="button" class="download_btn">다운로드</button></a>
+    <button type="button" class="print_btn" onclick="printArea();">인쇄</button>
+  </div>
+</body>
+</html>

@@ -1,42 +1,6 @@
 <!--검색 옵션-->
  <?php
-   session_start();
-   $mysqli = new mysqli("localhost", "root", "", "project") or die("fail");
-   //DB로부터 값을 가져온다     
-   $sql = "select * from users";
-   $res = $mysqli->query($sql);
-   $num_result = $res->num_rows;
-
-       $search_option = $_POST['search_option'];
-       $keyword = $_POST['keyword'];
-       
-       if(mysqli_connect_errno())
-       {
-           echo "DB connect error";
-       }
-
-       if(strlen($keyword) > 0) {
-           switch ($search_option) {
-           case "all": 
-               $sql = "SELECT *FROM project WHERE  ( LIKE '%$keyword%') OR (memo LIKE '%$keyword%') ORDER BY num DESC";
-             break;
-           case "user_minor":
-               $sql = "SELECT *FROM users WHERE  user_minor LIKE '%$keyword%' ORDER BY num DESC";
-              break;
-           case "user_class":
-               $sql = "SELECT *FROM users WHERE  user_class LIKE '%$keyword%' ORDER BY num DESC";
-              break;         
-           case "user_number":
-                $sql = "SELECT *FROM users WHERE  user_number LIKE '%$keyword%' ORDER BY num DESC";
-               break;
-           case "user_name":
-                $sql = "SELECT *FROM users WHERE  user_name LIKE '%$keyword%' ORDER BY num DESC";
-               break;
-          }
-          $res = $mysqli->query($sql);
-           $num_result = $res->num_rows;
-          
-       }
+    include $_SERVER['DOCUMENT_ROOT']."/db.php";
    ?>
    <!--관리자페이지 회원 조회 및 수정 searh_data.php-->
 
@@ -47,7 +11,7 @@
     <metavalue="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/search_data_1.css">
     <link rel="stylesheet" href="./css/popup.css">
-    <title>목원대학교 종합정보시스템</title>
+    <user_major>목원대학교 종합정보시스템</user_major>
   </head>
   <script type="text/javascript">
     function openPop(){
@@ -59,7 +23,11 @@
 
 <!--검색 기능-->
     <div class="search">
-    
+    <?php
+    /* 검색 변수 */
+    $catagory = $_GET['catgo'];
+    $search_con = $_GET['search'];
+    ?>
       <div class="search_b"><?php include "search.php";?></div>
 
        <!--학생 정보 출력 테이블 -->
@@ -74,10 +42,19 @@
         <th>수정</th>
       </tr>
       <?php
-      for($i=0; $i<$num_result; $i++){
-        $row=$res->fetch_assoc();
-
-      }
+          $sql2 = mq("select * from users where $catagory like '%$search_con%' order by user_number desc");
+          while($users = $sql2->fetch_array()){
+           
+          $user_major=$users["user_major"]; 
+            if(strlen($user_major)>30)
+              { 
+                $user_major=str_replace(users["user_major"],mb_substr(users["user_major"],0,30,"utf-8")."...",users["user_major"]);
+              }
+            $sql3 = mq("select * from users where con_num='".users['user_number']."'");
+            $rep_count = mysqli_num_rows($sql3);
+        ?>
+         </tr>
+      <?php
     while($row = mysqli_fetch_array($res)){
       ?>
       <tr>
@@ -95,9 +72,9 @@
     </tr>
     <?php
     }?>
-</div>
+    </table>
+
 </div>
 
   </body>
 </html>
-

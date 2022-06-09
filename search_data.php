@@ -11,7 +11,12 @@
   </head>
   <script type="text/javascript">
     function openPop(){
-    var popup = window.open('admin_change.php', '수정 팝업', 'width=850px,height=1000px, scrollbars=yes');}
+    var popup = window.open('admin_change.php', '수정 팝업', 'width=850px,height=1000px, scrollbars=yes');
+  }
+
+  function setText(){
+    popup.document.getElementById("cInput").value=document.getElementById("user_major").value;
+  }
     </script>
   <body>
   <div><?php include "admin_main.php";?></div> 
@@ -20,9 +25,7 @@
 <!--검색 기능-->
     <div class="search">
     
-      <div class="search_b">
-     
-        <?php include "search.php";?></div>
+      <div class="search_b"><?php include "search.php";?></div>
 
     <?php
       session_start();
@@ -38,7 +41,7 @@
        <!--학생 정보 출력 테이블 -->
       <table id="table_2" align=center  cellspacing="0"> 
       <tr bgcolor="#DFE6F7">
-        <th value="user_major">학과</th>
+        <th id="user_major" value="user_major">학과</th>
         <th value="user_minor">전공</th>
         <th value="user_class">힉년</th>
         <th value="user_number">학번</th>
