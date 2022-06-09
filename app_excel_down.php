@@ -1,7 +1,8 @@
+ <!--엑셀파일 업데이트/-->
 <?php
 header( "Content-type: application/vnd.ms-excel" );   
 header( "Content-type: application/vnd.ms-excel; charset=utf-8");  
-header( "Content-Disposition: attachment; filename = 개섷과목.xls" ); //제목을 바꾸자면 title.xls 를바꾸면됨
+header( "Content-Disposition: attachment; filename = 개설과목.xls" ); //제목을 바꾸자면 title.xls 를바꾸면됨
 header( "Content-Description: PHP5 Generated Data" );   
 
 $mysqli = new mysqli("localhost", "root", "", "project") or die("fail");  

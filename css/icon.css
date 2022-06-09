@@ -10,10 +10,10 @@ input[id="menu_icon"]+label{
     top:175px; /*위치*/
     right: 10px;
     cursor: pointer; /*커서*/
-    z-index: 12;
+    z-index: 20;
 }
 input[id="menu_icon"]:checked+label{
-    z-index: 12;
+    z-index: 20;
     right: 300px;
 }
 input[id="menu_icon"]+label span{

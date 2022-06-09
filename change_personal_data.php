@@ -1,4 +1,4 @@
-<!--personal_data.php-> 회원가입 정보 입력-->
+<!--personal_data.php-> 회원가입 정보 수정-->
 
 <!DOCTYPE html>
 <html lang='en' dir="ltr">

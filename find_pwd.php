@@ -22,9 +22,43 @@
     <table align="center" border="0" cellspacing="0" width="300" style="font-weight: bold; ">
           <tr><th><h2 >비밀번호 재설정</h2></th></tr>
           <tr><td><input type="text" name="user_number" onKeydown='javascript:handlerNum(this)' class="inph" placeholder="학번"/></td></tr>
-          <tr><td><input type="text"   name="user_name" class="inph" placeholder="이름"/></td></tr>
-          <tr><td><input type="text"  name="user_pnumber"  class="inph" placeholder="전화번호"/></td></tr>
-          <tr ><td width="100%"> <input type="submit"  class="find_pwd" value=" 비밀번호 변경 "/></td></tr>
+          <tr><td><input type="email" id="user_email" name="user_email" class="inph" placeholder="이메일"/></td></tr>
+          <tr ><td width="100%"> <input type="submit" onClick={this.sendEmail} class="find_pwd" value=" 인증번호 받기 "/></td></tr>
+          <script>
+              class Signup_page extends React.Component {
+
+constructor(props) {
+    super(props);
+    this.state = {
+        email: '',           // 입력받은 email state값
+
+    }
+    this.sendEmail = this.sendEmail.bind(this);
+
+}
+
+
+sendEmail(e){
+    e.preventDefault();
+    console.log(this.state.email);
+    const data = {                      //현재의 email state값을 data객체로 감쌌다
+        email: this.state.email
+    }
+
+    fetch('http://localhost:3001/sendEmail',{      //sendEmail 라우터로 보내버리기
+        method: "post",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+    })
+    .then(res => res.json())
+    .then(json => {
+        
+    })
+    
+}
+
+
+    </script>
           </table>
 </div>
 

@@ -1,4 +1,4 @@
-<!--비밀번호 찾기-->
+<!--개인정보 수집 동의 체크박스-->
 <!DOCTYPE html>
 <html lang="en">
 <head>

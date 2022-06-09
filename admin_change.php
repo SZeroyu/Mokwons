@@ -1,4 +1,4 @@
-
+ <!--관리자 페이지에서 학생 정보 수정-->
 <!DOCTYPE html>
 <html lang='en' dir="ltr">
   <head>

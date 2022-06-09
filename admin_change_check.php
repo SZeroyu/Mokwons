@@ -1,5 +1,4 @@
-<!--personal_data_check.php-->
-
+<!--수정한 내용 업데이트 하기-->
 <?php
    session_start();
    $con = mysqli_connect("localhost", "root", "", "project") or die("fail");
