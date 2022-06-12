@@ -23,19 +23,19 @@ router.post('/sendEmail', async function (req, res) {
     // 메일발송 함수
 
     let transporter = nodemailer.createTransport({
-        service: 'gmail'              //사용하고자 하는 서비스
+        service: 'naver'              //사용하고자 하는 서비스
         , prot: 587
-        , host: 'smtp.gmlail.com'
+        , host: 'smtp.naver.com'
         , secure: false
         , requireTLS: true
         , auth: {
-            user: 'mokwon1951@gmail.com'           //gmail주소입력
+            user: 'mokwonex@naver.com'           //gmail주소입력
             , pass: 'mokwon12!@'                 //gmail패스워드 입력
         }
     });
 
     let info = await transporter.sendMail({   
-        from: 'mokwon1951@gmail.com',             //보내는 주소 입력
+        from: 'mokwonex@naver.com',             //보내는 주소 입력
         to: user_email,                        //위에서 선언해준 받는사람 이메일
         subject: '안녕하세요',                  //메일 제목
         text: 'ㅁㄴㅇㄹ',                       //내용

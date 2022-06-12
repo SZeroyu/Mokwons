@@ -5,8 +5,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>목원대학교 종합정보시스템</title>
-    <link rel="stylesheet" href="./css/main1.css" />
-    <link rel="stylesheet" href="./css/dormitory.css">
+    <link rel="stylesheet" href="./css/print_1.css" />
     <div><?php include "main2_2.php";?></div>
 
 
@@ -130,5 +129,10 @@
       </table>
     </div>
       </div>
-  <input type="button" value="인쇄" class="print_btn" onclick="printArea();">
+  <!--버튼-->
+  <div class="btn_box">
+    <a href="mailto:rgy0409@gmail.com" title="문의메일보내기"><button type="button" class="mail_btn">메일보내기</button></a>
+    <a href="img/자퇴원.hwp" download><button type="button" class="download_btn">다운로드</button></a>
+    <button type="button" class="print_btn" onclick="printArea();">인쇄</button>
+  </div>
   </BODY> </HTML>
