@@ -1,0 +1,65 @@
+
+/*프로필 상자*/
+.top_pass4{
+    position: absolute;
+    top:55%; transform: translateY(-50%);
+    right: 25px;
+    z-index:2;
+    font-size: 12pt;
+    border:2px solid rgb(180, 55, 55); 
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 280px;
+    height: 120px;
+    border-radius: 10px;
+    z-index: 20;
+    background: white;
+   
+}
+
+/*프로필*/
+.my-box{
+    position: absolute;
+    top:10px;
+}
+
+
+.my-box li{
+    padding-left: 100px;
+    padding-top: 3px;
+    font-weight: 500;
+    font-size: 12pt;
+}
+
+/*로그아웃 버튼*/
+button a{
+    border-radius: 35px;
+    width: 80px;
+    height: 30px;
+    position: absolute;
+    background: #a72b43;
+    color: white;
+    font-size: 13pt;
+    z-index:1;
+    padding: 4px 10px 3px 10px; /*위 오른쪽 아래 왼쪽*/
+    top: 90px;
+    left: 180px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.4s;
+}
+
+
+button a:hover{
+    width: 75px;
+    height: 25px;
+    font-size: 12pt;
+    transition: 0.3s;
+    font-weight: bold;
+    text-align: center;
+    background: #b3304a;
+    top: 93px;
+    left: 183px;}
+
+
+
