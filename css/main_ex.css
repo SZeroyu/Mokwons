@@ -41,9 +41,8 @@ menu .main{
 
 menu .main li{
     display: inline-block;
-    width: 150px; height: 35px;
-    padding: 3px;
-    font-size: 13pt;
+    width: 140px; height: 35px;
+    font-size: 14pt; padding-top: 5px;
     color: white;
     text-align: center;
     cursor: pointer; transition: 0.4s;
@@ -57,38 +56,22 @@ menu .sub{
     border-bottom: 1px solid rgb(146, 144, 144);
     z-index:6;
 }
-menu .sub li:first-child{border: none; line-height: none;}
-menu .sub li{
-    display: inline-block;
-    width: 150px; line-height: 30px;
+menu .sub_menu > li{
+    width: 170px; /*20*5=100%*/
+    float: left; line-height: 30px;
     text-align: center;
-    padding: 3px;
     cursor: pointer; transition: 0.4s;
-    font-size: 13pt;
-    font-weight: 600;
-    
+    font-size: 14pt; padding-top: 5px;
+    font-weight: 600;   
 }
-
-menu .sub li:first-child:hover{background: none; color:black; }
-
-.submenu  li {
-    line-height: 40px;  
-    text-align: center;
-    background-color: rgb(167, 43, 67);
-    font-size: 13pt;
-    padding: 3px;
+.sub_menu li a {
+    color:black; 
 }
-.submenu {height: 0; /*ul의 높이를 안보이게 처리*/ overflow: hidden;}
-menu  .sub  li:hover {background-color:rgb(167, 43, 67);  transition-duration: 0.5s;}
-
-menu  .sub  li:hover .submenu {
-    height: 120px; /*서브메뉴 li한개의 높이 50*5*/
-    transition-duration: 1s;}
-
-menu  .sub .submenu li:hover{
-    background-color:rgb(133, 34, 54);
-    transition: 0.4s;
-}
-.submenu li a{
-    color:white;
-}
+.submenu li{line-height: 40px;  background:rgb(228, 228, 228); font-size: 12pt;}
+.submenu {height: 0; /*ul의 높이를 안보이게 처리*/ overflow: hidden; }
+.sub_menu > li:hover { background:rgb(228, 228, 228); transition-duration: 0.5s;}
+.sub_menu > li:hover .submenu {height: 160px; /*서브메뉴 li한개의 높이 50*5*/ transition-duration: 1s;}
+.submenu li:hover{background-color:   rgb(167, 43, 67); transition: 0.4s;}
+.submenu li a:hover{color:white;}
+.sub_menu .title{ width: 135px; border-right: 1px solid gray;}
+.sub_menu .title:hover{ background: none;}

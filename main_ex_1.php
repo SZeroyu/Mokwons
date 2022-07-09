@@ -43,7 +43,35 @@
     </div>
     <div class="sub">
             <ul class="sub_menu">
-            <li class="title"><a href="#">대학일반</a></li>
+            <li class="title"><a href="#">학사일정</a></li>
+            <li>
+              <a href="#">학적관리</a>
+              <ul class="submenu">
+              <li><a href="#">졸업생정보조회</a></li>
+                        <li><a href="#">일반복학신청</a></li>
+                        <li><a href="#" onclick="location.href='pass3.php'">일반휴학신청</a></li>
+                        <li><a href="#" onclick="location.href='dropout.php'">자퇴신청</a></li>
+                        <li><a href="#">국가기술자격증등록</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">장학관리</a>
+              <ul class="submenu">
+                <li><a href="#">장학이력조회</a></li>
+                <li><a href="#">근로장학생신청</a></li>
+                <li><a href="#">온라인장학금신청</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">등록관리</a>
+              <ul class="submenu">
+                <li><a href="#" onclick="location.href='check_pwd.php'">개인정보변경</a></li>
+                <li><a href="#" onclick="location.href='change_graduate_data.php'">개인정보변경(졸업생)</a></li>
+                <li><a href="#" onclick="location.href='password_new.php'"> 비밀번호변경</a></li>
+                <li><a href="#">비밀번호이력</a></li>
+                <li><a href="#">접속이력조회</a></li>
+              </ul>
+            </li>
             <li>
               <a href="#">개인정보</a>
               <ul class="submenu">
