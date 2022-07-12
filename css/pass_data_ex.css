@@ -2,7 +2,7 @@
 /*프로필 상자*/
 .top_pass4{
     position: absolute;
-    top:55%; transform: translateY(-50%);
+    top:62%; transform: translateY(-50%);
     right: 25px;
     z-index:2;
     font-size: 12pt;

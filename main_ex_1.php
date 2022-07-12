@@ -86,7 +86,10 @@
         </div>
   </menu>
 
-  
+  <main>
+    <div class="side_menu"><?php include "index_2.html";?></div>
+  </main>
+
   
 </header>
 </body>

@@ -13,7 +13,6 @@ header{
 .top_header{
     width: 100%; height: 170px;
     position: fixed;
-    border: 1px solid black;
 }
 .top_header .box{
     width: 100%; height: 20px;
@@ -24,7 +23,7 @@ header{
 
 .logo{
     position: relative;
-    top: 50%; transform: translateY(-50%);
+    top: 58%; transform: translateY(-50%);
     z-index: 5;
 }
 
@@ -33,7 +32,7 @@ menu .main{
     width: 100%; height: 35px;
     background-color: rgb(167, 43, 67);
     position: fixed;
-    top: 170px;
+    top: 195px;
     color: rgb(167, 43, 67);
     z-index: 5;
     overflow: hidden;
@@ -50,7 +49,7 @@ menu .main li{
 menu .main li:hover{background: rgb(133, 34, 54);}
 menu .sub{
     width: 100%; height: 35px;
-    top: 205px;
+    top: 230px;
     background-color: white;
     position: fixed;
     border-bottom: 1px solid rgb(146, 144, 144);
@@ -75,3 +74,23 @@ menu .sub_menu > li{
 .submenu li a:hover{color:white;}
 .sub_menu .title{ width: 135px; border-right: 1px solid gray;}
 .sub_menu .title:hover{ background: none;}
+main{
+    margin-top:265px;
+    width: 100%; height: 700px;
+}
+.side_menu{
+    position: relative;
+    left: 20px; top:50%;
+    transform: translateY(-50%);
+    width: 280px; height: 400px;
+}
+/*테이블 중앙 정렬*/
+.main_table{
+    position:relative;
+    height: 350px; width: 700px;
+    z-index:5;
+    top: 30%; left: 50%;
+    margin: -150px 0 0 -350px;
+    z-index: 1; 
+  }
+
