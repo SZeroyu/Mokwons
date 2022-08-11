@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>목원대학교 종합정보시스템</title>
     <link rel="stylesheet" href="./css/main_ex.css">
+    <link rel="stylesheet" href="./css/side_menu.css">
 </head>
 
 <body>
@@ -59,9 +60,58 @@
     </div>
   </main>
 
-  
-  
-</header>
+  <!-- 사이드 메뉴 -->
+  <div class="side">
+    <div class="navigation">
+          <ul>
+              <li class="list active">
+                  <a href="#">
+                      <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                      <span class="title">대학일반</span>
+                  </a>
+              </li>
+              <li class="list">
+                  <a href="#">
+                      <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                      <span class="title">개인정보변경</span>
+                  </a>
+              </li>
+              <li class="list">
+                  <a href="#">
+                      <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
+                      <span class="title">개인정보변경(졸업생)</span>
+                  </a>
+              </li>
+              <li class="list">
+                  <a href="#">
+                      <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
+                      <span class="title">비밀번호변경</span>
+                  </a>
+              </li>
+              <li class="list">
+                  <a href="#">
+                      <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
+                      <span class="title">비밀번호이력</span>
+                  </a>
+              </li>
+              <li class="list">
+                  <a href="#">
+                      <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
+                      <span class="title">접속이력조회</span>
+                  </a>
+              </li>
+              <li class="list">
+                  <a href="#">
+                      <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                      <span class="title">Sign Out</span>
+                  </a>
+              </li>
+          </ul>
+    </div>
+</div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
 

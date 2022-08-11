@@ -31,12 +31,12 @@
 }
 
 /*로그아웃 버튼*/
-button a{
+.top_pass4 button a{
     border-radius: 35px;
     width: 80px;
     height: 30px;
     position: absolute;
-    background: #a72b43;
+    background: #c52f4d;
     color: white;
     font-size: 13pt;
     z-index:1;

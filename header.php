@@ -14,7 +14,7 @@
 <header>
   <div class="top_header">
     <div class="box"></div>
-    <img src="./img/로고2.jpg" alt="Logo" class="logo" width="340">
+    <img src="./img/로고2.jpg" alt="Logo" class="logo" width="300">
     <?php include "user_info.php";?>
   </div>
   <menu>

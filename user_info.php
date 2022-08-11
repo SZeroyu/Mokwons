@@ -9,7 +9,7 @@
 
 <body>
     <div class="top_pass4">
-    <img src="./img/user.png" alt="Logo" width="100">
+    <img src="./img/user.png" alt="Logo" width="80">
     <?php
     if(isset($_SESSION['user_number'])){
       $user_number = $_SESSION['user_number'];

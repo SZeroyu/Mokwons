@@ -24,7 +24,7 @@ header{
 
 .logo{
     position: relative;
-    top: 58%; transform: translateY(-50%);
+    top: 45%; transform: translateY(-50%);
     z-index: 5;
 }
 
