@@ -3,6 +3,7 @@ html,
 ul{list-style: none;}
 a{text-decoration: none;}
 
+/* 헤더 */
 header{
     width: 100%; height: 240px;
     background-color: white;
@@ -22,24 +23,74 @@ header{
     position: fixed;
 }
 
+/* 학교로고 */
 .logo{
     position: relative;
-    top: 45%; transform: translateY(-50%);
+    top: 55%; transform: translateY(-50%);
     z-index: 5;
 }
 
 
-menu .main{
+/*프로필 상자*/
+.top_pass4{
+    position: absolute;
+    top:59%; transform: translateY(-50%);
+    right: 20px;
+    z-index:2;
+    font-size: 11pt;
+    border:2px solid rgb(180, 55, 55); 
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 270px;
+    height: 110px;
+    border-radius: 10px;
+    z-index: 20;
+    background: white;
+   
+}
+
+/*프로필*/
+.my-box{
+    position: absolute;
+    top:10px;
+}
+.my-box li{
+    padding-left: 100px;
+    padding-top: 3px;
+    font-weight: 500;
+    font-size: 11pt;
+}
+
+/*로그아웃 버튼*/
+.top_pass4 button a{
+    border-radius: 35px;
+    width: 80px; height: 30px;
+    position: absolute;
+    background: #c52f4d;
+    color: white;
+    font-size: 11pt;
+    padding: 2px;
+    z-index:1;
+    line-height: 30px;
+    top: 83px; left: 185px;
+    cursor: pointer;
+    text-align: center;
+    transition: 0.4s;
+}
+.top_pass4 button a:hover{ background: #a82842;}
+
+/* 메인 메뉴 */
+nav .main{
     width: 100%; height: 35px;
     background-color: rgb(167, 43, 67);
     position: fixed;
-    top: 195px;
+    top: 185px;
     color: rgb(167, 43, 67);
     z-index: 5;
     overflow: hidden;
 }
 
-menu .main li{
+nav .main li{
     display: inline-block;
     width: 140px; height: 35px;
     font-size: 14pt; padding-top: 5px;
@@ -47,16 +98,18 @@ menu .main li{
     text-align: center;
     cursor: pointer; transition: 0.4s;
 }
-menu .main li:hover{background: rgb(133, 34, 54);}
-menu .sub{
+nav .main li:hover{background: rgb(133, 34, 54);}
+
+/* 서브 메뉴 */
+nav .sub{
     width: 100%; height: 35px;
-    top: 230px;
+    top: 220px;
     background-color: white;
     position: fixed;
     border-bottom: 1px solid rgb(146, 144, 144);
     z-index:6;
 }
-menu .sub_menu > li{
+nav .sub_menu > li{
     width: 170px; /*20*5=100%*/
     float: left; line-height: 30px;
     text-align: center;
@@ -64,16 +117,43 @@ menu .sub_menu > li{
     font-size: 14pt; padding-top: 5px;
     font-weight: 600;   
 }
-.sub_menu li a {
+nav .sub_menu li a {
     color:black; 
 }
-.submenu li{line-height: 40px;  background:rgb(228, 228, 228); font-size: 12pt;}
-.submenu {height: 0; /*ul의 높이를 안보이게 처리*/ overflow: hidden; }
-.sub_menu > li:hover { background:rgb(228, 228, 228); transition-duration: 0.5s;}
-.sub_menu > li:hover .submenu {height: 160px; /*서브메뉴 li한개의 높이 50*5*/ transition-duration: 1s;}
-.submenu li:hover{background-color:   rgb(167, 43, 67); transition: 0.4s;}
-.submenu li a:hover{color:white;}
-.sub_menu .title{ width: 135px; border-right: 1px solid gray;}
-.sub_menu .title:hover{ background: none;}
+nav .submenu li{line-height: 40px;  background:rgb(228, 228, 228); font-size: 12pt;}
+nav .submenu {height: 0; /*ul의 높이를 안보이게 처리*/ overflow: hidden; }
+nav .sub_menu > li:hover { background:rgb(228, 228, 228); transition-duration: 0.5s;}
+nav .sub_menu > li:hover .submenu {height: 200px; /*서브메뉴 li한개의 높이 50*5*/ transition-duration: 1s;}
+nav .submenu li:hover{background-color:   rgb(167, 43, 67); transition: 0.4s;}
+nav .submenu li a:hover{color:white;}
+nav .sub_menu .title{ width: 135px; border-right: 1px solid gray;}
+nav .sub_menu .title:hover{ background: none;}
 
 
+
+
+main{
+    margin-top:265px;
+    width: 100%; height: 600px;
+}
+
+/*테이블 중앙 정렬*/
+.section{
+    position:relative;
+    top: 50%; left: 50%;
+    transform: translate(-50%,-50%);
+    height: 300px; width: 600px;
+    font-size: 11pt;
+}
+.section .main_table{
+    width: 100%; height: 100%;
+  }
+
+  /*반응형 메뉴판*/
+  @media screen and (max-width: 1040px) and (min-width: 768px){
+    nav .sub_menu,
+    nav .sub
+     {display: none;}
+ 
+
+  }

@@ -3,103 +3,124 @@ html,
 *{margin: 0px; padding: 0px;}
 ul{list-style: none;}
 a{text-decoration: none;}
-
-.top_header{
-    width: 100%; height: 20px;
-    top:0 ;
-    background-color: rgb(167, 43, 67);
-    position: fixed;
-    z-index: 5;
-  }
-  .back_header{
-    width: 100%; height: 150px;
-    top:20px;
-    background-color: white;
-    position: fixed;
-    z-index: 2;
-  }
-
-.logo{
-    position: fixed;
-    top: 35px;
-    z-index: 5;}
-
-/*메인 메뉴1->top_menu*/
-#top_menu{
-        width: 100%; height: 43px;
-        background-color: rgb(167, 43, 67);
-        position: fixed;
-        top: 170px;
-        color: rgb(167, 43, 67);
-        z-index: 5;
-    }
-
-#top_menu  li a {
-    margin: 5px 0px 5px 0px;
-    margin-left: 30px;
-    float: left;
-    color: white;
-    text-align: center;
-    }
-
-
-/*서브 메뉴1->sub_menu*/
-#sub_menu{
-    width: 100%; height: 43px;
-    background-color: white;
-    position: fixed;
-    top: 210px;
-    border: 1px solid rgb(146, 144, 144);
-    z-index:11;
-    }
-
-#sub_menu ul{width: 100%; margin: 0 auto;  font-size: 20px;}
-#sub_menu ul li a{color:black; }
-#sub_menu .main>li{
-    border-left: 2px solid gray;
-    padding: 0px 8px 0px 8px;
-    margin: 8px 0px 8px 0px;
-    text-align: center; 
-    position: relative;
-    display: inline;
-    float:left;
+/* 메인 */
+.main_page01{
+  width: 100%;
+  position:absolute;
+  top:260px;
+  border: 1px solid black;
+}
+/* 페이지 순서 */
+.main_page01 .page_info{
+  width: 100%; height: 30px;
+  font-weight: 600;
+  line-height: 30px;
+}
+.main_page01 .page_info p{
+  color: rgb(146, 146, 146);
+  padding-left: 10px;
 }
 
-
-#sub_menu ul li:first-child{border-left: none;}
-#sub_menu .main>li:hover .sub{display: block;}
-#sub_menu .main>li a{display: block; }
-
-/*서브 메뉴2->sub*/
-#sub_menu .main .sub{
-    position: absolute;
-    top: 27px; left: 0;
-    width: 241px; display: none;
+.main_page01 .side_menu{
+  margin-top: 10px;
+  width:100px; height: 500px;
+  float: left;
 }
 
-#sub_menu .main .sub li{background: rgba(240, 165, 196, 0.384); }
-#sub_menu .main .sub li a:hover{background: rgba(194, 51, 80, 0.589);  color: white;}
+/* 사이드메뉴 */
+.main_page01 .side_menu .navigation {
+  position: relative;
+  height: 500px;
+  width: 70px;
+  background: #ad2944;
+  box-shadow: 10px 0 0 white;
+  border-left: 5px solid #ad2944;
+  overflow-x: hidden;
+  transition: width 0.5s;
+  border-radius: 10px;
+  left: 10px;
+}
 
-/*테이블 중앙 정렬*/
-.main_table{
-    position:absolute;
-    height: 350px; width: 700px;
-    z-index:5;
-    top: 50%; left: 50%;
-    margin: -150px 0 0 -350px;
-    z-index: 1; 
-  }
+.main_page01 .side_menu .navigation:hover {
+  width: 300px;
+}
 
+.main_page01 .side_menu .navigation ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-left: 5px;
+  padding-top: 40px;
+}
 
-  /*반응형 메뉴판*/
-  @media screen and (max-width: 1040px){
-    #sub_menu {display: none;}
-    #header_1{
-      top:230px;
-    }
-   
-  }
+.main_page01 .side_menu .navigation ul li {
+  position: relative;
+  list-style: none;
+  width: 100%;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
 
+.main_page01 .side_menu .navigation ul li.active {
+  background: white;
+}
+.main_page01 .side_menu .navigation ul li.active a{
+  color:#c52f4d;
+}
+.main_page01 .side_menu .navigation ul li a {
+  position: relative;
+  display: block;
+  width: 100%;
+  display: flex;
+  text-decoration: none;
+  color: #fff;
+}
 
+.main_page01 .side_menu .navigation ul li.active a::before {
+  content: '';
+  position: absolute;
+  top: -30px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: #ad2944;
+  border-radius: 50%;
+  box-shadow: 15px 15px 0 white;
+}
 
+.main_page01 .side_menu .navigation ul li.active a::after {
+  content: '';
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  background: #ad2944;
+  border-radius: 50%;
+  box-shadow: 15px -15px 0 white;
+}
 
+.main_page01 .side_menu .navigation ul li a .icon {
+  position: relative;
+  display: block;
+  min-width: 60px;
+  height: 60px;
+  line-height: 70px;
+  text-align: center;
+}
+
+.main_page01 .side_menu .navigation ul li a .icon ion-icon {
+  position: relative;
+  font-size: 1.5em;
+  z-index: 1;
+}
+
+.main_page01 .side_menu .navigation ul li a .title {
+  position: relative;
+  display: block;
+  padding-left: 10px;
+  height: 60px;
+  line-height: 60px;
+  white-space: nowrap;
+}

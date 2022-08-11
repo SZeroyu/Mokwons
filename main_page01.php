@@ -23,16 +23,16 @@
         <div class="side_menu">
             <div class="navigation">
                 <ul>
-                    <li class="list active">
+                    <li class="list">
                         <a href="#" onclick="location.href='main.php'">
                             <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                             <span class="title">대학일반</span>
                         </a>
                     </li>
-                    <li class="list">
-                        <a href="#" onclick="location.href='main_page01.php'">
+                    <li class="list  active">
+                        <a href="#">
                             <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                            <span class="title">개인정보변경</span>
+                            <span class="title">학사행정</span>
                         </a>
                     </li>
                     <li class="list">
