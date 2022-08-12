@@ -130,25 +130,6 @@ nav .sub_menu .title{ width: 135px; border-right: 1px solid gray;}
 nav .sub_menu .title:hover{ background: none;}
 
 
-
-
-main{
-    margin-top:265px;
-    width: 100%; height: 600px;
-}
-
-/*테이블 중앙 정렬*/
-.section{
-    position:relative;
-    top: 50%; left: 50%;
-    transform: translate(-50%,-50%);
-    height: 300px; width: 600px;
-    font-size: 11pt;
-}
-.section .main_table{
-    width: 100%; height: 100%;
-  }
-
   /*반응형 메뉴판*/
   @media screen and (max-width: 1040px) and (min-width: 768px){
     nav .sub_menu,

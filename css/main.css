@@ -5,10 +5,9 @@ ul{list-style: none;}
 a{text-decoration: none;}
 /* 메인 */
 .main_page01{
-  width: 100%;
+  width: 98%;
   position:absolute;
-  top:260px;
-  border: 1px solid black;
+  top:265px; left:1%;
 }
 /* 페이지 순서 */
 .main_page01 .page_info{
@@ -18,7 +17,7 @@ a{text-decoration: none;}
 }
 .main_page01 .page_info p{
   color: rgb(146, 146, 146);
-  padding-left: 10px;
+  padding-left: 20px;
 }
 
 .main_page01 .side_menu{
@@ -37,12 +36,12 @@ a{text-decoration: none;}
   border-left: 5px solid #ad2944;
   overflow-x: hidden;
   transition: width 0.5s;
-  border-radius: 10px;
+  border-radius:20px;
   left: 10px;
 }
 
 .main_page01 .side_menu .navigation:hover {
-  width: 300px;
+  width: 280px;
 }
 
 .main_page01 .side_menu .navigation ul {
@@ -124,3 +123,26 @@ a{text-decoration: none;}
   line-height: 60px;
   white-space: nowrap;
 }
+
+/* 부서전화번호 */
+.phone_info{
+  overflow: hidden;
+  float: left;
+  margin-left: 20px;
+  width: 85%; height: 500px;
+
+}
+
+.phone_info .info_box table{overflow: hidden; width: 500;  left: 50%; top:100px; position: relative; transform: translateX(-50%);}
+.phone_info .info_box table thead tr th{border: 1px solid gainsboro; background: #DFE6F7;}
+.phone_info .info_box table thead tr th:first-child,
+.phone_info .info_box table thead tr th:last-child{border-right: none; border-left: none;}
+
+.phone_info .info_box table tbody tr td{
+    border-bottom: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    padding: 10px;
+    text-align: center;
+}
+
+.phone_info .info_box table tbody tr td:last-child{border-right: none;}

@@ -7,14 +7,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>목원대학교 종합정보시스템</title>
     <link rel="stylesheet" href="./css/new_pwd.css">
+    <link rel="stylesheet" href="./css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
-<div>
-    <?php 
-    include "header.php";
-    include "index_1.html";
-    ?>
+<div><?php include "header_1.php";?></div>
+<div class="main_page01">
+    <div class="page_info"><p>대학일반<span> &gt </span>개인정보<span> &gt </span>개인정보수정</p></div>
+    <!-- 사이드 메뉴 -->
+    <div class="side_menu">
+        <div class="navigation">
+            <ul>
+                <li class="list ">
+                    <a href="#" onclick="location.href='h_대학일반.php'">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">대학일반</span>
+                    </a>
+                </li>
+                <li class="list active">
+                    <a href="#">
+                            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                            <span class="title">개인정보</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#" onclick="location.href='login_out.php'">
+                            <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                            <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>        
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="./js/script.js"></script>
+    </div>
 </div>
 
     <form action="checked_pwd.php" method="post">

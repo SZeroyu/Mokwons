@@ -1,14 +1,14 @@
-<!-- header -->
+<!--사용자 정보-->
 <?php include "db.php"; ?>
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>목원대학교 종합정보시스템</title>
     <link rel="stylesheet" href="./css/header.css">
-
 </head>
-
 <body>
 <?php
   if(isset($_SESSION["user_number"])){
@@ -60,9 +60,9 @@
         <div class="main">
           <nav>
             <ul>
-              <li><b onclick="location.href='main_ex.php'">대학일반</b></li>
-              <li><b onclick="location.href='main_ex_1.php'">학사일정</b></li>
-              <li><b>수업</b></li>
+              <li><b onclick="location.href='h_대학일반.php'">대학일반</b></li>
+              <li><b onclick="location.href='h_학사행정.php'">학사일정</b></li>
+              <li><b onclick="location.href='h_수업.php'">수업</b></li>
             </ul>
           </nav>
         </div>

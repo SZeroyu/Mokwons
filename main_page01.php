@@ -72,9 +72,7 @@
             <script src="./js/script.js"></script>
         </div>
     </div>
-    <div class="phone_info">
-        
-    </div>
+
 </div>
     <!-- 부서전화번호 테이블
     <div>

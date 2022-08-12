@@ -32,35 +32,17 @@
                     <li class="list">
                         <a href="#" onclick="location.href='main_page01.php'">
                             <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-                            <span class="title">개인정보변경</span>
+                            <span class="title">학사행정</span>
                         </a>
                     </li>
                     <li class="list">
                         <a href="#">
                             <span class="icon"><ion-icon name="chatbubbles-outline"></ion-icon></span>
-                            <span class="title">개인정보변경(졸업생)</span>
+                            <span class="title">수업</span>
                         </a>
                     </li>
                     <li class="list">
-                        <a href="#">
-                            <span class="icon"><ion-icon name="settings-outline"></ion-icon></span>
-                            <span class="title">비밀번호변경</span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="#">
-                            <span class="icon"><ion-icon name="help-outline"></ion-icon></span>
-                            <span class="title">비밀번호이력</span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="#">
-                            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span>
-                            <span class="title">접속이력조회</span>
-                        </a>
-                    </li>
-                    <li class="list">
-                        <a href="#">
+                        <a href="#" onclick="location.href='login_out.php'">
                             <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
                             <span class="title">Sign Out</span>
                         </a>
@@ -71,43 +53,51 @@
             <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
             <script src="./js/script.js"></script>
         </div>
+        <!-- 부서전화번호 -->
+        <div class="phone_info">
+            <div class="info_box">
+                <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>구분</th>
+                            <th>프로그램</th>
+                            <th>담당부서</th>
+                            <th>부서전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="5">개인정보</td>
+                            <td>개인정보변경</td>
+                            <td rowspan="2">학사자원과</td>
+                            <td rowspan="2">829-7978, 7979</td>
+                        </tr>
+                        <tr>
+                            <td>개인정보변경(졸업생)</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>비밀번호변경</td>
+                            <td rowspan="3">전산정보과</td>
+                            <td rowspan="2">829-7233</td>
+                        </tr>   
+                        <tr>
+                            <td>비밀번호이력</td>
+                            <td></td>
+                        </tr> 
+                        <tr>
+                            <td>접속이력조회</td>
+                            <td>829-7236</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-    <div class="phone_info">
-        
-    </div>
+
 </div>
-    <!-- 부서전화번호 테이블
-    <div>
-    <table class="main_table" border="1" width="50%" height=200 bordercolor="gray" cellspacing="0">
-            <tr align="center" bgcolor="#DFE6F7" style="font-weight: bold;">
-                <td>구분</td>
-                <td>프로그램</td>
-                <td>담당부서</td>
-                <td>부서전화번호</td>
-            </tr>
-            <tr align="center" bgcolor="white">
-                <td rowspan="5">개인정보</td>
-                <td>개인정보변경</td>
-                <td rowspan="2">학사자원과</td>
-                <td rowspan="2">829-7978, 7979</td>
-            </tr>
-            <tr align="center" bgcolor="white">
-                <td>개인정보변경(졸업생)</td>
-            </tr>
-            <tr align="center" bgcolor="white">
-                <td>비밀번호변경</td>
-                <td rowspan="3">전산정보과</td>
-                <td rowspan="2">829-7233</td>
-            </tr>   
-            <tr align="center" bgcolor="white">
-                <td>비밀번호이력</td>
-            </tr> 
-            <tr align="center" bgcolor="white">
-                <td>접속이력조회</td>
-                <td>829-7236</td>
-            </tr>
-        </table>
-    </div> -->
+   
+  
 </body>
 
 </html>

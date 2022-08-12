@@ -26,7 +26,7 @@
             echo '
               <script>
                 alert("로그인 되었습니다.");
-                location.replace("./main.php");
+                location.replace("./h_대학일반.php");
               </script>';
           }
 
