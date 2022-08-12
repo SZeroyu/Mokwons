@@ -68,24 +68,23 @@
         </div>
         <!-- 서브메뉴 -->
         <div class="sub">
-                <ul class="sub_menu">
-                <li class="title"><a href="#">대학일반</a></li>
-                <li>
-                  <a href="#">개인정보</a>
-                  <ul class="submenu">
-                    <li><a href="#" onclick="location.href='check_pwd_1.php'">개인정보변경</a></li>
-                    <li><a href="#" onclick="location.href='change_graduate_data.php'">개인정보변경(졸업생)</a></li>
-                    <li><a href="#" onclick="location.href='password_new.php'"> 비밀번호변경</a></li>
-                    <li><a href="#">비밀번호이력</a></li>
-                    <li><a href="#">접속이력조회</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div><?php include "icon.php";?></div>
-          </nav>
-
-   </header>
+          <ul class="sub_menu">
+            <li class="title"><a href="#">대학일반</a></li>
+            <li>
+              <a href="#">개인정보</a>
+              <ul class="submenu">
+                <li><a href="#" onclick="location.href='check_pwd_1.php'">개인정보변경</a></li>
+                <li><a href="#" onclick="location.href='change_graduate_data.php'">졸업생정보조회</a></li>
+                <li><a href="#" onclick="location.href='password_new.php'"> 비밀번호변경</a></li>
+                <li><a href="#">비밀번호이력</a></li>
+                <li><a href="#">접속이력조회</a></li>
+              </ul>    
+            </li>
+          </ul>
+        </div>
+        <div><?php include "icon.php";?></div>
+      </nav>
+    </header>
 </body>
 </html>
 

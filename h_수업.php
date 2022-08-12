@@ -12,7 +12,7 @@
     <div><?php include "header_2.php";?>
         <div class="main_page01">
             <!-- 페이지 순 -->
-            <div class="page_info"><p>수업<span> &gt </span>부서전화번호</p></div>
+            <div class="page_info"><p>수업<span> &gt </span><span class="page">부서전화번호<span></p></div>
             <!-- 사이드 메뉴 -->
             <div class="side_menu">
                 <div class="navigation">

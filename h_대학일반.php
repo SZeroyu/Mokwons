@@ -12,7 +12,7 @@
         <div class="main_page01">
             <!-- 페이지 순 -->
             <div class="page_info">
-                <p>대학일반<span> &gt </span>부서전화번호</p>
+                <p>대학일반<span> &gt </span><span class="page">부서전화번호<span></p>
             </div>
             <!-- 사이드 메뉴 -->
             <div class="side_menu">
@@ -68,7 +68,7 @@
                                 <td rowspan="2">829-7978, 7979</td>
                             </tr>
                             <tr>
-                                <td>개인정보변경(졸업생)</td>
+                                <td>졸업생정보조회</td>
                                 <td></td>
                             </tr>
                             <tr>

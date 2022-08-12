@@ -80,15 +80,15 @@ table{
 
  /*버튼*/ 
  .find_pwd{
-  margin-top: 10px;
-  transform: translateX(-50%);
-  margin-bottom: 20px;
+   margin-top: 10px;
+   transform: translateX(-50%);
+   margin-bottom: 20px;
    border-radius: 20px;
    width: 280px; height:40px;
    position:relative;
    left:140px;
    background: linear-gradient(125deg,#a72b43,#f04164,#c43451);
-  background-position: left;
+   background-position: left;
    background-size: 200%;
    color: white;
    font-size: 15pt;

@@ -22,9 +22,7 @@
     }
   }
    ?>
-<!-- 헤더  -->
-          <!-- 화면 크기가 768px 될경우 햄버거 메뉴 -->
-           
+<!-- 헤더  -->        
    <header>
       <div class="top_header">
         <div class="box"></div>
