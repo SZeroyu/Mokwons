@@ -68,7 +68,7 @@
         <script src="./js/script.js"></script>
     </div>
 </div>
-<form action="checked_pwd.php" method="post">
+<form action="p_개인정보수집동의_checked.php" method="post">
     <!--개인정보 수집 동의-->
     <div class="yes_box">
         <label class="checkbox">

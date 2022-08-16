@@ -82,7 +82,7 @@ session_start();
     $user_email = $row["user_email"];
     $user_birthday = $row["user_birthday"];
   ?>
-  <div><?php include "main_2.php";?></div>
+  <div><?php include "header_1.php";?></div>
     <div>
     <form action="change_personal_data_check.php" method="post">
       <table id="table_1" align=center cellspacing="10">
