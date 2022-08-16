@@ -57,7 +57,7 @@
                                 <th>구분</th>
                                 <th>프로그램</th>
                                 <th>담당부서</th>
-                                <th>부서전화번호</th>
+                                <th colspan="2">부서전화번호</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -82,7 +82,7 @@
                             </tr> 
                             <tr>
                                 <td>접속이력조회</td>
-                                <td>829-7236</td>
+                                <td  colspan="2">829-7236</td>
                             </tr>
                         </tbody>
                     </table>

@@ -57,32 +57,56 @@
                                 <th>구분</th>
                                 <th>프로그램</th>
                                 <th>담당부서</th>
-                                <th>부서전화번호</th>
+                                <th colspan="4">부서전화번호</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td rowspan="5">개인정보</td>
-                                <td>개인정보변경</td>
-                                <td rowspan="2">학사자원과</td>
-                                <td rowspan="2">829-7978, 7979</td>
+                                <td rowspan="4">학적관리</td>
+                                <td>일반복학신청</td>
+                                <td>학사지원과</td>
+                                <td rowspan="2" colspan="2">  829-7977~9</td>
                             </tr>
                             <tr>
-                                <td>개인정보변경(졸업생)</td>
+                                <td>일반휴학신청</td>
+                                <td>학사지원계</td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td>비밀번호변경</td>
-                                <td rowspan="3">전산정보과</td>
-                                <td rowspan="2">829-7233</td>
+                                <td>자퇴신청</td>
+                                <td rowspan="2">학사지원과</td>
+                                <td rowspan="2"  colspan="2">829-7104</td>
                             </tr>   
                             <tr>
-                                <td>비밀번호이력</td>
+                                <td>국가기술자격증등록</td>
                                 <td></td>
                             </tr> 
                             <tr>
-                                <td>접속이력조회</td>
-                                <td>829-7236</td>
+                                <td rowspan="3">강의정보</td>
+                                <td>공결관리</td>
+                                <td rowspan="6">학사지원과</td>
+                                <td colspan="4" >829-7105</td>
+                            </tr>
+                            <tr>
+                                <td>강의평가입력</td>
+                                <td rowspan="2" colspan="2">829-7097</td>
+                            </tr>
+                            <tr>
+                                <td>시간표조회</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">성적관리</td>
+                                <td>성적조회</td>
+                                <td rowspan="3">    829-7102~4</td>
+                            </tr>
+                            <tr>
+                                <td>금학기성적열람</td> 
+                                <td rowspan="2"></td>
+                            </tr>
+                            <tr>
+                                <td>계절학기성적열람</td>
+                                <td></td>
                             </tr>
                         </tbody>
                     </table>

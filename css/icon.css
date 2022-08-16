@@ -82,7 +82,7 @@ input[id*="answer"]:checked + label + div {
     max-height: 900px ;
 }
 
-/*메인메뉴 및 서비메뉴*/
+/*메인메뉴 및 서브메뉴*/
 input[id*="submn"]{
     display: none;
 }

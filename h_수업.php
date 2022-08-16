@@ -9,7 +9,7 @@
 </head>
 
 <body> 
-    <div><?php include "header_2.php";?>
+    <div><?php include "header_3.php";?>
         <div class="main_page01">
             <!-- 페이지 순 -->
             <div class="page_info"><p>수업<span> &gt </span><span class="page">부서전화번호<span></p></div>

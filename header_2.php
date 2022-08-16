@@ -71,21 +71,12 @@
                     <li>
                         <a href="#">학적관리</a>
                         <ul class="submenu">
-                            <li><a href="#">졸업생정보조회</a></li>
+                            <li><a href="#">졸업논문계획서</a></li>
                             <li><a href="#">일반복학신청</a></li>
                             <li><a href="#" onclick="location.href='pass3.php'">일반휴학신청</a></li>
                             <li><a href="#" onclick="location.href='dropout.php'">자퇴신청</a></li>
                             <li><a href="#">국가기술자격증등록</a></li>   
                         </ul>   
-                    </li>
-                    <li>
-                        <a href="#">강의정보</a>
-                        <ul class="submenu">
-                            <li><a href="#">공결관리</a></li>
-                            <li><a href="#">강의평가입력</a></li>
-                            <li><a href="#" onclick="location.href='schedule.php'">시간표조회</a></li>
-                            <li><a href="#" onclick="location.href='app_class.php'">수강신청</a></li>    
-                        </ul>
                     </li>
                     <li>
                         <a href="#">장학관리</a>
@@ -103,7 +94,7 @@
                         </ul>
                     </li>     
                     <li>
-                        <a href="#">상담 및 포트폴리오</a>
+                        <a href="#">상담관리</a>
                         <ul class="submenu">
                             <li><a href="#" onclick="location.href='planing.php'">학업계획등록</a></li>
                             <li><a href="#" onclick="location.href='playing.php'">학습활동등록</a></li>

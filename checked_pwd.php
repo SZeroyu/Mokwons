@@ -19,7 +19,7 @@ location.href='./change_personal_data.php'
 
 }else{
 echo "<script>alert('다시입력해주세요'); 
-location.href='./check_pwd.php'
+location.href='./p_개인정보수집동의.php'
 </script>";
 }
 }

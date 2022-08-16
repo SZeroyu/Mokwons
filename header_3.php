@@ -69,17 +69,7 @@
         <!-- 서브메뉴 -->
         <div class="sub">
                 <ul class="sub_menu">
-                    <li class="title"><a href="#">학사행정</a></li>
-                    <li>
-                        <a href="#">학적관리</a>
-                        <ul class="submenu">
-                            <li><a href="#">졸업생정보조회</a></li>
-                            <li><a href="#">일반복학신청</a></li>
-                            <li><a href="#" onclick="location.href='pass3.php'">일반휴학신청</a></li>
-                            <li><a href="#" onclick="location.href='dropout.php'">자퇴신청</a></li>
-                            <li><a href="#">국가기술자격증등록</a></li>   
-                        </ul>   
-                    </li>
+                    <li class="title"><a href="#">수업</a></li>
                     <li>
                         <a href="#">강의정보</a>
                         <ul class="submenu">
@@ -88,49 +78,16 @@
                             <li><a href="#" onclick="location.href='schedule.php'">시간표조회</a></li>
                             <li><a href="#" onclick="location.href='app_class.php'">수강신청</a></li>    
                         </ul>
-                    </li>
+                    </li>   
                     <li>
-                        <a href="#">장학관리</a>
+                        <a href="#">성적관리</a>
                         <ul class="submenu">
-                            <li><a href="#">장학이력조회</a></li>
-                            <li><a href="#">근로장학생신청</a></li>
-                            <li><a href="#">온라인장학금신청</a></li>
-                        </ul>
-                    </li> 
-                    <li>
-                        <a href="#">등록관리</a>
-                        <ul class="submenu">
-                            <li><a href="#">등록금처리요청</a></li>
-                            <li><a href="#">분할납부신청</a></li>
-                        </ul>
-                    </li>     
-                    <li>
-                        <a href="#">상담 및 포트폴리오</a>
-                        <ul class="submenu">
-                            <li><a href="#" onclick="location.href='planing.php'">학업계획등록</a></li>
-                            <li><a href="#" onclick="location.href='playing.php'">학습활동등록</a></li>
-                            <li><a href="#" onclick="location.href='friend.php'">교우관계등록</a></li>
+                            <li><a href="#" onclick="location.href=''">전체성적조회</a></li>
+                            <li><a href="#" onclick="location.href=''">계절학기조회</a></li>
+                            <li><a href="#" onclick="location.href=''">교우관계등록</a></li>
                             <li><a href="#">상담예약</a></li>
                         </ul>
-                    </li>     
-                    <li>
-                        <a href="#">생활관</a>
-                        <ul class="submenu">
-                            <li><a href="#" onclick="location.href='dormitory.php'">생활관입사신쳥</a></li>
-                            <li><a href="#">생활관사생카드작성</a></li>
-                            <li><a href="#">생활관외박신청</a></li>
-                            <li><a href="#">생활관퇴사신청</a></li>
-                        </ul>
-                    </li>     
-                    <li>
-                        <a href="#">부가서비스</a>
-                        <ul class="submenu">
-                            <li><a href="#">봉사자료입력</a></li>
-                            <li><a href="#">학습단체활동신청</a></li>
-                            <li><a href="#">사물함신청</a></li>
-                            <li><a href="#">기초요양클리닉신청</a></li>
-                        </ul>
-                    </li>     
+                    </li>        
                 </ul>
             </div>
             <div><?php include "icon.php";?></div>

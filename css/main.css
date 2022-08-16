@@ -32,7 +32,7 @@ a{text-decoration: none;}
 /* 사이드메뉴 */
 .main_page01 .side_menu .navigation {
   position: relative;
-  height: 500px;
+  height: 620px;
   width: 70px;
   background: #ad2944;
   box-shadow: 10px 0 0 white;
@@ -127,6 +127,16 @@ a{text-decoration: none;}
   white-space: nowrap;
 }
 
+.page_list{
+  color: rgba(255, 255, 255, 0.664);
+  height: 50px;
+  line-height: 50px;
+  font-weight: bold;
+  padding-left: 15px;
+  display: none;
+}
+.main_page01 .side_menu .navigation:hover .page_list{display: block;}
+
 /* 부서전화번호 */
 .phone_info{
   overflow: hidden;
@@ -136,7 +146,7 @@ a{text-decoration: none;}
 
 }
 
-.phone_info .info_box table{overflow: hidden; width: 500;  left: 50%; top:100px; position: relative; transform: translateX(-50%);}
+.phone_info .info_box table{overflow: hidden; width: 550px;  left: 52%; top:50%; position: relative; transform: translateX(-50%);}
 .phone_info .info_box table thead tr th{border: 1px solid gainsboro; background: #DFE6F7;}
 .phone_info .info_box table thead tr th:first-child,
 .phone_info .info_box table thead tr th:last-child{border-right: none; border-left: none;}
@@ -149,3 +159,4 @@ a{text-decoration: none;}
 }
 
 .phone_info .info_box table tbody tr td:last-child{border-right: none;}
+

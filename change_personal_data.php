@@ -6,6 +6,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/change_personal_data.css">
+    <link rel="stylesheet" href="./css/main.css">
     <title>개인정보 입력 페이지</title>
 
     <!--우편 번호 찾기-->
@@ -53,74 +54,131 @@
 </script>
   </head>
 
-  <body>
+<body>
   <?php
-session_start();
-    if(isset($_SESSION['user_number'])){
-      $user_number = $_SESSION['user_number'];
-    }
-    $con = mysqli_connect("localhost", "root", "", "project") or die("fail");
-    $sql = "select * from users where user_number='$user_number'; ";
-    $res = mysqli_query($con, $sql);
-    $row = mysqli_fetch_array($res);
-    $user_name = $row["user_name"];
-    $user_address = $row["user_address"];
-    $user_address_number = $row["user_address_number"];
-    $user_pnumber = $row["user_pnumber"];
-    $user_hnumber = $row["user_hnumber"];
-    $user_email = $row["user_email"];
-    $user_birthday = $row["user_birthday"];
-
+  session_start();
+  if(isset($_SESSION['user_number'])){
+    $user_number = $_SESSION['user_number'];
+  }
+  $con = mysqli_connect("localhost", "root", "", "project") or die("fail");
+  $sql = "select * from users where user_number='$user_number'; ";
+  $res = mysqli_query($con, $sql);
+  $row = mysqli_fetch_array($res);
+  $user_name = $row["user_name"];
+  $user_address = $row["user_address"];
+  $user_address_number = $row["user_address_number"];
+  $user_pnumber = $row["user_pnumber"];
+  $user_hnumber = $row["user_hnumber"];
+  $user_email = $row["user_email"];
+  $user_birthday = $row["user_birthday"];
   ?>
-  <div><?php include "main_2.php";?></div>
-    <div>
-    <form action="change_personal_data_check.php" method="post">
-      <table id="table_1" align=center cellspacing="10">
-      <div>
-          <tr>
-            <th bgcolor="#DFE6F7">학번/사번</th>
-            <td><input type="text" name="user_number" value = "<?=$user_number?>" class="inph_1" placeholder="학번" readonly></td>
-          </tr>
-          </div>
-      <div>
-          <tr>
-            <th bgcolor="#DFE6F7">이름</th>
-            <td><input type="text" name="user_name" value = "<?=$user_name?>" class="inph_1" placeholder="이름"></td>
-          </tr>
-          </div>
-          <div>
-            <tr>
-            <th bgcolor="#DFE6F7">생년월일</th>
-            <td><input type="text" name="user_birthday" value="<?=$user_birthday?>" placeholder="ex) 20001127" class="inph_1"></td>
-  </tr>
-  </div>
-          <div>
-          <tr ><th rowspan="3" bgcolor="#DFE6F7">주소</th></tr>
-          <tr><td  colspan="3"><input type="text" name="user_address_number" value="<?=$user_address_number?>" id="user_address_number" placeholder="우편번호" class="form-control m-input inph_1"><button type="button" class=" btn_1"  onclick="execDaumPostcode()">우편번호 찾기</button></td>
-          <tr><td colspan="3"><input type="text" name="user_address" id="user_address" value="<?=$user_address?>" placeholder="주소+상세주소" class="form-control m-input inph_2" cols="50"></td></tr>
-          </div>
 
-          <div>
-          <tr><th  rowspan="3" bgcolor="#DFE6F7">전화번호</th>
+<div><?php include "header_1.php";?></div>
+<div class="main_page01">
+  <div class="page_info"><p>대학일반<span> &gt </span>개인정보<span> &gt </span><span class="page">개인정보변경<span></p></div>
+  <!-- 사이드 메뉴 -->
+  <div class="side_menu">
+    <div class="navigation">
+      <ul>
+        <li class="list ">
+          <a href="#" onclick="location.href='h_대학일반.php'">
+            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+            <span class="title">대학일반</span>
+          </a>
+        </li>
+        <li class="page_list"><p>개인정보</p></li>
+        <li class="list active">
+          <a href="#">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <span class="title">개인정보변경</span>
+          </a>
+        </li>
+        <li class="list ">
+          <a href="#">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <span class="title">졸업생정보조회</span>
+          </a>
+        </li>
+        <li class="list ">
+          <a href="#">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <span class="title">비밀번호변경</span>
+          </a>
+        </li>
+        <li class="list ">
+          <a href="#">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <span class="title">비밀번호이력</span>
+          </a>
+        </li>
+       <li class="list ">
+          <a href="#">
+            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+            <span class="title">접속이력</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#" onclick="location.href='login_out.php'">
+            <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+            <span class="title">Sign Out</span>
+          </a>
+        </li>
+      </ul>        
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./js/script.js"></script>
+  </div>
+</div>
+    <!--  사이드메뉴 끝 -->
+
+    <!-- 사용자정보 수정 -->
+<div>
+  <form action="change_personal_data_check.php" method="post">
+    <table id="table_1" align=center cellspacing="10">
+      <div>
+        <tr>
+          <th bgcolor="#DFE6F7">학번/사번</th>
+          <td><input type="text" name="user_number" value = "<?=$user_number?>" class="inph_1" placeholder="학번" readonly></td>
+        </tr>
+      </div>
+      <div>
+        <tr>
+          <th bgcolor="#DFE6F7">이름</th>
+          <td><input type="text" name="user_name" value = "<?=$user_name?>" class="inph_1" placeholder="이름"></td>
+        </tr>
+      </div>
+      <div>
+        <tr>
+          <th bgcolor="#DFE6F7">생년월일</th>
+          <td><input type="text" name="user_birthday" value="<?=$user_birthday?>" placeholder="ex) 20001127" class="inph_1"></td>
+        </tr>
+      </div>
+      <div>
+        <tr><th rowspan="3" bgcolor="#DFE6F7">주소</th></tr>
+        <tr><td  colspan="3"><input type="text" name="user_address_number" value="<?=$user_address_number?>" id="user_address_number" placeholder="우편번호" class="form-control m-input inph_1"><button type="button" class=" btn_1"  onclick="execDaumPostcode()">우편번호 찾기</button></td>
+        <tr><td colspan="3"><input type="text" name="user_address" id="user_address" value="<?=$user_address?>" placeholder="주소+상세주소" class="form-control m-input inph_2" cols="50"></td></tr>
+      </div>
+      <div>
+        <tr>
+          <th  rowspan="3" bgcolor="#DFE6F7">전화번호</th>
           <tr> <td colspan="3"><input type="text" name="user_pnumber" value="<?=$user_pnumber?>" placeholder="개인 전화번호" class="inph_2"></td></tr>
           <tr> <td colspan="3"><input type="text" name="user_hnumber" value="<?=$user_hnumber?>" placeholder="집 전화번호" class="inph_2"></td></tr>
+        </tr>
+      </div>
+      <div>
+        <tr>
+          <th bgcolor="#DFE6F7">이메일</th>
+          <td colspan="3"><input type="email"  class="inph_2" name="user_email" value="<?=$user_email?>" placeholder="이메일"></td>
           </tr>
-          </div>
-
-          <div>
-          <tr>
-            <th bgcolor="#DFE6F7">이메일</th>
-            <td colspan="3"><input type="email"  class="inph_2" name="user_email" value="<?=$user_email?>" placeholder="이메일"></td>
-          </tr>
-          </div>
-
-         <div>
-          <tr>
+      </div>
+      <div>
+        <tr>
           <td colspan="4"><input type="submit" class="btn_2" value="저장"></td>
-          </tr>
-        </div>
-      </table>
-      </form>
-    </div>
-  </body>
+        </tr>
+      </div>
+    </table>
+  </form>
+</div>
+</body>
 </html>
