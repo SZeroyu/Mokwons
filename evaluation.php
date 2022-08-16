@@ -5,13 +5,11 @@
     <meta charset="utf-8" />
     <title>강의평가입력</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/main1.css">
     <link rel="stylesheet" href="./css/personal_data.css">
 </head>
 
 <body>
-  <div><?php include "main2_2.php";?></div>
-  <div id="header_1" style="display: inline; color: white;"><ul><li><a href="#"> 강의평가입력 </a></li></ul></div>
+  <div><?php include "header_3.php";?></div>
     <main class="evaluation">
       <div class="evaluation">
         <form action="evaluation_action.php" method="post">

@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <div class="top_pass4">
+  <div class="top_pass4">
     <img src="./img/user.png" alt="Logo" width="80">
     <?php
     if(isset($_SESSION['user_number'])){

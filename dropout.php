@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>목원대학교 종합정보시스템</title>
     <link rel="stylesheet" href="./css/print_1.css" />
-    <div><?php include "main2_2.php";?></div>
+    <div><?php include "header_2.php";?></div>
 
 
     <script language="JavaScript">

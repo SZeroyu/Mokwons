@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/dormitory.css" />
     <link rel="stylesheet" href="./css/download.css" />
     <link rel="stylesheet" href="./css/mail.css" />
-    <div><?php include "main2_2.php";?></div>
+    <div><?php include "header_2.php";?></div>
     </HEAD>
     <BODY>
     <br><br><br><br><br><br><br><br>
