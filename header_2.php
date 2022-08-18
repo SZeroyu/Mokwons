@@ -72,9 +72,9 @@
                         <a href="#">학적관리</a>
                         <ul class="submenu">
                             <li><a href="#">졸업논문계획서</a></li>
-                            <li><a href="#">일반복학신청</a></li>
-                            <li><a href="#" onclick="location.href='pass3.php'">일반휴학신청</a></li>
-                            <li><a href="#" onclick="location.href='dropout.php'">자퇴신청</a></li>
+                            <li><a href="#">복학신청</a></li>
+                            <li><a href="#" onclick="location.href='h_휴학신청.php'">휴학신청</a></li>
+                            <li><a href="#" onclick="location.href='h_자퇴신청.php'">자퇴신청</a></li>
                             <li><a href="#">국가기술자격증등록</a></li>   
                         </ul>   
                     </li>

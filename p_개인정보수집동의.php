@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/new_pwd.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/d6d6196cf4.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div><?php include "header_1.php";?></div>
@@ -33,25 +34,25 @@
                 </li>
                 <li class="list ">
                     <a href="#">
-                            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                            <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
                             <span class="title">졸업생정보조회</span>
                     </a>
                 </li>
                 <li class="list ">
                     <a href="#">
-                            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                            <span class="icon"><ion-icon name="key-outline"></ion-icon></span>
                             <span class="title">비밀번호변경</span>
                     </a>
                 </li>
                 <li class="list ">
                     <a href="#">
-                            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                            <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
                             <span class="title">비밀번호이력</span>
                     </a>
                 </li>
                 <li class="list ">
                     <a href="#">
-                            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                            <span class="icon"><ion-icon name="link-outline"></ion-icon></span>
                             <span class="title">접속이력</span>
                     </a>
                 </li>

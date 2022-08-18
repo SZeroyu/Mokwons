@@ -142,11 +142,11 @@ a{text-decoration: none;}
   overflow: hidden;
   float: left;
   margin-left: 20px;
-  width: 85%; height: 500px;
-
+  width: 90%; 
+  position: fixed;
 }
 
-.phone_info .info_box table{overflow: hidden; width: 550px;  left: 52%; top:50%; position: relative; transform: translateX(-50%);}
+.phone_info .info_box table{overflow: hidden; background: white; width: 550px; padding: 20px 0px 20px 0px; left: 52%; top:50%; position: relative; transform: translateX(-50%);}
 .phone_info .info_box table thead tr th{border: 1px solid gainsboro; background: #DFE6F7;}
 .phone_info .info_box table thead tr th:first-child,
 .phone_info .info_box table thead tr th:last-child{border-right: none; border-left: none;}

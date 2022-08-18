@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+                <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <title>목원대학교 종합정보시스템</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -44,8 +46,7 @@
                         </li>
                     </ul>
                 </div>
-                <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-                <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+                
                 <script src="./js/script.js"></script>
             </div>
             <!-- 부서전화번호 -->
@@ -56,8 +57,8 @@
                             <tr>
                                 <th>구분</th>
                                 <th>프로그램</th>
-                                <th>담당부서</th>
-                                <th colspan="2">부서전화번호</th>
+                                <th >담당부서</th>
+                                <th>부서전화번호</th>
                             </tr>
                         </thead>
                         <tbody>
@@ -65,7 +66,7 @@
                                 <td rowspan="5">개인정보</td>
                                 <td>개인정보변경</td>
                                 <td rowspan="2">학사자원과</td>
-                                <td rowspan="2">829-7978, 7979</td>
+                                <td rowspan="2" colspan="2">829-7978, 7979</td>
                             </tr>
                             <tr>
                                 <td>졸업생정보조회</td>
@@ -74,7 +75,7 @@
                             <tr>
                                 <td>비밀번호변경</td>
                                 <td rowspan="3">전산정보과</td>
-                                <td rowspan="2">829-7233</td>
+                                <td rowspan="2" colspan="2">829-7233</td>
                             </tr>   
                             <tr>
                                 <td>비밀번호이력</td>
@@ -82,7 +83,7 @@
                             </tr> 
                             <tr>
                                 <td>접속이력조회</td>
-                                <td  colspan="2">829-7236</td>
+                                <td>829-7236</td>
                             </tr>
                         </tbody>
                     </table>

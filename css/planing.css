@@ -2,8 +2,13 @@ html,
 *{margin: 0px; padding: 0px;}
 ul{list-style: none;}
 a{text-decoration: none;}
-
+.plan{
+    position: absolute;
+    top: 50%; left: 50%; 
+    transform: translate(-50%, -50%);
+}
 .plan ul li textarea{
   margin-left: 20px;
+  height: 100px;
 }
 

@@ -119,21 +119,22 @@ nav .sub_menu  li{
     font-weight: 600;   
 }
 nav .sub_menu li a { color:black; }
-nav li .submenu li{line-height: 40px; height: 40px; background:rgb(236, 234, 234); font-size: 12pt; font-weight: 500;}
-nav li .submenu {height: 0; /*ul의 높이를 안보이게 처리*/ overflow: hidden; }
-nav .sub_menu > li:hover { background:rgb(236, 234, 234); transition-duration: 0.5s;}
-nav .sub_menu > li:hover .submenu {height: 200px; /*서브메뉴 li한개의 높이 50*5*/ transition-duration: 1s;}
-nav li .submenu li:hover{background-color:rgb(167, 43, 67); transition: 0.4s;}
-nav li .submenu li:hover  a{color:white;}
-nav .sub_menu .title{ width: 135px; border-right: 1px solid gray;}
+nav .sub_menu li:hover { background:rgb(232, 233, 233); transition-duration: 0.5s;}
+nav .sub_menu .title{ width: 135px; border-right: 1px solid #e8e9e9;}
 nav .sub_menu .title:hover{ background: none;}
 
+/* 서브메뉴2 */
+nav li .submenu li{line-height: 40px; height: 40px; background:#e8e9e9; font-size: 12pt; font-weight: 500;}
+nav li .submenu {height: 0; /*ul의 높이를 안보이게 처리*/ overflow: hidden; }
+nav .sub_menu li:hover .submenu {height: 200px; /*서브메뉴 li한개의 높이 50*5*/ transition-duration: 1s;}
+nav li .submenu li:hover{background-color:rgb(167, 43, 67); transition: 0.4s;}
+nav li .submenu li:hover  a{color:white;}
 
-  /*반응형 메뉴판*/
-  @media screen and (max-width: 1040px) and (min-width: 768px){
+
+
+/*반응형 메뉴판*/
+@media screen and (max-width: 1200px){
     nav .sub_menu,
     nav .sub
-     {display: none;}
- 
-
+    {display: none;}
   }
