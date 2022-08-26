@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>목원대학교 종합정보시스템</title>
-    <link rel="stylesheet" href="./css/new_pwd.css">
+    <link rel="stylesheet" href="./css/user_info.css">
     <link rel="stylesheet" href="./css/main.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/d6d6196cf4.js" crossorigin="anonymous"></script>
@@ -39,7 +39,7 @@
                     </a>
                 </li>
                 <li class="list ">
-                    <a href="#">
+                    <a href="#" onclick="location.href='password_new.php'">
                             <span class="icon"><ion-icon name="key-outline"></ion-icon></span>
                             <span class="title">비밀번호변경</span>
                     </a>
@@ -68,10 +68,12 @@
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="./js/script.js"></script>
     </div>
-</div>
+
+
+<!--개인정보 수집 동의-->
+<div class="user_yes">
 <form action="p_개인정보수집동의_checked.php" method="post">
-    <!--개인정보 수집 동의-->
-    <div class="yes_box">
+<div class="yes_box">
         <label class="checkbox">
             <input type="checkbox" value="y" name="agree" id="agree" />
             <span class="icon"></span>
@@ -90,16 +92,16 @@
 
         <!--비밀번호 확인-->
         <div class="pwd_check_box">
-            <table class="pwd_check_table" align=center cellspacing="5">
-                <tr>
-                    <th colspan="2" bgcolor="#DFE6F7">비밀번호 입력</th>
-                    <td colspan="2"><input type="password" name="user_password" value=""  class="inph_pwd" placeholder="비밀번호"></td>
-                </tr>
-            </table>
-        <input type="submit" name="check_btn" id ="check_btn" class="check_btn" value="확인">
+            <label for="pwd_check">비밀번호 확인</label>
+            <input type="password" id="pwd_check" name="user_password" placeholder="비밀번호">
         </div> 
+        <input type="submit" name="check_btn" id ="check_btn" class="check_btn" value="동의">
     </div>
 </form>
+</div>
+
+
+</div>
 
 <script>
 $(function(){

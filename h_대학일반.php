@@ -49,6 +49,7 @@
                 
                 <script src="./js/script.js"></script>
             </div>
+        
             <!-- 부서전화번호 -->
             <div class="phone_info">
                 <div class="info_box">
@@ -89,7 +90,7 @@
                     </table>
                 </div>
             </div>
-        </div>
+            </div>
     </div>
 </body>
 </html>

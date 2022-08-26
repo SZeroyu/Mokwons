@@ -24,13 +24,12 @@
     position: absolute;
     width: 50%;
     height: 100%;
-    top:68%;
+    top:70%;
     left: 50%;
     transform: translate(-50%, -30%);
     overflow-y: scroll;
     border: 1px solid gray;
     z-index:2;
-    margin-bottom: 10px;
 }
 
 /*버튼*/
@@ -62,19 +61,12 @@ button[class*=btn]:focus{outline:0;}
 .print_table .write_info table{
   overflow: hidden;
   position: absolute;
-  top:50%; left: 50%;
-  transform:translate(-50%, -50%);
-  margin-top: 10px;
-  width: 95%; height: 90%;
-  border: 1px solid gainsboro;
-}
-.print_table .write_info table thead th h1{border-bottom: 1px solid gainsboro;}
-.print_table .write_info table thead th h1,
-.print_table .write_info table tfoot tr td h1
-{
-  text-align: center
+  width: 95%; height: 1080px;
+  padding: 30px 10px 30px 10px;
 }
 
+/* 사유작성 */
+.print_table .write_info table thead th h1{border: 1px solid gainsboro;}
 .print_table .write_info table tbody tr td,
 .print_table .write_info table tfoot tr td{
   border-right: 1px solid gainsboro;
@@ -82,9 +74,19 @@ button[class*=btn]:focus{outline:0;}
   width: 100px;
   padding-left: 10px;
 }
-.print_table .write_info table tbody tr .title{
-  width: 200px;
-}
+.print_table .write_info table thead th h1,
+.print_table .write_info table tfoot tr td h1{text-align: center}
+
+.print_table .write_info table thead th h1,
+.print_table .write_info table tfoot tr td ol,
+.print_table .write_info table tfoot tr td h1{padding: 20px;}
+
+.print_table .write_info table tbody tr td:first-child,
+.print_table .write_info table tfoot tr td:first-child{border-left: 1px solid gainsboro;}
+.print_table .write_info table tbody tr .title{width: 200px;}
+
+
+/* input, select */
 .print_table .write_info table tbody tr td input,
 .print_table .write_info table tbody tr td select{
   padding: 8px;
@@ -94,24 +96,19 @@ button[class*=btn]:focus{outline:0;}
   cursor: pointer;
   transition: all 0.5s;
 }
-.print_table .write_info table tbody tr td input[type=text]{
-  font-size: 10pt;
-}
-.print_table .write_info table tbody tr td input:hover,
-.print_table .write_info table tbody tr td select:hover{
-  border: 1px solid #004fff;
-}
+.print_table .write_info table tbody tr td input[type=text]{font-size: 10pt;}
 .print_table .write_info table tbody tr td input[type=tel]{width: 50px;}
-.print_table .write_info table tbody .user_sign td p{
-  text-align: center;
-  padding-top: 5px;
-}
-.print_table .write_info table tbody .sign td p{
-  text-align: end;
-  padding-right: 10px;
-}
-.print_table .write_info table thead th h1,
-.print_table .write_info table tfoot tr td ol,
-.print_table .write_info table tfoot tr td h1{
-  padding: 20px;
+.print_table .write_info table tbody tr td input:hover,
+.print_table .write_info table tbody tr td select:hover{border: 1px solid #004fff;}
+
+/* 본인 성명, 부모님 성명 경유*/
+.print_table .write_info table tbody .user_sign td p{text-align: center; padding-top: 10px;}
+.print_table .write_info table tbody .user_sign td p span{padding-left: 80px;}
+.print_table .write_info table tbody .sign td p{text-align: end; padding-right: 10px;}
+
+
+.print_table .info table tr td{
+  position:absolute;
+  border: 1px solid gainsboro;
+  padding: 30px 10px 30px 10px;
 }

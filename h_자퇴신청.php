@@ -16,7 +16,7 @@
   <div><?php include "header_2.php";?></div>  
   <div class="main_page01">
   <!-- 페이지 순 -->
-  <div class="page_info"><p>학사행정<span> &gt </span>학적관리<span> &gt </span><span class="page">휴학신청<span></p></div>
+  <div class="page_info"><p>학사행정<span> &gt </span>학적관리<span> &gt </span><span class="page">자퇴원출력<span></p></div>
   <!-- 사이드 메뉴 -->
   <div class="side_menu">
     <div class="navigation">

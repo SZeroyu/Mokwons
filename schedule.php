@@ -1,15 +1,67 @@
 <!-- 시간표 조회 -->
 <!DOCTYPE html>
-<html lang='en' dir="ltr">
+<html lang='ko' dir="ltr">
 <head>
     <meta charset="utf-8" />
     <title>시간표 조회</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/schedule_1.css">
+    <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
 <div><?php include "header_3.php";?></div>
+<div class="main_page01">
+  <!-- 페이지 순 -->
+  <div class="page_info"><p>수업<span> &gt </span>강의정보<span> &gt </span><span class="page">시간표조회<span></p></div>
+  <!-- 사이드 메뉴 -->
+  <div class="side_menu">
+    <div class="navigation">
+      <ul>
+        <li class="list ">
+          <a href="#" onclick="location.href='h_수업.php'">
+            <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
+            <span class="title">수업</span>
+          </a>
+        </li>
+        <li class="page_list"><p>강의정보</p></li>
+        <li class="list ">
+          <a href="#" onclick="location.href=''">
+            <span class="icon"><ion-icon name="medkit-outline"></ion-icon></span>
+            <span class="title">공결관리</span>
+          </a>
+        </li>
+        <li class="list ">
+          <a href="#" onclick="location.href=''">
+            <span class="icon"><ion-icon name="star-half-outline"></ion-icon></span>
+            <span class="title">강의평가</span>
+          </a>
+        </li>
+        <li class="list active" >
+          <a href="#" onclick="location.href=''">
+            <span class="icon"><ion-icon name="time-outline"></ion-icon></span>
+            <span class="title">시간표조회</span>
+          </a>
+        </li>
+        <li class="list " >
+          <a href="#" onclick="location.href=''">
+            <span class="icon"><ion-icon name="checkbox-outline"></ion-icon></span>
+            <span class="title">수강신청</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#" onclick="location.href='login_out.php'">
+            <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+            <span class="title">Sign Out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./js/script.js"></script>
+  </div>
+    </div>
   <div class="schedule_box">
   <?php
     if(isset($_SESSION['user_number'])){

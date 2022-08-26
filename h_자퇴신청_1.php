@@ -13,10 +13,16 @@
     <script src="https://kit.fontawesome.com/d6d6196cf4.js" crossorigin="anonymous"></script>
 </head>
 <body> 
-    <div><?php include "header_2.php";?></div>  
+    <div><?php include "header_2.php";?></div>
+      <!--버튼-->
+      <div class="btn_box">
+        <a href="mailto:rgy0409@gmail.com" title="문의메일보내기"><button type="button" class="mail_btn">메일보내기</button></a>
+        <a href="img/자퇴원.hwp" download><button type="button" class="download_btn">다운로드</button></a>
+        <button type="button" class="print_btn" onclick="printArea();">인쇄</button>
+    </div>  
     <div class="main_page01">
     <!-- 페이지 순 -->
-    <div class="page_info"><p>학사행정<span> &gt </span>학적관리<span> &gt </span><span class="page">휴학신청<span></p></div>
+    <div class="page_info"><p>학사행정<span> &gt </span>학적관리<span> &gt </span><span class="page">자퇴원출력<span></p></div>
     <!-- 사이드 메뉴 -->
     <div class="side_menu">
     <div class="navigation">
@@ -74,6 +80,7 @@
     <!-- 휴학신청 프린트 영역 -->
     <div class="print_table">
         <div id="idPrint">
+          <!-- 첫페이지 -->
             <div class="write_info">
                 <?php
                 if(isset($_SESSION['user_number'])){
@@ -132,7 +139,7 @@
                             <td class="title">병력사항</td>
                             <td colspan="3">
                                 <select name="병력사항" id="">
-                                    <option value="" selected>병력사항선택</option>
+                                    <option value="" selected>병력사항 선택</option>
                                     <option value="">민방위</option>
                                     <option value="">예비군</option>
                                     <option value="">입영대상</option>
@@ -165,17 +172,17 @@
                                 <p>본인은 위와같이 자퇴하고자 하오니 허락하여 주시기 바랍니다.</p>
                                 <p id="ex_date">
                                     <script>
-                                        // 오늘날짜 나오게하는 법
+                                    // 현재 날짜 나오는 script
                                     let today = new Date();
                                     let year = today.getFullYear();
                                     let month = today.getMonth()+1;
                                     let day = today.getDate();
 
-                                    document.getElementById('ex_date').innerHTML = year + "년" + month + "월" + day + "일";
+                                    document.getElementById('ex_date').innerHTML = year + "년 &nbsp" + month + "월 &nbsp" + day + "일";
                                     </script>
                                 </p>
-                                <p>본인 성명 : (인)</p>
-                                <p>부모님 성명 : (인) </p>
+                                <p>본인 성명 : <span>&nbsp</span> (인)</p>
+                                <p>부모님 성명 : <span>&nbsp</span>(인) </p>
                             </td>
                         </tr>
                         <tr>
@@ -215,14 +222,11 @@
                     </tfoot>
                 </table>
             </div>
+            <!-- 마지막페이지 -->
+            
         </div>
-    </div>
-  <!--버튼-->
-    <div class="btn_box">
-        <a href="mailto:rgy0409@gmail.com" title="문의메일보내기"><button type="button" class="mail_btn">메일보내기</button></a>
-        <a href="img/자퇴원.hwp" download><button type="button" class="download_btn">다운로드</button></a>
-        <button type="button" class="print_btn" onclick="printArea();">인쇄</button>
-    </div>
+      </div>
+
 </body> 
 </html>
 

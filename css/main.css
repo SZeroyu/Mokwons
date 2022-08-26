@@ -139,11 +139,10 @@ a{text-decoration: none;}
 
 /* 부서전화번호 */
 .phone_info{
+  position: relative;
   overflow: hidden;
-  float: left;
   margin-left: 20px;
   width: 90%; 
-  position: fixed;
 }
 
 .phone_info .info_box table{overflow: hidden; background: white; width: 550px; padding: 20px 0px 20px 0px; left: 52%; top:50%; position: relative; transform: translateX(-50%);}

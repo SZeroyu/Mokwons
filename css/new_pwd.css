@@ -22,8 +22,8 @@ a{text-decoration: none;}
   #table_1{
     width: 700px;
     height: 25px;
-    left: 50%; top: 32%;
-    margin: -5px 0 0 -400px;
+    left: 50%; top: 50%;
+    transform: translate(-50%,-50%);
     z-index:1;
   }
 
@@ -74,8 +74,15 @@ th, td{
     background-color: rgb(180, 19, 51);}
 
 /*개인정보 수정전 비밀번호 확인*/
+.user_yes{
+  position: relative;
+  overflow: hidden;
+  margin-left: 20px;
+  width: 90%; 
+  border:  1px solid black;
+}
   .pwd_check_table{
-    position: absolute;
+    position: relative;
     bottom: 75px; left: 0px;
   }    
 
