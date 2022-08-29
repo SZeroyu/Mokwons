@@ -29,25 +29,25 @@
 // })
 // h_자퇴신청,휴학신청 등
 // print.js
-var initBody
-function beforePrint()
-{
-initBody = document.body.innerHTML;
-document.body.innerHTML = idPrint.innerHTML;
-}
+// var initBody
+// function beforePrint()
+// {
+// initBody = document.body.innerHTML;
+// document.body.innerHTML = idPrint.innerHTML;
+// }
 
-function afterPrint()
-{
-document.body.innerHTML = initBody;
-}
+// function afterPrint()
+// {
+// document.body.innerHTML = initBody;
+// }
 
-function printArea()
-{
-window.print();
-}
+// function printArea()
+// {
+// window.print();
+// }
 
-window.onbeforeprint = beforePrint;
-window.onafterprint = afterPrint;
+// window.onbeforeprint = beforePrint;
+// window.onafterprint = afterPrint;
 
 //자퇴신청 선택.js
 function dropout(ele){
@@ -67,14 +67,14 @@ function dropout(ele){
   if($ele.val() == "1" || $ele.val() == "2"){
           document.getElementById('check').innerHTML='*대학교를 작성해주세요'
           document.getElementById('check').style.color='gray';
-          document.getElementById('check').style.fontSize='11pt';
+          document.getElementById('check').style.fontSize='10pt';
       }else{
           document.getElementById('check').innerHTML=''
       }
   if($ele.val() == "3"){ //3인경우 기타 사유 작성문구
           document.getElementById('check').innerHTML='*기타사유를작성해주세요'
           document.getElementById('check').style.color='gray';
-          document.getElementById('check').style.fontSize='11pt';
+          document.getElementById('check').style.fontSize='10pt';
       }
 }
 
@@ -89,4 +89,7 @@ function selectphone(ele){
    
   
 }
-
+ 
+function printPage(idPrint){
+  window.print();
+}

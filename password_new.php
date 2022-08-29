@@ -88,12 +88,15 @@
                     </tr>
                     <tr>
                         <td>
-                            <p class="pwd_title">비밀번호 확인&nbsp<span id="check"></span></p>
+                            <p class="pwd_title">비밀번호 확인</p>
                             <label for="new_pwd_check"></label>
                             <input type="password" id="new_pwd_check" name="new_password2" placeholder="비밀번호 확인"  onchange="check_pw()">
+                            <p class="pwd_title"><span id="check" class="check"></span>
                         </td>
                     </tr>
-    
+                    <!-- <tr>
+                        <td><p class="pwd_title"><span id="check" class="check"></span></p></td>
+                    </tr> -->
                     <tr><th colspan="4" ><input type="submit" id="btn"  value="저장"></th></tr>
                 </table>
             </form>
@@ -101,7 +104,12 @@
 </div>
 <script>
     function check_pw(){
-        if(document.getElementById('new_pwd').value !='' && document.getElementById('new_pwd_check').value!=''){
+        if(document.getElementById('current_pwd').value == document.getElementById('new_pwd').value){
+                    document.getElementById('check').innerHTML='*기존비밀번호와일치합니다 변경해주세요'
+                    document.getElementById('check').style.color='red';
+                    
+        }else{
+            if(document.getElementById('new_pwd').value !='' && document.getElementById('new_pwd_check').value!=''){
                 if(document.getElementById('new_pwd').value==document.getElementById('new_pwd_check').value){
                     document.getElementById('check').innerHTML='*비밀번호 일치'
                     document.getElementById('check').style.color='blue';
@@ -111,6 +119,8 @@
                     document.getElementById('check').style.color='red';
                 }
             }
+        }
+
     }
 
     

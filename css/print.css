@@ -20,17 +20,6 @@
 .tg .tg-0lax{text-align:left;vertical-align:top}
 .tg .tg-h8l1{font-family:Impact, Charcoal, sans-serif !important;;font-size:32px;text-align:center;vertical-align:top}
 
-.print_table{
-    position: absolute;
-    width: 50%;
-    height: 100%;
-    top:70%;
-    left: 50%;
-    transform: translate(-50%, -30%);
-    overflow-y: scroll;
-    border: 1px solid gray;
-    z-index:2;
-}
 
 /*버튼*/
 .btn_box{
@@ -58,15 +47,30 @@ button[class*=btn]:hover{
 }
 button[class*=btn]:focus{outline:0;}
 
+/* 스크롤 */
+.print_table{
+  position: absolute;
+  width: 50%; height: 1000px;
+  top:70%; left: 50%;
+  transform: translate(-50%, -30%);
+  overflow-y: scroll;
+  border: 1px solid gray;
+  z-index:2;
+  
+}
+
+/* print할 내용 */
 .print_table .write_info table{
   overflow: hidden;
   position: absolute;
-  width: 95%; height: 1080px;
-  padding: 30px 10px 30px 10px;
+  width: 97%; height: 1060px;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 20px;
 }
 
 /* 사유작성 */
-.print_table .write_info table thead th h1{border: 1px solid gainsboro;}
+.print_table .write_info table thead th h1{border-bottom: 1px solid gainsboro;}
 .print_table .write_info table tbody tr td,
 .print_table .write_info table tfoot tr td{
   border-right: 1px solid gainsboro;
@@ -98,8 +102,8 @@ button[class*=btn]:focus{outline:0;}
 }
 .print_table .write_info table tbody tr td input[type=text]{font-size: 10pt;}
 .print_table .write_info table tbody tr td input[type=tel]{width: 50px;}
-.print_table .write_info table tbody tr td input:hover,
-.print_table .write_info table tbody tr td select:hover{border: 1px solid #004fff;}
+.print_table .write_info table tbody tr td input:focus,
+.print_table .write_info table tbody tr td select:focus{border: 1px solid #004fff;}
 
 /* 본인 성명, 부모님 성명 경유*/
 .print_table .write_info table tbody .user_sign td p{text-align: center; padding-top: 10px;}
@@ -112,3 +116,85 @@ button[class*=btn]:focus{outline:0;}
   border: 1px solid gainsboro;
   padding: 30px 10px 30px 10px;
 }
+
+.print_table .info_mwn {
+  overflow: hidden;
+  position: relative;
+  width: 95%; height: 1060px;
+  padding: 10px;
+  border: 1px solid black;
+  margin: 20px;
+}
+.print_table .info_mwn .head{
+  text-align: center;
+  margin: 20px 0px 20px 0px;
+}
+.print_table .info_mwn .head h2{
+  padding-bottom: 20px;
+}
+.print_table .info_mwn .head p b{text-decoration: underline; color:red;}
+.print_table .info_mwn .body{
+  margin-top: 20px;
+}
+.print_table .info_mwn .body .title{
+  border: 1px solid gainsboro;
+  width: 98%; height: 100%;
+  margin-top: 10px;
+  padding: 10px;
+}
+.print_table .info_mwn .body .title li ul li{
+  padding: 5px 0px 5px 15px;
+}
+.print_table .info_mwn .body .title li ul li span {
+  float: right;
+}
+.print_table .info_mwn .footer{
+  margin-top: 20px;
+  width: 100%; height: 480px;
+  border: 1px solid gainsboro;
+  text-align: center;
+}
+.print_table .info_mwn .footer h3,
+.print_table .info_mwn .footer h2{
+  padding: 40px 0px 10px 0px;
+}
+.print_table .info_mwn .footer b{
+  padding: 5px;
+  font-size: 13pt;
+}
+.print_table .info_mwn .footer b span{
+  color:red;
+}
+.print_table .info_mwn .footer .info{
+  margin-top: 120px;
+}
+.print_table .info_mwn .footer .info p{
+  padding-top: 20px;
+}
+/* footer */
+footer{
+  position: absolute;
+  width: 100%; height: 80px;
+  background: white;
+  bottom: -500px;
+}
+footer button{
+  position: relative;
+  transform: translateX(-50%);
+  left: 50%;
+  padding: 10px;
+  background: #c4314e;
+  border: 0px;
+  width: 300px;
+  border-radius: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+footer button:hover{
+  background: #ad2944;
+}
+footer button a,
+footer button ion-icon{
+  color:white;
+}
+

@@ -126,9 +126,10 @@ a{text-decoration: none;}
 {
     color:rgb(158, 158, 158);
     font-size: 10pt; font-weight: 500;
-    width: 250px;
+    width: 260px;
     padding-bottom: 5px;
 }
+.new_password table tr .pwd_title .check{padding-top: 5px;}
 .new_password table tr td input[type="password"]:focus .new_password table tr td .pwd_title{color: #5188f8;}
 .new_password table tr td{padding-top: 10px;}
 .new_password table tr td input[type="password"]{

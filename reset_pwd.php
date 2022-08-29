@@ -57,8 +57,8 @@ router.post('/sendEmail', async function (req, res) {
     <div class="box1">   
     <table align="center" border="0" cellspacing="0" width="300" style="font-weight: bold; ">
           <tr><th><h2 >인증</h2></th></tr>
-          <tr><td><input type="email" id="user_email" name="user_email" class="inph" placeholder="인증번호"/></td></tr>
-          <tr ><td width="100%"><button id="sendBtn" class="reset_pwd" value="전송" onclick='check()'>인증하기</button></td></tr>
+          <tr><td><input type="text" id="user_email" name="user_email" class="inph" placeholder="인증번호"/></td></tr>
+          <tr ><td width="100%"><button type="submit" id="sendBtn" class="reset_pwd" value="전송" onclick='check()'>인증하기</button></td></tr>
     </table>
     <footer class="pn">&copy; 시스템 문의 : 042-829-7236</footer> 
 </div>

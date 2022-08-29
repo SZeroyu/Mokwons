@@ -8,28 +8,8 @@
     <title>목원대학교 종합정보시스템</title>
     <link rel="stylesheet" href="./css/print.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/index.js"></script>
     <script src="https://kit.fontawesome.com/d6d6196cf4.js" crossorigin="anonymous"></script>
-    <script language="JavaScript">
-      var initBody
-      function beforePrint()
-      {
-      initBody = document.body.innerHTML;
-      document.body.innerHTML = idPrint.innerHTML;
-      }
-
-      function afterPrint()
-      {
-      document.body.innerHTML = initBody;
-      }
-
-      function printArea()
-      {
-      window.print();
-      }
-
-      window.onbeforeprint = beforePrint;
-      window.onafterprint = afterPrint;
-</script>
 </HEAD>
 <body> 
   <div><?php include "header_2.php";?></div>  
@@ -91,98 +71,214 @@
   </div>
     </div>
 <!-- 휴학신청 프린트 영역 -->
-  <div class="print_table">
-    <div id="idPrint">
-      <table class="tg">
-        <thead>
-          <tr>
-            <th class="tg-xhiq" colspan="15"><span style="text-decoration:underline">휴&nbsp;&nbsp;학&nbsp;&nbsp;원</span></th>
-          </tr>
-        </thead>
-          <tbody>
-            <tr>
-              <td class="tg-baqh" rowspan="14"></td>
-              <td class="tg-baqh">학 번 / 학 년</td>
-              <td class="tg-baqh">              </td>
-              <td class="tg-baqh">           </td>
-              <td class="tg-baqh">성&nbsp;&nbsp;명</td>
-              <td class="tg-baqh" colspan="3">         </td>
-              <td class="tg-0lax" colspan="7" rowspan="14"></td>
-            </tr>
-            <tr>
-              <td class="tg-baqh">소 속</td>
-              <td class="tg-baqh" colspan="2">공과대학 융합컴퓨터 미디어학부</td>
-              <td class="tg-baqh">전 공</td>
-              <td class="tg-baqh" colspan="3">융합미디어전공</td>
-            </tr>
-            <tr>
-              <td class="tg-baqh">전 화 번 호</td>
-              <td class="tg-baqh" colspan="2">            </td>
-              <td class="tg-baqh">이 수 학 기</td>
-              <td class="tg-baqh" colspan="3">  학기</td>
-            </tr>
-            <tr>
-              <td class="tg-baqh">휴 학 기 간</td>
-              <td class="tg-baqh" colspan="2">&nbsp;&nbsp;&nbsp;년&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;학기</td>
-              <td class="tg-baqh">휴 학 구 분</td>
-              <td class="tg-baqh" colspan="3">일 반 휴 학</td>
-            </tr>
-            <tr>
-              <td class="tg-baqh">복 학 예 정 학 기</td>
-              <td class="tg-baqh" colspan="2">              </td>
-              <td class="tg-baqh">생 년 월 일</td>
-              <td class="tg-baqh" colspan="3">         -          </td>
-            </tr>
-            <tr>
-              <td class="tg-baqh">병 역 사 항</td>
-              <td class="tg-baqh" colspan="2">민방위 * 예비군 * 입영대상 * 현역 * 여학생 * 기타</td>
-              <td class="tg-baqh">국 적</td>
-              <td class="tg-baqh" colspan="3">        </td>
-            </tr>
-            <tr>
-              <td class="tg-0lax" rowspan="2">휴 학 사 유</td>
-              <td class="tg-baqh" colspan="6" rowspan="2">□ 편입학 휴학         □ 학비마련 휴학         □ 취업 휴학         □ 유학 휴학<br>□ 가사 휴학            □졸업시기 조정          □ 사회 경험        □ 창업 휴학</td>
-            </tr>
-            <tr>
-            </tr>
-            <tr>
-              <td class="tg-baqh" colspan="7">본인은 위와 같이 휴학 하고자 하오니 허락하여 주시기 바랍니다.<br><br>년&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;월&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일<br><br>본 인 성명:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(인)<br>보호자성명:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(인)</td>
-            </tr>
-            <tr>
-              <td class="tg-baqh" rowspan="2"><br><br>경유</td>
-              <td class="tg-baqh">지도교수</td>
-              <td class="tg-baqh">학과(부)장</td>
-              <td class="tg-baqh">도서관<br>(도서관대출)</td>
-              <td class="tg-baqh">국제교육원<br>(외국인전용)</td>
-              <td class="tg-baqh" colspan="2">장학지원과</td>
-            </tr>
-            <tr>
-              <td class="tg-lqy6"> (인)</td>
-              <td class="tg-lqy6">(인)</td>
-              <td class="tg-lqy6">(인)</td>
-              <td class="tg-lqy6">(인)</td>
-              <td class="tg-lqy6" colspan="2">(인)</td>
-            </tr>
-            <tr>
-              <td class="tg-h8l1" colspan="7">목 원 대 학 교   총 장  귀 하</td>
-            </tr>
-            <tr>
-              <td class="tg-baqh"><br><br>유<br>의<br>사<br>항</td>
-              <td class="tg-0lax" colspan="5">1. 휴학기간은 1회 1년(2학기)을 초과할 수 없으며, 재학기간 중 통산하여 3년을 초과할 수 없음<br>    단, 입영. 휴학기간 제외(2002학년도 1학기부터 적용)<br>2. 장학생으로 선발된 학생이 등록금을 납부하지 않고 휴학하는 경우 추후 복학시 장학금을<br>    받을 수 없으니 참고 바랍니다. (장학규정 제 9조 3항에 의거)<br>3. 휴학기간 만료 후 미복학자는 학칙 제 30조에 의거하여 자동 제적처리 됨<br><span style="font-style:italic;text-decoration:underline;color:#3531FF">4. 병무청 공지사항 : 휴학을 해도 본인이 입영신청을 하지 않으면 게속해서 입영 연기자로</span><br><span style="font-style:italic;text-decoration:underline;color:#3531FF">    관리됩니다. 군 입대를 목적으로 휴학하는 학생은 먼저 입영신청을 하고, 입영일자가 결정된 후</span><br><span style="font-style:italic;text-decoration:underline;color:#3531FF">    휴학을 해야 학업공백기간을 줄일 수 있습니다.</span></td>
-              <td class="tg-baqh">신  청  자<br>확       인<br><br><br><br><br>(인)</td>
-            </tr>
-            <tr>
-              <td class="tg-0lax" colspan="7"></td>
-            </tr>
-        </tbody>
-      </table>
+   <div class="print_table"  media="print">
+          <div id="idPrint">
+          <div class="info_mwn">
+            <div class="head">
+              <h2>[개인정보 수집·이용 동의서]</h2>
+              <p>
+                목원대학교에서 <b>휴학 목적의 학적처리</b>와 관련하여 귀하의 개인정보를 아래와 같이 수집·이용하고자 합니다.
+                다음의 사항에 대해 충분히 읽어보신 후 동의 여부를 체크, 서명하여주시기 바랍니다.
+              </p>
+            </div>
+            <div class="body">
+              <h3>개인정보 수집·이용 동의</h3>
+              <ul class="title">
+                <li><h3>■ 개인정보 수집·이용 목적 : 휴학 목적의 학적처리</h3></li>
+                <li>
+                  <h3>■ 수집하는 개인정보의 항목</h3>
+                  <ul>
+                    <li>
+                      ○ 필수정보
+                      <p>- 학번, 성명, 소속 학과(전공), 연락처, 생년월일, 이수학기, 학적상태, 부모님 성명,부모님 전화번호, 휴학유형, 휴학사유</p>
+                    </li>
+                    <li>○ 선택정보 : 계좌번호</li>
+                  </ul>
+                </li>
+                <li>
+                  <h3>■ 개인정보의 보유 및 이용기간(파기 전까지)</h3>
+                  <ul>
+                    <li>
+                      ○ 학적처리 이용기간까지 보유하며, 민원처리를 위해 10년간 보관합니다.
+                      <p>- 개인정보 보유기간 경과, 처리목적 달성 등 개인정보가 불필요하게 된 경우는 지체없이 해당 개인정보를 파기합니다.</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <h3>■ 동의 거부 권리 안내</h3>
+                  <ul>
+                    <li> ○ 개인정보의 수집 및 이용 동의에 대해 거부할 수 있습니다. 거부 시 자퇴 관련 업무 이용에 제한이 있을 수도 있습니다.</li>
+                    <li> 
+                      ○ 개인정보의수집 및 이용에동의하십니까? 
+                      <span>
+                        <input type="checkbox" id="yes">
+                        <label for="yes">동의함&nbsp;&nbsp;&nbsp;</label>
+                        <input type="checkbox" id="no">
+                        <label for="no">동의하지 않음</label>
+                      </span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="footer">
+              <h3>&lt;본인 확인 및 동의 안내&gt;</h3>
+              <b><span>개인정보 수집 이용 동의서</span>는 본인만 작성하여 동의할 수 있습니다. 목원대학교 개인정보처리방침은 홈페이지를 참조해 주시기 바랍니다.</b>
+              <!--  -->
+              <div class="info">
+                <p>
+                  위의 관련 내용을 모두 확인하였음, 신청자 본인이 직접 작성하였음을 확인합니다.
+                </p>
+                <p class="ymd">년&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;월&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일</p>
+                <p class="sing">신청자:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(서명)</p>
+              </div>
+              <h2>목 원 대 학 교 총 장</h2>
+            </div>
+          </div>
+          <!-- 첫페이지 -->
+          <div class="write_info">
+            <?php
+                if(isset($_SESSION['user_number'])){
+                $user_number = $_SESSION['user_number'];
+                }
+                $con = mysqli_connect("localhost", "root", "", "project") or die("fail");
+                $sql = "select * from users where user_number='$user_number'; ";
+                $res = mysqli_query($con, $sql);
+                $row = mysqli_fetch_array($res);
+                $user_name = $row["user_name"];
+                $user_affiliation = $row["user_affiliation"];
+                $user_semester = $row["user_semester"];
+                $user_class = $row["user_class"];
+                $user_minor = $row["user_minor"];
+                $user_pnumber = $row["user_pnumber"];
+                $user_birthday = $row["user_birthday"];
+            ?>
+            <table>
+              <thead><th colspan="7"><h1>휴 학 원</h1></th></thead>
+              <tbody>
+                <tr>
+                  <td class="title">학번/학년</td>
+                  <td colspan="2"><?=$user_number?></td>
+                  <td><?=$user_class?>학년</td>
+                  <td class="title">이름</td>
+                  <td colspan="2"><?=$user_name?></td>
+                </tr>
+                <tr>
+                  <td class="title">소속</td>
+                  <td colspan="3"><?=$user_major?></td>
+                  <td class="title">전공</td>
+                  <td colspan="2"><?=$user_minor?></td>
+                </tr>
+                <tr>
+                  <td class="title">전화번호</td>
+                  <td colspan="3">
+                    <input type="text" value="<?=$user_pnumber?>" >
+                  </td>
+                  <td class="title">국적</td>
+                  <td colspan="2"><input type="" value="국적"></td>
+                </tr>
+                <tr>
+                  <td class="title">휴학기간</td>
+                  <td colspan="3">년 학기</td>
+                  <td class="title">휴학구분</td>
+                  <td colspan="2">일 반 휴 학</td>
+                </tr>
+                <tr>
+                  <td class="title">복학예정학기</td>
+                  <td colspan="3">
+                    <p id="ee_date">
+                    <script>
+                      // 현재 날짜 나오는 script
+                        let today = new Date();
+                        let year = today.getFullYear()+1;
+                        document.getElementById('ee_date').innerHTML = year + "년도 &nbsp";
+                      </script>
+                      </p>
+                  </td>
+                  <td class="title">생년월일</td>
+                  <td colspan="2"><?=$user_birthday?></td>
+                </tr>
+                <tr>
+                  <td class="title">휴학사유</td>
+                  <td colspan="6">
+                    <select name="" id="">
+                      <option value="">편입학 휴학</option>
+                      <option value="">학비마련 휴학</option>
+                      <option value="">취업 휴학</option>
+                      <option value="">유학 휴학</option>
+                      <option value="">가사 휴학</option>
+                      <option value="">졸업시기 조정</option>
+                      <option value="">사회 경험</option>
+                      <option value="">창업 휴학</option>
+                    </select>
+                  </td>
+                </tr>
+                <tr class="user_sign">
+                  <td colspan="7">
+                    <p>본인은 위와같이 휴학하고자 하오니 허락하여 주시기 바랍니다.</p>
+                    <p id="ex_date">
+                      <script>
+                      // 현재 날짜 나오는 script
+                        let today = new Date();
+                        let year = today.getFullYear();
+                        let month = today.getMonth()+1;
+                        let day = today.getDate();
+
+                        document.getElementById('ex_date').innerHTML = year + "년 &nbsp" + month + "월 &nbsp" + day + "일";
+                      </script>
+                    </p>
+                    <p>본인 성명 : <span>&nbsp</span> (인)</p>
+                    <p>부모님 성명 : <span>&nbsp</span>(인) </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="2">경유</td>
+                  <td>지도교수</td>
+                  <td>학과(부)장</td>
+                  <td>도서관(도서관대출)</td>
+                  <td>국제교육원(외국인전용)</td>
+                  <td>예비군연대</td>
+                  <td>장학지원과</td>
+                </tr>
+                <tr class="sign">
+                  <td><p>(인)</p></td>
+                  <td><p>(인)</p></td>
+                  <td><p>(인)</p></td>
+                  <td><p>(인)</p></td>
+                  <td><p>(인)</p></td>
+                  <td><p>(인)</p></td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr><td colspan="7"><h1>목원대 총장 귀하</h1></td></tr>
+                <tr>
+                  <td>유의사항</td>
+                  <td colspan="6">
+                    <ol type="1">
+                      <li>자퇴절차 : 학과사무실(상담 및 확인) → 장학지원과(장학금 및 학자금대출확인) →
+                          학사지원과(서류접수 및 처리)</li>
+                      <li>부모님 확인전화 후 자퇴처리 되오니 이동번호란에 부모님 번호를 적어주시기 바랍니다.</li>
+                      <li>뒷장 자퇴통지서 반환 게좌번호는 반드시 부모님 계좌번호를 적어주시기 바랍니다.</li>
+                      <li>자퇴처리 1년 이후(자퇴처리 학기부터 2학기 지난 기준) 재입학 지원 가능합니다.
+                          (단, 기존학과로만 재입학 가능하며 해당학과에 여식이 있는 경우 가능합니다.)</li>
+                    </ol>
+                  </td>
+                </tr>
+              </tfoot>
+            </table>
+          </div>
+          
+        </div>
+      </div>
     </div>
-  </div>
-  <!--버튼-->
-  <div class="btn_box">
-    <a href="mailto:rgy0409@gmail.com" title="문의메일보내기"><button type="button" class="mail_btn">메일보내기</button></a>
-    <a href="img/휴학계.hwp" download><button type="button" class="download_btn">다운로드</button></a>
-    <button type="button" class="print_btn" onclick="printArea();">인쇄</button>
-  </div>
-</body>
+   
+      <!--버튼-->
+      <footer><button><a href="https://mokwon.ac.kr/kr/html/sub09/090501.html" target='_blank' >개인정보처리방침 바로가기</a><ion-icon name="open-outline"></ion-icon></button></footer>
+      <div class="btn_box">
+          <a href="mailto:rgy0409@gmail.com" title="문의메일보내기"><button type="button" class="mail_btn">메일보내기</button></a>
+          <a href="img/자퇴원.hwp" download><button type="button" class="download_btn">다운로드</button></a>
+          <button type="button" class="print_btn" onclick="printArea();">인쇄</button>
+      </div>
+      
+</body> 
 </html>
