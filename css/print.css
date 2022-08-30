@@ -1,141 +1,112 @@
 @media print{
-  .print_table .write_info table{
-    overflow: hidden;
-    position: absolute;
-    width: 97%; height: 1060px;
-    padding: 10px;
-    border: 1px solid black;
-    margin: 20px;
-  }
   
   /* 사유작성 */
-  .print_table .write_info table thead th h1{border-bottom: 1px solid gainsboro;}
-  .print_table .write_info table tbody tr td,
-  .print_table .write_info table tfoot tr td{
+   .write_info table thead th h1{
+    border-bottom: 1px solid gainsboro;
+    text-align: center;
+  }
+
+   .write_info table tbody tr td,
+   .write_info table tfoot tr td{
     border-right: 1px solid gainsboro;
     border-bottom: 1px solid gainsboro;
     width: 100px;
     padding-left: 10px;
   }
-  .print_table .write_info table thead th h1,
-  .print_table .write_info table tfoot tr td h1{text-align: center}
+   .write_info table thead th h1,
+   .write_info table tfoot tr td h1{text-align: center}
   
-  .print_table .write_info table thead th h1,
-  .print_table .write_info table tfoot tr td ol,
-  .print_table .write_info table tfoot tr td h1{padding: 20px;}
+   .write_info table thead th h1,
+   .write_info table tfoot tr td ol,
+   .write_info table tfoot tr td h1{padding: 20px;}
   
-  .print_table .write_info table tbody tr td:first-child,
-  .print_table .write_info table tfoot tr td:first-child{border-left: 1px solid gainsboro;}
-  .print_table .write_info table tbody tr .title{width: 200px;}
-  
-  
+   .write_info table tbody tr td:first-child,
+   .write_info table tfoot tr td:first-child{border-left: 1px solid gainsboro;}
+   .write_info table tbody tr .title{width: 200px;}
+   .write_info table tbody tr td{ padding: 2px;}
   /* input, select */
-  .print_table .write_info table tbody tr td input,
-  .print_table .write_info table tbody tr td select{
+   .write_info table tbody tr td input,
+   .write_info table tbody tr td select{
     padding: 8px;
+    margin: 3px;
     outline: none;
     border-radius: 5px;
     border:1px solid #bdbdbd;
     cursor: pointer;
     transition: all 0.5s;
   }
-  .print_table .write_info table tbody tr td input[type=text]{font-size: 10pt;}
-  .print_table .write_info table tbody tr td input[type=tel]{width: 50px;}
-  .print_table .write_info table tbody tr td input:focus,
-  .print_table .write_info table tbody tr td select:focus{border: 1px solid #004fff;}
+   .write_info table tbody tr td input[type=text]{font-size: 10pt;}
+   .write_info table tbody tr td input[type=tel]{width: 50px;}
+
   
   /* 본인 성명, 부모님 성명 경유*/
-  .print_table .write_info table tbody .user_sign td p{text-align: center; padding-top: 10px;}
-  .print_table .write_info table tbody .user_sign td p span{padding-left: 80px;}
-  .print_table .write_info table tbody .sign td p{text-align: end; padding-right: 10px;}
+  .write_info table tbody .user_sign {
+    height: 200px;
+  }
+   .write_info table tbody .user_sign td p{text-align: center; padding-top: 10px;}
+   .write_info table tbody .user_sign td p span{padding-left: 80px;}
+   .write_info table tbody .sign td p{text-align: end; padding-right: 10px;}
+   .write_info table tbody .sign{height:50px;}
   
-  
-  .print_table .info table tr td{
+   .info table tr td{
     position:absolute;
     border: 1px solid gainsboro;
-    padding: 30px 10px 30px 10px;
   }
   
-  .print_table .info_mwn {
+   .info_mwn {
     overflow: hidden;
     position: relative;
     width: 95%; height: 1060px;
     padding: 10px;
-    border: 1px solid black;
-    margin: 20px;
   }
-  .print_table .info_mwn .head{
+   .info_mwn .head{
     text-align: center;
     margin: 20px 0px 20px 0px;
   }
-  .print_table .info_mwn .head h2{
+   .info_mwn .head h2{
     padding-bottom: 20px;
   }
-  .print_table .info_mwn .head p b{text-decoration: underline; color:red;}
-  .print_table .info_mwn .body{
+   .info_mwn .head p b{text-decoration: underline; color:red;}
+   .info_mwn .body{
     margin-top: 20px;
+   
   }
-  .print_table .info_mwn .body .title{
+   .info_mwn .body .title{
     border: 1px solid gainsboro;
     width: 98%; height: 100%;
     margin-top: 10px;
     padding: 10px;
   }
-  .print_table .info_mwn .body .title li ul li{
+   .info_mwn .body .title li ul li{
     padding: 5px 0px 5px 15px;
   }
-  .print_table .info_mwn .body .title li ul li span {
+   .info_mwn .body .title li ul li span {
     float: right;
   }
-  .print_table .info_mwn .footer{
+   .info_mwn .footer{
     margin-top: 20px;
-    width: 100%; height: 480px;
+    width: 690px; height: 420px;
     border: 1px solid gainsboro;
     text-align: center;
   }
-  .print_table .info_mwn .footer h3,
-  .print_table .info_mwn .footer h2{
-    padding: 40px 0px 10px 0px;
+   .info_mwn .footer h3,
+   .info_mwn .footer h2{
+    padding: 20px 5px 10px 5px;
   }
-  .print_table .info_mwn .footer b{
-    padding: 5px;
+   .info_mwn .footer b{
     font-size: 13pt;
+    padding: 0px 10px 0px 10px;
   }
-  .print_table .info_mwn .footer b span{
+   .info_mwn .footer b span{
     color:red;
   }
-  .print_table .info_mwn .footer .info{
-    margin-top: 120px;
+   .info_mwn .footer .info{
+    margin-top: 80px;
   }
-  .print_table .info_mwn .footer .info p{
+   .info_mwn .footer .info p{
     padding-top: 20px;
   }
-  /* footer */
-  footer{
-    position: absolute;
-    width: 100%; height: 80px;
-    background: white;
-    bottom: -500px;
-  }
-  footer button{
-    position: relative;
-    transform: translateX(-50%);
-    left: 50%;
-    padding: 10px;
-    background: #c4314e;
-    border: 0px;
-    width: 300px;
-    border-radius: 20px;
-    transition: all 0.5s;
-    cursor: pointer;
-  }
-  footer button:hover{
-    background: #ad2944;
-  }
-  footer button a,
-  footer button ion-icon{
-    color:white;
-  }
+
   
 }
 

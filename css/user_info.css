@@ -152,3 +152,8 @@ a{text-decoration: none;}
     background: #bd3651;
     box-shadow: 1px 3px 8px #db3b5b;
 }
+/* 비밀번호 표시 아이콘 */
+.new_password table tr td span {
+  float: right;
+  width: 25px; height: 25px;
+}

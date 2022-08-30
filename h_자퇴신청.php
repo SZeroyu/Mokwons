@@ -8,6 +8,7 @@
     <title>목원대학교 종합정보시스템</title>
     <link rel="stylesheet" href="./css/print.css" />
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/academic_1.css" />
     <script src="./js/index.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://kit.fontawesome.com/d6d6196cf4.js" crossorigin="anonymous"></script>

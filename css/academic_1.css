@@ -177,10 +177,71 @@ footer button a,
 footer button ion-icon{
   color:white;
 }
-
+.graduate_plan{
+  position: absolute;
+  left: 50%; transform: translateX(-50%);
+}
 
 /* 졸업논문계획서 */
+.graduate_plan .notice .box{
+  width: 15px; height: 280px;
+  background: #c4314e;
+  z-index: 2;
+  float: left;
+  margin-right: 15px;
+  
+}
 .graduate_plan .notice{
+  width: 1080px; height: 100%; 
+  border: 1px solid gainsboro;
+  float: left;
+
+}
+
+.graduate_plan .notice ul li{
+  padding: 3px;
+  font-weight: 600;
+  margin-left: 10px;
+  font-size: 11pt;
+}
+.graduate_plan .notice ul li p{color:red; font-size: 10pt;}
+.graduate_plan .notice ul li span{color:green;}
+.graduate_plan .notice ul li ul li{
+  font-weight: 300;
+  padding-left: 20px;
+}
+.graduate_plan .notice ul li ul li p{color:blue; font-size: 10pt;}
+
+/* 본 전공 신청 내용 */
+.graduate_plan .plan{
   position: absolute;
-  left: 50%;
+  top: 300px;
+  width: 1080px; height:100%;
+
+
+}
+.graduate_plan .plan .title{width: 100%; height: 50px;}
+.graduate_plan .plan .title p{float: left;}
+.graduate_plan .plan .title .btn{float: right;}
+.graduate_plan .plan .title .btn button{
+  width: 80px; height: 30px;
+  background: #ad2944; color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.graduate_plan .plan .title .btn button:hover{background: #8b2136;}
+
+.graduate_plan .plan .content table{width: 100%; }
+.graduate_plan .plan .content table tr th{
+  background: rgb(236, 236, 236);
+  width: 200px;
+}
+.graduate_plan .plan .content table tr td{border: 1px solid black;}
+.graduate_plan .plan .content table tr td input[type="text'"]{outline: none; border: none;}
+.graduate_plan .plan .content table tr td textarea{
+  width: 99%; height: 100px; resize: none;
+  border:none;
+  padding: 3px;
+  outline: none;
 }

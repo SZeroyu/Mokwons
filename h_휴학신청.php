@@ -203,6 +203,7 @@
                   <td class="title">휴학사유</td>
                   <td colspan="6">
                     <select name="" id="">
+                    <option value="" selected>휴학사유선택</option>
                       <option value="">편입학 휴학</option>
                       <option value="">학비마련 휴학</option>
                       <option value="">취업 휴학</option>

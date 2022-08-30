@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/user_info.css">
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://kit.fontawesome.com/d6d6196cf4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -76,7 +77,9 @@
                         <td>
                             <p class="pwd_title">현재 비밀번호</p>
                             <label for="current_pwd" ></label>
-                            <input type="password" name="current_password" id="current_pwd" placeholder="현재 비밀번호">
+                            <input type="password" name="current_password" id="current_pwd" placeholder="현재 비밀번호" >
+                            <span><i class="fa-regular fa-eye-slash"></i></span>
+                            <!-- <i class="fa-regular fa-eye"></i> -->
                         </td>
                     </tr>
                     <tr>
@@ -91,7 +94,7 @@
                             <p class="pwd_title">비밀번호 확인</p>
                             <label for="new_pwd_check"></label>
                             <input type="password" id="new_pwd_check" name="new_password2" placeholder="비밀번호 확인"  onchange="check_pw()">
-                            <p class="pwd_title"><span id="check" class="check"></span>
+                            <p class="pwd_title"><span id="check" class="check"></span></p>
                         </td>
                     </tr>
                     <!-- <tr>

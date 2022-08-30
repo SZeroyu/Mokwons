@@ -81,33 +81,6 @@
                                 <td>국가기술자격증등록</td>
                                 <td></td>
                             </tr> 
-                            <tr>
-                                <td rowspan="3">강의정보</td>
-                                <td>공결관리</td>
-                                <td rowspan="6">학사지원과</td>
-                                <td colspan="4" >829-7105</td>
-                            </tr>
-                            <tr>
-                                <td>강의평가입력</td>
-                                <td rowspan="2" colspan="2">829-7097</td>
-                            </tr>
-                            <tr>
-                                <td>시간표조회</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td rowspan="3">성적관리</td>
-                                <td>성적조회</td>
-                                <td rowspan="3">    829-7102~4</td>
-                            </tr>
-                            <tr>
-                                <td>금학기성적열람</td> 
-                                <td rowspan="2"></td>
-                            </tr>
-                            <tr>
-                                <td>계절학기성적열람</td>
-                                <td></td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
