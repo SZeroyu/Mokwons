@@ -27,27 +27,27 @@
   
 //   var accordion = new Accordion($('.accordion-menu'), false);
 // })
-// h_자퇴신청,휴학신청 등
+// h_자퇴신청,휴학신청 등 프린트
 // print.js
-// var initBody
-// function beforePrint()
-// {
-// initBody = document.body.innerHTML;
-// document.body.innerHTML = idPrint.innerHTML;
-// }
+var initBody
+function beforePrint()
+{
+initBody = document.body.innerHTML;
+document.body.innerHTML = idPrint.innerHTML;
+}
 
-// function afterPrint()
-// {
-// document.body.innerHTML = initBody;
-// }
+function afterPrint()
+{
+document.body.innerHTML = initBody;
+}
 
-// function printArea()
-// {
-// window.print();
-// }
+function printArea()
+{
+window.print();
+}
 
-// window.onbeforeprint = beforePrint;
-// window.onafterprint = afterPrint;
+window.onbeforeprint = beforePrint;
+window.onafterprint = afterPrint;
 
 //자퇴신청 선택.js
 function dropout(ele){
@@ -90,6 +90,4 @@ function selectphone(ele){
   
 }
  
-function printPage(idPrint){
-  window.print();
-}
+

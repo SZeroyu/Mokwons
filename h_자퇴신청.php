@@ -29,7 +29,7 @@
             </li>
             <li class="page_list"><p>학적관리</p></li>
             <li class="list ">
-              <a href="#" onclick="location.href=''">
+              <a href="#" onclick="location.href='h_졸업논문계획서.php'">
                 <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
                 <span class="title">졸업논문계획서</span>
               </a>
@@ -188,7 +188,7 @@
                     <input type="tel" maxlength='4' name="phone3">
                   </td>
                   <td class="title">생년월일</td>
-                  <td colspan="4"><?=$user_birthday?></td>
+                  <td colspan="2"><?=$user_birthday?></td>
                 </tr>
                 <tr>
                   <td class="title">병력사항</td>
@@ -279,6 +279,7 @@
           
         </div>
       </div>
+
     </div>
    
       <!--버튼-->
@@ -287,6 +288,29 @@
           <a href="mailto:rgy0409@gmail.com" title="문의메일보내기"><button type="button" class="mail_btn">메일보내기</button></a>
           <a href="img/자퇴원.hwp" download><button type="button" class="download_btn">다운로드</button></a>
           <button type="button" class="print_btn" onclick="printArea();">인쇄</button>
+          <!-- 프린트 js -->
+          <script>
+            var initBody
+            function beforePrint()
+            {
+              initBody = document.body.innerHTML;
+              document.body.innerHTML = idPrint.innerHTML;
+            }
+
+            function afterPrint()
+            { 
+              document.body.innerHTML = initBody;
+            }
+
+            function printArea()
+            {
+              window.print();
+            }
+
+  
+            window.onbeforeprint = beforePrint;
+            window.onafterprint = afterPrint;
+          </script>
       </div>
       
 </body> 

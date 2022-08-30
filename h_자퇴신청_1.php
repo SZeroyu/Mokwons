@@ -70,14 +70,14 @@
         <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
         <script src="./js/script.js"></script>
       </div>
-        <!-- 휴학신청 프린트 영역 -->
+        <!-- 자퇴신청 프린트 영역 -->
         <div class="print_table"  media="print">
           <div id="idPrint">
           <div class="info_mwn">
             <div class="head">
               <h2>[개인정보 수집·이용 동의서]</h2>
               <p>
-                목원대학교에서 자퇴목적의학적처리와 관련하여 귀하의 개인정보를 아래와 같이 수집·이용하고자 합니다.
+                목원대학교에서 <b>자퇴 목적의 학적처리</b>와 관련하여 귀하의 개인정보를 아래와 같이 수집·이용하고자 합니다.
                 다음의 사항에 대해 충분히 읽어보신 후 동의 여부를 체크, 서명하여주시기 바랍니다.
               </p>
             </div>
@@ -123,7 +123,7 @@
             </div>
             <div class="footer">
               <h3>&lt;본인 확인 및 동의 안내&gt;</h3>
-              <b>개인정보 수집 이용 동의서는 본인만 작성하여 동의할 수 있습니다. 목원대학교 개인정보처리방침은 홈페이지를 참조해 주시기 바랍니다.</b>
+              <b><span>개인정보 수집 이용 동의서</span>는 본인만 작성하여 동의할 수 있습니다. 목원대학교 개인정보처리방침은 홈페이지를 참조해 주시기 바랍니다.</b>
               <!--  -->
               <div class="info">
                 <p>
@@ -158,24 +158,24 @@
               <tbody>
                 <tr>
                   <td class="title">학번/학년</td>
-                  <td><?=$user_number?></td>
+                  <td colspan="2"><?=$user_number?></td>
                   <td><?=$user_class?>학년</td>
                   <td class="title">이름</td>
-                  <td colspan="3"><?=$user_name?></td>
+                  <td colspan="2"><?=$user_name?></td>
                 </tr>
                 <tr>
                   <td class="title">소속</td>
-                  <td colspan="2"><?=$user_major?></td>
+                  <td colspan="3"><?=$user_major?></td>
                   <td class="title">전공</td>
-                  <td colspan="3"><?=$user_minor?></td>
+                  <td colspan="2"><?=$user_minor?></td>
                 </tr>
                 <tr>
                   <td class="title">전화번호</td>
-                  <td colspan="2">
+                  <td colspan="3">
                     <input type="text" value="<?=$user_pnumber?>" >
                   </td>
                   <td class="title">이수학기</td>
-                  <td colspan="3"><?=$user_semester?></td>
+                  <td colspan="2"><?=$user_semester?></td>
                 </tr>
                 <tr>
                   <td class="title">보호자연락처</td>
@@ -188,7 +188,7 @@
                     <input type="tel" maxlength='4' name="phone3">
                   </td>
                   <td class="title">생년월일</td>
-                  <td colspan="4"><?=$user_birthday?></td>
+                  <td colspan="2"><?=$user_birthday?></td>
                 </tr>
                 <tr>
                   <td class="title">병력사항</td>
@@ -282,7 +282,7 @@
     </div>
    
       <!--버튼-->
-      <footer><button><a href="https://mokwon.ac.kr/kr/html/sub09/090501.html" target='_blank' >개인정보처리방침 바로가기</a><ion-icon name="open-outline"></ion-icon></button></footer>
+      <footer><button title="새창"><a href="https://mokwon.ac.kr/kr/html/sub09/090501.html" title="새창" target='_blank' >개인정보처리방침 바로가기</a><ion-icon name="open-outline"></ion-icon></button></footer>
       <div class="btn_box">
           <a href="mailto:rgy0409@gmail.com" title="문의메일보내기"><button type="button" class="mail_btn">메일보내기</button></a>
           <a href="img/자퇴원.hwp" download><button type="button" class="download_btn">다운로드</button></a>

@@ -71,7 +71,7 @@
                     <li>
                         <a href="#">학적관리</a>
                         <ul class="submenu">
-                            <li><a href="#">졸업논문계획서</a></li>
+                            <li><a href="#" onclick="location.href='h_졸업논문계획서.php'">졸업논문계획서</a></li>
                             <li><a href="#">복학신청</a></li>
                             <li><a href="#" onclick="location.href='h_휴학신청.php'">휴학신청</a></li>
                             <li><a href="#" onclick="location.href='h_자퇴신청.php'">자퇴신청</a></li>

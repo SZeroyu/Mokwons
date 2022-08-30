@@ -14,7 +14,7 @@
 <body>
   <div><?php include "header_1.php";?></div>
   <div class="main_page01">
-        <div class="page_info"><p>대학일반<span> &gt </span>개인정보<span> &gt </span><span class="page">비밀번호변경<span></p></div>
+        <div class="page_info"><p>대학일반<span> &gt </span>개인정보<span> &gt </span><span class="page">비밀번호변경</span></p></div>
         <!-- 사이드 메뉴 -->
         <div class="side_menu">
             <div class="navigation">
