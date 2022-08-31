@@ -105,7 +105,7 @@
                     <li>
                         <a href="#">생활관</a>
                         <ul class="submenu">
-                            <li><a href="#" onclick="location.href='dormitory.php'">생활관입사신쳥</a></li>
+                            <li><a href="#" onclick="location.href='h_생활관입사신청.php'">생활관입사신쳥</a></li>
                             <li><a href="#">생활관사생카드작성</a></li>
                             <li><a href="#">생활관외박신청</a></li>
                             <li><a href="#">생활관퇴사신청</a></li>

@@ -5,8 +5,8 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>목원대학교 종합정보시스템</title>
-
-    <link rel="stylesheet" href="./css/print_1.css" />
+    <link rel="stylesheet" href="./css/academic_1.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <div><?php include "header_2.php";?></div>
 
     <script language="JavaScript">
@@ -31,7 +31,65 @@
     window.onafterprint = afterPrint;
     </script>
     </HEAD>
-    <BODY> <br>
+    <BODY>
+    <div class="main_page01">
+    <!-- 페이지 순 -->
+      <div class="page_info"><p>학사행정<span> &gt </span>생활관<span> &gt </span><span class="page">생활관입사신청<span></p></div>
+      <!-- 사이드 메뉴 -->
+      <div class="side_menu">
+        <div class="navigation">
+          <ul>
+            <li class="list ">
+              <a href="#" onclick="location.href='h_학사행정.php'">
+                <span class="icon"><ion-icon name="desktop-outline"></ion-icon></span>
+                <span class="title">학사행정</span>
+              </a>
+            </li>
+            <li class="page_list"><p>학적관리</p></li>
+            <li class="list active">
+              <a href="" onclick="location.href='h_졸업논문계획서.php'">
+                <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
+                <span class="title">졸업논문계획서</span>
+              </a>
+            </li>
+            <li class="list ">
+              <a href="#" onclick="location.href=''">
+                <span class="icon"><ion-icon name="push-outline"></ion-icon></span>
+                <span class="title">복학신청</span>
+              </a>
+            </li>
+            <li class="list " >
+              <a href="#" onclick="location.href='h_휴학신청.php'">
+                <span class="icon"><ion-icon name="airplane-outline"></ion-icon></span>
+                <span class="title">휴학신청</span>
+              </a>
+            </li>
+            <li class="list " >
+              <a href="#" onclick="location.href='h_자퇴신청.php'">
+                <span class="icon"><ion-icon name="create-outline"></ion-icon></span>
+                <span class="title">자퇴신청</span>
+              </a>
+            </li>
+            <li class="list" >
+              <a href="#" onclick="location.href=''">
+                <span class="icon"><ion-icon name="card-outline"></ion-icon></span>
+                <span class="title">국가자격증등록</span>
+              </a>
+            </li>
+            <li class="list">
+              <a href="#" onclick="location.href='login_out.php'">
+                <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                <span class="title">Sign Out</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="./js/script.js"></script>
+      </div>
+  </div>
+    <br>
     <div class="print_table">
     <div id="idPrint">
       <style type="text/css">

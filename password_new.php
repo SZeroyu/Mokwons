@@ -78,8 +78,6 @@
                             <p class="pwd_title">현재 비밀번호</p>
                             <label for="current_pwd" ></label>
                             <input type="password" name="current_password" id="current_pwd" placeholder="현재 비밀번호" >
-                            <span><i class="fa-regular fa-eye-slash"></i></span>
-                            <!-- <i class="fa-regular fa-eye"></i> -->
                         </td>
                     </tr>
                     <tr>
@@ -125,6 +123,7 @@
         }
 
     }
+
 
     
     </script>

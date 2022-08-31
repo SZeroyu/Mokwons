@@ -234,14 +234,21 @@ footer button ion-icon{
 
 .graduate_plan .plan .content table{width: 100%; }
 .graduate_plan .plan .content table tr th{
-  background: rgb(236, 236, 236);
+  background: rgb(223, 223, 223);
   width: 200px;
 }
-.graduate_plan .plan .content table tr td{border: 1px solid black;}
-.graduate_plan .plan .content table tr td input[type="text'"]{outline: none; border: none;}
+.graduate_plan .plan .content table tr td{border: 1px solid black; height: 30px; padding-left: 10px;}
+.graduate_plan .plan .content table tr td input[type="text"]{outline: none; height: 25px; width: 90%;}
+.graduate_plan .plan .content table tr td select{ width: 150px; height: 25px; outline: none;}
 .graduate_plan .plan .content table tr td textarea{
   width: 99%; height: 100px; resize: none;
-  border:none;
+  border: none;
   padding: 3px;
   outline: none;
+  font-size: 11pt;
 }
+.graduate_plan .plan .content table tr td select:focus,
+.graduate_plan .plan .content table tr td input[type="text"]:focus{
+  border: 2px solid rgb(46, 142, 252);
+}
+

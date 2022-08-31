@@ -153,7 +153,8 @@ a{text-decoration: none;}
     box-shadow: 1px 3px 8px #db3b5b;
 }
 /* 비밀번호 표시 아이콘 */
-.new_password table tr td span {
-  float: right;
+.new_password table tr td  .eye_icon i{
   width: 25px; height: 25px;
+  cursor:pointer;
+  padding-left: 10px;
 }

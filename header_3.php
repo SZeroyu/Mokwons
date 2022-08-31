@@ -83,9 +83,9 @@
                         <a href="#">성적관리</a>
                         <ul class="submenu">
                             <li><a href="#" onclick="location.href=''">전체성적조회</a></li>
-                            <li><a href="#" onclick="location.href=''">계절학기조회</a></li>
-                            <li><a href="#" onclick="location.href=''">교우관계등록</a></li>
-                            <li><a href="#">상담예약</a></li>
+                            <li><a href="#" onclick="location.href=''">금학기성적열람</a></li>
+                            <li><a href="#" onclick="location.href=''">계절학기성적열람</a></li>
+                            <li><a href="#" onclick="location.href=''">학점포기신청</a></li>
                         </ul>
                     </li>        
                 </ul>

@@ -97,12 +97,29 @@
             </ul>
         </div>
         <div class="plan">
+        <?php
+                if(isset($_SESSION['user_number'])){
+                $user_number = $_SESSION['user_number'];
+                }
+                $con = mysqli_connect("localhost", "root", "", "project") or die("fail");
+                $sql = "select * from graduate_plan where user_number='$user_number'; ";
+                $res = mysqli_query($con, $sql);
+                $row = mysqli_fetch_array($res);
+                $graduate_project = $row["graduate_project"];
+                $project_name = $row["project_name"];
+                $advisor = $row["advisor"];
+                $dean = $row["dean"];
+                $project_name = $row["project_name"];
+                $project_con = $row["project_con"];
+                $project_info= $row["project_info"];
+            ?>
+        <form action="graduate_plan.php" method="post">
           <div class="title">
             <p><ion-icon name="ribbon-outline"></ion-icon>본 전공 신청</p>
             
             <div class="btn">
               <button>조회</button>
-              <button>저장</button>
+              <button type="submit">저장</button>
               <button>인쇄</button>
             </div>
           </div>
@@ -111,32 +128,40 @@
               <tr>
                 <th>구분</th>
                 <td>
-                  <select name="" id="">
-                    <option value="" selected>선택</option>
-                    <option value="">졸업작품</option>
-                    <option value="">졸업논문</option>
-                    <option value="">졸업시험</option>
+                  <select name="graduate_project" id="">
+                    <option value="0" selected>선택</option>
+                    <option value="1">졸업작품</option>
+                    <option value="2">졸업연주</option>
+                    <option value="3">졸업논문</option>
+                    <option value="4">졸업시험</option>
+                    <option value="5">졸업대체</option>
                   </select>
                 </td>
                 <th>지도교수</th>
-                <td></td>
+                <td>                  
+                  <label for="advisor"></label>
+                  <input type="text" id="advisor" name="advisor" >
+                </td>
                 <th>학부(과)장</th>
-                <td>성경</td>
+                <td>
+                  <label for="dean"></label>
+                  <input type="text" id="dean" name="dean" >
+                </td>
               </tr>
               <tr>
                 <th>작품명</th>
                 <td colspan="6">
                   <label for="project_name"></label>
-                  <input type="text" id="project_name">
+                  <input type="text" id="project_name" name="project_name">
                 </td>
               </tr>
               <tr>
                 <th>작품설명</th>
-                <td colspan="6"><textarea></textarea></td>
+                <td colspan="6"><textarea name="project_con"></textarea></td>
               </tr>
               <tr>
                 <th>작품규격 / 전시장소 / 기간</th>
-                <td colspan="6"><textarea></textarea></td>
+                <td colspan="6"><textarea name="project_info"></textarea></td>
               </tr>
             </table>
           </div>
