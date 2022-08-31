@@ -43,7 +43,7 @@
             </li>
             <li class="list " >
               <a href="#" onclick="location.href=''">
-                <span class="icon"><ion-icon name="bicycle-outline"></ion-icon></span>
+                <span class="icon"><ion-icon name="moon-outline"></ion-icon></span>
                 <span class="title">생활관외박신청</span>
               </a>
             </li>
@@ -64,23 +64,8 @@
           <div id="idPrint">
           <!-- 첫페이지 -->
           <div class="write_info">
-            <?php
-                if(isset($_SESSION['user_number'])){
-                $user_number = $_SESSION['user_number'];
-                }
-                $con = mysqli_connect("localhost", "root", "", "project") or die("fail");
-                $sql = "select * from users where user_number='$user_number'; ";
-                $res = mysqli_query($con, $sql);
-                $row = mysqli_fetch_array($res);
-                $user_name = $row["user_name"];
-                $user_affiliation = $row["user_affiliation"];
-                $user_semester = $row["user_semester"];
-                $user_class = $row["user_class"];
-                $user_minor = $row["user_minor"];
-                $user_pnumber = $row["user_pnumber"];
-                $user_birthday = $row["user_birthday"];
-            ?>
             <div class="dormitory">
+              <!-- 이용서약 및 신청서 -->
               <div class="notice">
                 <p> 생활관 이용서약 </p>
                 <p>
@@ -109,26 +94,34 @@
                   <p>(재학생/대학원신입생)</p>
                 </h2>
                 <table>
+                <?php
+                if(isset($_SESSION['user_number'])){
+                $user_number = $_SESSION['user_number'];
+                }
+                $con = mysqli_connect("localhost", "root", "", "project") or die("fail");
+                $sql = "select * from users where user_number='$user_number'; ";
+                $res = mysqli_query($con, $sql);
+                $row = mysqli_fetch_array($res);
+                $user_name = $row["user_name"];
+                $user_major = $row["user_major"];
+                $user_pnumber = $row["user_pnumber"];
+                $user_birthday = $row["user_birthday"];
+            ?>
                   <tr>
-                    <td>성명</td>
-                    <td>
-                      <label for="name"></label>
-                      <input type="text" id="name">
-                    </td>
-                    <td>학번</td>
-                    <td>
-                      <label for="name"></label>
-                      <input type="text" id="name">
-                    </td>
+                    <td>성명(한글)</td>
+                    <td><?=$user_name?></td>
                     <td>생년월일</td>
-                    <td>
-                      <label for="name"></label>
-                      <input type="text" id="name">
-                    </td>
+                    <td><?=$user_birthday?></td>
+                  </tr>                  
+                  <tr>
+                    <td>학번</td>
+                    <td><?=$user_number?></td>
+                    <td>소속</td>
+                    <td><?=$user_major?></td>
                   </tr>
                   <tr>
                     <td>입사구분</td>
-                    <td colspan="2">
+                    <td>
                       <select name="" id="">
                         <option value="">선택</option>
                         <option value="">재학생</option>
@@ -136,11 +129,11 @@
                       </select>
                     </td>
                     <td>생활관</td>
-                    <td colspan="2">
+                    <td>
                       <select name="" id="">
                         <option value="">선택</option>
-                        <option value="">서관(남)</option>
-                        <option value="">동관(여)</option>
+                        <option value="">서관(남) 4인실</option>
+                        <option value="">동관(여) 4인실</option>
                         <option value="">신축 1인실</option>
                         <option value="">신축 2인실</option>
                       </select>
@@ -148,154 +141,116 @@
                   </tr>
                   <tr>
                     <td>보호자 성명</td>
-                    <td colspan="2">
+                    <td>
                       <label for="name"></label>
                       <input type="text" id="name">
                     </td>
                     <td>관계</td>
-                    <td colspan="2">
+                    <td>
                       <label for="name"></label>
                       <input type="text" id="name">
                     </td>
                   </tr>
                   <tr>
                     <td>본인연락처</td>
-                    <td colspan="2">
-                      <label for="name"></label>
-                      <input type="text" id="name">
-                    </td>
+                    <td><?=$user_pnumber?></td>
                     <td>보호자연락처</td>
-                    <td colspan="2">
+                    <td>
                       <label for="name"></label>
                       <input type="text" id="name">
                     </td>
                   </tr>
                   <tr>
                     <td rowspan="2">주소</td>
-                    <td>우편번호</td>
-                    <td colspan="4">
+                    <td>우편번호<button class=""  onclick="execDaumPostcode()">우편번호찾기</button></td>
+                    <td colspan="2">
                       <label for="name"></label>
-                      <input type="text" name="user_address_number" value="" id="user_address_number" placeholder="우편번호" class="form-control m-input inph_1"><button class=""  onclick="execDaumPostcode()">우편번호찾기</button>
+                      <input type="text" name="user_address_number" value="" id="user_address_number" placeholder="우편번호" class="form-control m-input inph_1">
                     </td>
                   </tr>
                   <tr>
-                    <td>주소</td>
-                    <td colspan="4">
+                    <td>주소 + 상세주소</td>
+                    <td colspan="2">
                       <label for="name"></label>
                       <input type="text" name="user_address" id="user_address" value=""placeholder="주소+상세주소" class="form-control m-input inph_2">
                     </td>
                   </tr>
                 </table>
-               
               </div>
             </div>
-            <!-- <table>
-              <thead>
-                <th colspan="7">
-                    <h1>
-                        생활관입사신청서
-                        <p>(재학생및대학원신입생)</p>
-                    </h1>
-                </th>
-            </thead>
-              <tbody>
-              <tr>
-                  <td class="title">입사구분</td>
-                  <td colspan="2">
-                    <select name="병력사항" id="">
-                      <option value="" selected> 선택</option>
-                      <option value="">재학생(초과학기 학생)</option>
-                      <option value="">대학원 신입생</option>
-                    </select>
-                  </td>
-                  <td  class="title">생활관</td>
-                  <td colspan="3">
-                    <select name="생활관" id="">
-                      <option value="" selected> 선택</option>
-                      <option value="">서관(남)</option>
-                      <option value="">동관(여)</option>
-                      <option value="">신축 1인실</option>
-                      <option value="">신축 2인실</option>
-                    </select>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="title">학번/학년</td>
-                  <td colspan="2"><?=$user_number?></td>
-                  <td><?=$user_class?>학년</td>
-                  <td class="title">이름</td>
-                  <td colspan="2"><?=$user_name?></td>
-                </tr>
-                <tr>
-                  <td class="title">소속</td>
-                  <td colspan="2"><?=$user_major?></td>
-                  <td class="title">전화번호</td>
-                  <td colspan="3"><?=$user_pnumber?></td>
-                </tr>
-                <tr>
-                  <td class="title">보호자성명</td>
-                  <td>
-                    <input type="text" id="name">
-                    <label for="name"></label>
-                  </td>
-                  <td class="title">보호자연락처</td>
-                  <td colspan="2">
-                    <select name="phone" onChange="selectphone(this)">
-                      <option value="1" name="f">010</option>
-                      <option value="2" name="s">011</option>
-                    </select>
-                    <input type="tel" maxlength='4' name="phone2">
-                    <input type="tel" maxlength='4' name="phone3">
-                  </td>
-                  <td class="title">관계</td>
-                  <td>
-                    <input type="text" id="name">
-                    <label for="name"></label>
-                  </td>
-                </tr>
-                <tr>
-                  <td>주소 및 연락처</td>
-                  <td colspan="6">
-                    <label for="address_number">우편번호</label>
-                    <input type="text" id="address_number">
-                    <p>
-                      <label for="address">주소</label>
-                      <input type="text" id="address">
-                    </p>
 
-                  </td>
-                </tr>
-                </tbody>
-                <tfoot>
-                <tr><td colspan="7">생활관이용서약</td></tr>
-                <tr>
-                  <td colspan="7">
-                  
-                  </td>
-                </tr>
-
-                <tr class="user_sign">
-                  <td colspan="7">
-                    <p>위 본인은 목원대학교 학생생활관에 입사하고자 신청서를 제출합니다.</p>
-                    <p id="ex_date">
-                      <script>
-                      // 현재 날짜 나오는 script
-                        let today = new Date();
-                        let year = today.getFullYear();
-                        let month = today.getMonth()+1;
-                        let day = today.getDate();
-
-                        document.getElementById('ex_date').innerHTML = year + "년 &nbsp" + month + "월 &nbsp" + day + "일";
-                      </script>
-                    </p>
-                    <p>신청자 : <span>&nbsp</span> (인)</p>
-                  </td>
-                </tr>
-                <tr><td colspan="7"><h1>목원대학교 생활관장 귀하</h1></td></tr>
-              </tfoot>
-            </table> -->
           </div>
-          
+          <div class="user_sign">
+            <table>
+              <tr>
+                <th colspan="4"><p>개인정보수집동의<p></th>
+              </tr>
+              <tr>
+                <th>구분</th>
+                <th>항목</th>
+                <th>수집목적</th>
+                <th>보유기간</th>
+              </tr>
+              <tr>
+                <th>필수</th>
+                <td>소속, 학번, 성명, 학년, 성별, 생년월일, 전화번호(본인 및 보호자), 주소, 성적</td>
+                <td>생활관 입사 지원 학생 선발 관생관리 및 학부모 연락</td>
+                <td>선발자 : 준영구 탈락자 : 5년</td>
+              </tr>
+              <tr>
+                <th>필수</th>
+                <td colspan="3">
+                  개인정보 수집 이용 동의
+                  <span>
+                    <input type="checkbox" id="yes">
+                    <label for="yes">예</label>
+                    <input type="checkbox" id="no">
+                    <label for="no">아니요</label>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <th>선택</th>
+                <td>질병 등 건강정보, 생체 정보</td>
+                <td>생활관 입사 지원 학생 선발 관생관리 및 학부모 연락</td>
+                <td>선발자 : 준영구 탈라자 : 5년</td>
+              </tr>
+              <tr>
+                <th>선택</th>
+                <td colspan="3">
+                  민감정보 수집 이용동의
+                  <span>
+                    <input type="checkbox" id="yes1">
+                    <label for="yes1">예</label>
+                    <input type="checkbox" id="no1">
+                    <label for="no1">아니요</label>
+                  </span>
+                </td>
+              </tr>
+              <tr rowspan="4"><td colspan="4">위 본인은 목원대학교 학생 생활관에 입사하고자 신청서를 제출합니다.</td></tr>
+              <tr>
+                <td colspan="4">
+                  <p id="ex_date">
+                    <script>
+                      // 현재 날짜 나오는 script
+                      let today = new Date();
+                      let year = today.getFullYear();
+                      let month = today.getMonth()+1;
+                      let day = today.getDate();
+
+                      document.getElementById('ex_date').innerHTML = year + "년 &nbsp" + month + "월 &nbsp" + day + "일";
+                    </script>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="4">신청자 : (서명)</td>
+              </tr>
+              <tr>
+                <td colspan="4">목원대학교 생활관장 귀하</td>
+              </tr>
+            </table>
+          </div>
         </div>
       </div>
     </div>

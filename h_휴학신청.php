@@ -74,68 +74,6 @@
 <!-- 휴학신청 프린트 영역 -->
    <div class="print_table"  media="print">
           <div id="idPrint">
-          <div class="info_mwn">
-            <div class="head">
-              <h2>[개인정보 수집·이용 동의서]</h2>
-              <p>
-                목원대학교에서 <b>휴학 목적의 학적처리</b>와 관련하여 귀하의 개인정보를 아래와 같이 수집·이용하고자 합니다.
-                다음의 사항에 대해 충분히 읽어보신 후 동의 여부를 체크, 서명하여주시기 바랍니다.
-              </p>
-            </div>
-            <div class="body">
-              <h3>개인정보 수집·이용 동의</h3>
-              <ul class="title">
-                <li><h3>■ 개인정보 수집·이용 목적 : 휴학 목적의 학적처리</h3></li>
-                <li>
-                  <h3>■ 수집하는 개인정보의 항목</h3>
-                  <ul>
-                    <li>
-                      ○ 필수정보
-                      <p>- 학번, 성명, 소속 학과(전공), 연락처, 생년월일, 이수학기, 학적상태, 부모님 성명,부모님 전화번호, 휴학유형, 휴학사유</p>
-                    </li>
-                    <li>○ 선택정보 : 계좌번호</li>
-                  </ul>
-                </li>
-                <li>
-                  <h3>■ 개인정보의 보유 및 이용기간(파기 전까지)</h3>
-                  <ul>
-                    <li>
-                      ○ 학적처리 이용기간까지 보유하며, 민원처리를 위해 10년간 보관합니다.
-                      <p>- 개인정보 보유기간 경과, 처리목적 달성 등 개인정보가 불필요하게 된 경우는 지체없이 해당 개인정보를 파기합니다.</p>
-                    </li>
-                  </ul>
-                </li>
-                <li>
-                  <h3>■ 동의 거부 권리 안내</h3>
-                  <ul>
-                    <li> ○ 개인정보의 수집 및 이용 동의에 대해 거부할 수 있습니다. 거부 시 자퇴 관련 업무 이용에 제한이 있을 수도 있습니다.</li>
-                    <li> 
-                      ○ 개인정보의수집 및 이용에동의하십니까? 
-                      <span>
-                        <input type="checkbox" id="yes">
-                        <label for="yes">동의함&nbsp;&nbsp;&nbsp;</label>
-                        <input type="checkbox" id="no">
-                        <label for="no">동의하지 않음</label>
-                      </span>
-                    </li>
-                  </ul>
-                </li>
-              </ul>
-            </div>
-            <div class="footer">
-              <h3>&lt;본인 확인 및 동의 안내&gt;</h3>
-              <b><span>개인정보 수집 이용 동의서</span>는 본인만 작성하여 동의할 수 있습니다. 목원대학교 개인정보처리방침은 홈페이지를 참조해 주시기 바랍니다.</b>
-              <!--  -->
-              <div class="info">
-                <p>
-                  위의 관련 내용을 모두 확인하였음, 신청자 본인이 직접 작성하였음을 확인합니다.
-                </p>
-                <p class="ymd">년&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;월&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일</p>
-                <p class="sing">신청자:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(서명)</p>
-              </div>
-              <h2>목 원 대 학 교 총 장</h2>
-            </div>
-          </div>
           <!-- 첫페이지 -->
           <div class="write_info">
             <?php
@@ -269,7 +207,68 @@
               </tfoot>
             </table>
           </div>
-          
+          <div class="info_mwn">
+            <div class="head">
+              <h2>[개인정보 수집·이용 동의서]</h2>
+              <p>
+                목원대학교에서 <b>휴학 목적의 학적처리</b>와 관련하여 귀하의 개인정보를 아래와 같이 수집·이용하고자 합니다.
+                다음의 사항에 대해 충분히 읽어보신 후 동의 여부를 체크, 서명하여주시기 바랍니다.
+              </p>
+            </div>
+            <div class="body">
+              <h3>개인정보 수집·이용 동의</h3>
+              <ul class="title">
+                <li><h3>■ 개인정보 수집·이용 목적 : 휴학 목적의 학적처리</h3></li>
+                <li>
+                  <h3>■ 수집하는 개인정보의 항목</h3>
+                  <ul>
+                    <li>
+                      ○ 필수정보
+                      <p>- 학번, 성명, 소속 학과(전공), 연락처, 생년월일, 이수학기, 학적상태, 부모님 성명,부모님 전화번호, 휴학유형, 휴학사유</p>
+                    </li>
+                    <li>○ 선택정보 : 계좌번호</li>
+                  </ul>
+                </li>
+                <li>
+                  <h3>■ 개인정보의 보유 및 이용기간(파기 전까지)</h3>
+                  <ul>
+                    <li>
+                      ○ 학적처리 이용기간까지 보유하며, 민원처리를 위해 10년간 보관합니다.
+                      <p>- 개인정보 보유기간 경과, 처리목적 달성 등 개인정보가 불필요하게 된 경우는 지체없이 해당 개인정보를 파기합니다.</p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <h3>■ 동의 거부 권리 안내</h3>
+                  <ul>
+                    <li> ○ 개인정보의 수집 및 이용 동의에 대해 거부할 수 있습니다. 거부 시 자퇴 관련 업무 이용에 제한이 있을 수도 있습니다.</li>
+                    <li> 
+                      ○ 개인정보의수집 및 이용에동의하십니까? 
+                      <span>
+                        <input type="checkbox" id="yes">
+                        <label for="yes">동의함&nbsp;&nbsp;&nbsp;</label>
+                        <input type="checkbox" id="no">
+                        <label for="no">동의하지 않음</label>
+                      </span>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+            <div class="footer">
+              <h3>&lt;본인 확인 및 동의 안내&gt;</h3>
+              <b><span>개인정보 수집 이용 동의서</span>는 본인만 작성하여 동의할 수 있습니다. 목원대학교 개인정보처리방침은 홈페이지를 참조해 주시기 바랍니다.</b>
+              <!--  -->
+              <div class="info">
+                <p>
+                  위의 관련 내용을 모두 확인하였음, 신청자 본인이 직접 작성하였음을 확인합니다.
+                </p>
+                <p class="ymd">년&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;월&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;일</p>
+                <p class="sing">신청자:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(서명)</p>
+              </div>
+              <h2>목 원 대 학 교 총 장</h2>
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -42,7 +42,6 @@ button[class*=btn]:focus{outline:0;}
 /* print할 내용 */
 .print_table .write_info table{
   overflow: hidden;
-  position: absolute;
   width: 97%; height: 1060px;
   padding: 10px;
   border: 1px solid black;
