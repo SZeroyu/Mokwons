@@ -1,0 +1,58 @@
+html,
+*{margin: 0px; padding: 0px;}
+ul{list-style: none;}
+a{text-decoration: none;}
+body{font-style: initial;}
+.app_box{
+  position: absolute;
+  width: 90%; height: 100%;
+  top:60%; left: 52%;
+  transform: translate(-50%, -50%);
+  border: 1px solid black;
+  z-index: 1;
+}
+/*수강신청*/
+.table_box{
+  width: 80%; height: 90%;
+    overflow-y: scroll;
+    border: 1px solid gray;
+    float: left;
+
+}
+.app_box .table_box .app_table{margin: 10px; width: 98%; height: 200px; text-align: center; } 
+.app_box .table_box .app_table tr th{background: rgb(199, 239, 255); padding: 3px; border-left: 1px solid #969696;; border-bottom: 1px solid #969696;}
+.app_box .table_box .app_table tr td{
+  border-bottom: 1px solid gainsboro;
+  padding: 3px;
+}
+.app_box .table_box .app_table tr td input[type="submit"]{
+  border: none; width: 100px; 
+  padding: 3px;
+  cursor: pointer; 
+}
+.app_box .table_box .app_table tr td input[type="submit"]:hover{
+  background: #888888;
+}
+.app_box .table_box ul{width: 100%; margin:10px 0px 10px 0px;}
+.app_box .table_box ul li{
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  width: 25px; height: 25px; line-height: 25px;
+  background: gainsboro; border-radius: 20px;
+  cursor: pointer;
+  text-align: center;
+}
+.app_box .table_box input[type="radio"]:first-child{margin: 20px 0px 20px 20px;}
+.app_box .table_box ul li:hover{background: black; color: white;}
+.app_box .app_info{
+  overflow: hidden;
+  margin-left: 31px;
+  width: 300px; height: 90%;
+  border: 1px solid #2e2e2e;
+  float:right;
+}
+.app_box .app_info h4{text-align: center; background: gainsboro;}
+.app_box .app_info ol{
+  padding-left: 28px;
+}

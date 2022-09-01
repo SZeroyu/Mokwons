@@ -57,6 +57,9 @@ button[class*=btn]:focus{outline:0;}
   width: 100px;
   padding-left: 10px;
 }
+.print_table .write_info table tbody tr td span .yy{
+  width: 100px;
+}
 .print_table .write_info table thead th h1,
 .print_table .write_info table tfoot tr td h1{text-align: center}
 

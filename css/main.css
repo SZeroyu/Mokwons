@@ -41,6 +41,7 @@ a{text-decoration: none;}
   transition: width 0.5s;
   border-radius:20px;
   left: 10px;
+  z-index:2;
 }
 
 .main_page01 .side_menu .navigation:hover {

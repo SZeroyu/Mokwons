@@ -86,8 +86,10 @@ function selectphone(ele){
 
   $f.attr('readonly', true);
   $f.val($ele.val());
-   
-  
 }
  
-
+//휴학날짜 계산
+function yydate(){
+  let year = document.getElementById('yy')+1;
+  document.getElementById('ee_date').innerHTML = year + "년도 &nbsp";
+}

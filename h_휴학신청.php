@@ -118,14 +118,27 @@
                 </tr>
                 <tr>
                   <td class="title">휴학기간</td>
-                  <td colspan="3">년 학기</td>
+                  <td colspan="3">
+                    <span>
+                      <input type="text" id="yy" class="yy" max="4" placeholder="ex) 2022" onclick="yydate()">
+                      <label for="yy">년</label>
+                    </span>
+                    <span>
+                      <select name="" id="semester" >
+                        <option value="0" selected>선택</option>
+                        <option value="1">1학기</option>
+                        <option value="2">2학기</option>
+                      </select>
+                      <label for="semester">학기</label>
+                    </span>
+                  </td>
                   <td class="title">휴학구분</td>
                   <td colspan="2">일 반 휴 학</td>
                 </tr>
                 <tr>
                   <td class="title">복학예정학기</td>
                   <td colspan="3">
-                    <p id="ee_date">
+                    <p id="ee_date" name="result">
                     <script>
                       // 현재 날짜 나오는 script
                         let today = new Date();
