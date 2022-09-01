@@ -1,4 +1,6 @@
-/*버튼*/
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+
+/* 메일보내기/다운로드/ 인쇄 버튼*/
 .btn_box{
     width: 450px; height: 40px;
     position: absolute;
@@ -38,57 +40,58 @@ button[class*=btn]:focus{outline:0;}
 
 /* print할 내용 */
 .print_table .write_info,
-.print_table .user_sign{
+.print_table .dormitory{
   width: 95%; height: 1060px;
   padding: 10px;
   border: 1px solid black;
   margin: 10px;
 }
-
-/* 생활관입사신청 */
-.print_table .write_info .dormitory .notice{
-    width: 99%; height: 100%;
-    border: 1px solid gainsboro;
-}
-.print_table .write_info .dormitory .notice p{padding-left: 10px;}
-.print_table .write_info .dormitory .notice p:first-child,
-.print_table .write_info .dormitory .notice p:last-child{color:red; padding: 10px;}
-.print_table .write_info .dormitory .notice ol{
-    padding: 10px 0px 0px 30px;
-}
-.print_table .write_info .dormitory .notice ol li{padding: 5px 0px 0px}
-
-.print_table .write_info .dormitory .info{width: 99%; height: 100%; border: 1px solid gainsboro; margin-top: 30px;}
-.print_table .write_info .dormitory .info h2{text-align: center; padding-top: 20px;}
-.print_table .write_info .dormitory .info h2 p{font-size: 13pt;}
-.print_table .write_info .dormitory .info table{
-    margin-top: 20px;
-}
-.print_table .write_info .dormitory .info table tr td
-{
-    border: 1px solid gainsboro;
-    padding: 10px;
-    width: 200px;
-}
-.print_table .write_info .dormitory .info table tr td input,
-.print_table .write_info .dormitory .info table tr td select{
+/* p.01 생활관신청서 */
+.print_table .write_info .info{width: 99%; height: 100%;}
+.print_table .write_info  .info h2{text-align: center; padding-top: 20px;}
+.print_table .write_info  .info h2 p{font-size: 13pt;}
+.print_table .write_info  .info table{margin-top: 20px;}
+.print_table .write_info  .info table tr td{border: 1px solid gainsboro;padding: 10px; width: 200px;}
+.print_table .write_info .info table tr td input,
+.print_table .write_info .info table tr td select{
     width: 90%;
     padding: 5px;
     outline: none;
     border: none;
     border-bottom: 2px solid gainsboro;
 }
-.print_table .write_info .dormitory .info table tr td button{margin-left: 10px; border-radius: 20px; padding: 5px 10px 5px 10px; outline: none; border: none; cursor: pointer; background:#c4314e; color: white;}
-.print_table .write_info .dormitory .info table tr td input:focus,
-.print_table .write_info .dormitory .info table tr td select:focus{border-bottom: 2px solid #107bf5;}
-.print_table .write_info .dormitory .info table tr td button:hover{background: #ad2944; transition: all 0.8s;}
+.print_table .write_info  .info table tr td button{margin-left: 10px; border-radius: 20px; padding: 5px 10px 5px 10px; outline: none; border: none; cursor: pointer; background:#c4314e; color: white;}
+.print_table .write_info  .info table tr td input:focus,
+.print_table .write_info  .info table tr td select:focus{border-bottom: 2px solid #107bf5;}
+.print_table .write_info  .info table tr td button:hover{background: #ad2944; transition: all 0.8s;}
 
-.print_table .user_sign table tr td{border: 1px solid gainsboro; padding: 5px;}
-.print_table .user_sign table tr th{background: gainsboro;  padding: 5px;}
-.print_table .user_sign table tr th p{font-size: 12pt;}
-.print_table .user_sign table tr th:first-child{width: 80px;}
-.print_table .user_sign table tr td span{float: right;}
-.print_table .user_sign table tr td span input[type="checkbox"]{margin-left: 10px;}
+.print_table .write_info .user_sign{width:100%;}
+.print_table .write_info .user_sign tr td{border: 1px solid gainsboro; padding: 10px;}
+.print_table .write_info .user_sign tr th{background: gainsboro;  padding: 5px;}
+.print_table .write_info .user_sign tr th p{font-size: 12pt;}
+.print_table .write_info .user_sign tr th:first-child{width: 80px;}
+.print_table .write_info .user_sign tr td span{float: right;}
+.print_table .write_info .user_sign tr td span input[type="checkbox"]{margin-left: 20px; width: 18px; height: 18px;}
+.print_table .write_info .user_sign tfoot tr td{text-align: center; border: none; padding-top: 20px;}
+.print_table .write_info .user_sign tfoot tr td h3{font-family: 'Nanum Myeongjo', serif;}
+
+
+/* p.02 생활관입사신청 서약서*/
+.print_table .dormitory .notice{
+    width: 99%; height: 100%;
+    font-size: 12pt;
+}
+.print_table  .dormitory .notice p{padding-left: 10px;}
+.print_table  .dormitory .notice p:first-child{font-size: 15pt; padding-top: 10px; font-weight: 800; text-align: center;}
+.print_table  .dormitory .notice p:first-child,
+.print_table .dormitory .notice p:last-child{color:red; padding: 10px;}
+.print_table  .dormitory .notice p span{
+    font-weight: 700;
+}
+.print_table .dormitory .notice ol{padding: 50px 0px 0px 30px;}
+.print_table .dormitory .notice ol li{padding: 10px 0px 10px 0px ; }
+
+
 /* footer */
 footer{
   position: absolute;

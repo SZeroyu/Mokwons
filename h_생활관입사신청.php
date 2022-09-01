@@ -1,4 +1,4 @@
-<!--자퇴신청-->
+<!--생활관입사신청-->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>목원대학교 종합정보시스템</title>
-    <link rel="stylesheet" href="./css/print.css" />
+    <link rel="stylesheet" href="./css/print_5.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/academic_5.css" />
     <script src="./js/index.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://kit.fontawesome.com/d6d6196cf4.js" crossorigin="anonymous"></script>
+
+    
 </head>
 <body> 
     <div><?php include "header_2.php";?></div> 
@@ -64,31 +66,7 @@
           <div id="idPrint">
           <!-- 첫페이지 -->
           <div class="write_info">
-            <div class="dormitory">
-              <!-- 이용서약 및 신청서 -->
-              <div class="notice">
-                <p> 생활관 이용서약 </p>
-                <p>
-                  본인은 목원대학교 생활관에 입사함에 있어 생활관 규정과 운영수칙 제 9조의 사생 의무사항 및 모든 수칙을
-                  준수하고 성실한 자세로서 공동생활을 통한 협동과 단결은 물론 학문을 넓히고 인격을 닦는데 전념할 것을
-                  다짐함과 동시에 특별히 아래의 사항을 책임지고 지킬 것을 보호자와 함께 서약합니다.
-                </p>
-                <ol type="1">
-                  <li>생활관 운영수칙(규정)을 반드시 지키고, 위반하지 않겠습니다.</li>
-                  <li>운영수칙 제 18조, 19조에 의거하여 책정된 생활관 입사비용항목 및 환불정책에 대하여 동의하고 이의를 제기하지 않겠습니다.</li>
-                  <li>운영수칙 제 7조, 제 15조, 제27조에 의거하여 생활관의 원만한 운영을 위해 생활관장 및 직원들의 지도에 반드시 따르겠습니다.</li>
-                  <li>운영수칙 제 5조, 제 6조에 의거하여 생활관 일과 및 점호 실시에 대하여 준수하겠습니다.</li>
-                  <li>운영수칙 제 10조에 의거하여 관내 시설물 및 개인비품 파손 시 즉시 변상하겠습니다.</li>
-                  <li>운영수칙 제 21조에 의거하여 "관생자치위원회" 구성에 동의하고 임원들의 활동에 성의를 다하여 협조하며 "관생자치위원회"가 주관하여 실시하는 모든 행사에 반드시 참여하고 자발적으로 협조하겠습니다.</li>
-                  <li>개인 물푼의 보관 및 관리는 본인이 책임지겠습니다.</li>
-                  <li>신학대학(원)생에 한하여서는 새벽 기도회에 반드시 참여하겠습니다.</li>
-                  <li>운영수칙 제 28조에 의거하여 생활관 퇴사 절차를 따르겠습니다.</li>
-                  <li>운영수칙 제 23조, 제 25조에 의거 다음의 상, 벌점 기준을 준수하겠습니다.</li>
-                  <li>생활관 내 금주, 금연을 서약하겠습니다.</li>
-                </ol>
-                <p>※ 생활관 내에서 음주, 흡연시 퇴사 ※</p>
-              </div>
-              <div class="info">
+          <div class="info">
                 <h2>
                   생활관입사신청서
                   <p>(재학생/대학원신입생)</p>
@@ -172,16 +150,11 @@
                     <td>주소 + 상세주소</td>
                     <td colspan="2">
                       <label for="name"></label>
-                      <input type="text" name="user_address" id="user_address" value=""placeholder="주소+상세주소" class="form-control m-input inph_2">
+                      <input type="text" name="user_address" id="user_address" value="" placeholder="주소+상세주소" class="form-control m-input inph_2">
                     </td>
                   </tr>
                 </table>
-              </div>
-            </div>
-
-          </div>
-          <div class="user_sign">
-            <table>
+            <table class="user_sign">
               <tr>
                 <th colspan="4"><p>개인정보수집동의<p></th>
               </tr>
@@ -227,34 +200,65 @@
                   </span>
                 </td>
               </tr>
-              <tr rowspan="4"><td colspan="4">위 본인은 목원대학교 학생 생활관에 입사하고자 신청서를 제출합니다.</td></tr>
-              <tr>
-                <td colspan="4">
-                  <p id="ex_date">
-                    <script>
-                      // 현재 날짜 나오는 script
-                      let today = new Date();
-                      let year = today.getFullYear();
-                      let month = today.getMonth()+1;
-                      let day = today.getDate();
+              <tfoot>
+                <tr rowspan="4"><td colspan="4">위 본인은 목원대학교 학생 생활관에 입사하고자 신청서를 제출합니다.</td></tr>
+                <tr>
+                  <td colspan="4">
+                    <p id="ex_date">
+                      <script>
+                        // 현재 날짜 나오는 script
+                        let today = new Date();
+                        let year = today.getFullYear();
+                        let month = today.getMonth()+1;
+                        let day = today.getDate();
 
-                      document.getElementById('ex_date').innerHTML = year + "년 &nbsp" + month + "월 &nbsp" + day + "일";
-                    </script>
-                  </p>
-                </td>
-              </tr>
-              <tr>
-                <td colspan="4">신청자 : (서명)</td>
-              </tr>
-              <tr>
-                <td colspan="4">목원대학교 생활관장 귀하</td>
-              </tr>
+                        document.getElementById('ex_date').innerHTML = year + "년 &nbsp" + month + "월 &nbsp" + day + "일";
+                      </script>
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td colspan="4">신청자 : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(서명)</td>
+                </tr>
+                <tr>
+                  <td colspan="4"><h3>목원대학교 생활관장 귀하</h3></td>
+                </tr>
+              </tfoot>
+             
             </table>
+              </div>
+              <div class="user_sign">
+           
           </div>
+          </div>
+          <div class="dormitory">
+              <!-- 이용서약 및 신청서 -->
+              <div class="notice">
+                <p> 생활관 이용서약 </p>
+                <p>
+                  본인은 목원대학교 생활관에 입사함에 있어 <span>생활관 규정과 운영수칙 제 9조의 사생 의무사항 및 모든 수칙</span>을
+                  준수하고 성실한 자세로서 공동생활을 통한 협동과 단결은 물론 학문을 넓히고 인격을 닦는데 전념할 것을
+                  다짐함과 동시에 특별히 아래의 사항을 책임지고 지킬 것을 보호자와 함께 서약합니다.
+                </p>
+                <ol type="1">
+                  <li>생활관 운영수칙(규정)을 반드시 지키고, 위반하지 않겠습니다.</li>
+                  <li>운영수칙 제 18조, 19조에 의거하여 책정된 생활관 입사비용항목 및 환불정책에 대하여 동의하고 이의를 제기하지 않겠습니다.</li>
+                  <li>운영수칙 제 7조, 제 15조, 제27조에 의거하여 생활관의 원만한 운영을 위해 생활관장 및 직원들의 지도에 반드시 따르겠습니다.</li>
+                  <li>운영수칙 제 5조, 제 6조에 의거하여 생활관 일과 및 점호 실시에 대하여 준수하겠습니다.</li>
+                  <li>운영수칙 제 10조에 의거하여 관내 시설물 및 개인비품 파손 시 즉시 변상하겠습니다.</li>
+                  <li>운영수칙 제 21조에 의거하여 "관생자치위원회" 구성에 동의하고 임원들의 활동에 성의를 다하여 협조하며 "관생자치위원회"가 주관하여 실시하는 모든 행사에 반드시 참여하고 자발적으로 협조하겠습니다.</li>
+                  <li>개인 물푼의 보관 및 관리는 본인이 책임지겠습니다.</li>
+                  <li>신학대학(원)생에 한하여서는 새벽 기도회에 반드시 참여하겠습니다.</li>
+                  <li>운영수칙 제 28조에 의거하여 생활관 퇴사 절차를 따르겠습니다.</li>
+                  <li>운영수칙 제 23조, 제 25조에 의거 다음의 상, 벌점 기준을 준수하겠습니다.</li>
+                  <li>생활관 내 금주, 금연을 서약하겠습니다.</li>
+                </ol>
+                <p>※ 생활관 내에서 음주, 흡연시 퇴사입니다. ※</p>
+              </div>
         </div>
       </div>
     </div>
-   
+            </div>
       <!--버튼-->
       <footer><button title="새창"><a href="https://www.mokwon.ac.kr/dormitory/" title="새창" target='_blank' >목원대 생활관 홈페이지 바로가기</a><ion-icon name="open-outline"></ion-icon></button></footer>
       <div class="btn_box">

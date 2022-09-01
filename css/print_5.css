@@ -1,0 +1,65 @@
+@media print{
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+    body {-webkit-print-color-adjust: exact !important;}
+
+
+/* print할 내용 */
+.write_info,
+.dormitory{
+  width: 95%; height: 1010px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid black;
+}
+/* p.01 생활관신청서 */
+.write_info .info{width: 99%; height: 100%;}
+.write_info  .info h2{text-align: center; padding-top: 10px;}
+.write_info  .info h2 p{font-size: 13pt;}
+.write_info  .info table{margin-top: 20px;}
+.write_info  .info table tr td{border: 1px solid gainsboro;padding: 5px; width: 200px;}
+.write_info .info table tr td input,
+.write_info .info table tr td select{
+    width: 90%;
+    padding: 5px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid gainsboro;
+}
+.write_info  .info table tr td button{display: none;}
+.write_info  .info table tr td input:focus,
+.write_info  .info table tr td select:focus{border-bottom: 2px solid #107bf5;}
+.write_info  .info table tr td button:hover{background: #ad2944; transition: all 0.8s;}
+
+.write_info .user_sign{width:100%; padding-top:20px;}
+.write_info .user_sign tr td{border: 1px solid gainsboro;}
+.write_info .user_sign tr th{background: gainsboro;  padding: 5px;}
+.write_info .user_sign tr th p{font-size: 12pt;}
+.write_info .user_sign tr th:first-child{width: 80px;}
+.write_info .user_sign tr td span{float: right;}
+.write_info .user_sign tr td span input[type="checkbox"]{margin-left: 20px; width: 18px; height: 18px;}
+.write_info .user_sign tfoot{ margin-top:20px;}
+.write_info .user_sign tfoot tr td{text-align: center; border: none;}
+.write_info .user_sign tfoot tr td:first-child{padding-top: 30px;}
+.write_info .user_sign tfoot tr td h3{font-family: 'Nanum Myeongjo', serif;}
+
+/* p.02 생활관입사신청 서약서*/
+.dormitory .notice{
+    width: 99%; height: 100%;
+    font-size: 12pt;
+    margin-top: 20px;
+}
+ .dormitory .notice p{padding-left: 10px;}
+ .dormitory .notice p:first-child{font-size: 15pt; font-weight: 800; text-align: center;}
+ .dormitory .notice p:first-child,
+.dormitory .notice p:last-child{color:red; padding: 10px;}
+ .dormitory .notice p span{
+    font-weight: 700;
+}
+.dormitory .notice ol{padding: 50px 0px 0px 30px;}
+.dormitory .notice ol li{padding: 10px 0px 10px 0px ; }
+
+
+
+  
+}
+

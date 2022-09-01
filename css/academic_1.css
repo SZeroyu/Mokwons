@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
 
 
 /*버튼*/
@@ -88,7 +88,7 @@ button[class*=btn]:focus{outline:0;}
 .print_table .write_info table tbody .user_sign td p{text-align: center; padding-top: 10px;}
 .print_table .write_info table tbody .user_sign td p span{padding-left: 80px;}
 .print_table .write_info table tbody .sign td p{text-align: end; padding-right: 10px;}
-
+.print_table .write_info table tfoot tr td h1{font-family: 'Nanum Myeongjo', serif;}
 
 .print_table .info table tr td{
   position:absolute;
@@ -109,7 +109,7 @@ button[class*=btn]:focus{outline:0;}
   margin: 20px 0px 20px 0px;
 }
 .print_table .info_mwn .head h2{
-  padding-bottom: 20px;
+  padding-bottom: 20px; 
 }
 .print_table .info_mwn .head p b{text-decoration: underline; color:red;}
 .print_table .info_mwn .body{
@@ -136,6 +136,7 @@ button[class*=btn]:focus{outline:0;}
 .print_table .info_mwn .footer h3,
 .print_table .info_mwn .footer h2{
   padding: 40px 0px 10px 0px;
+  font-family: 'Nanum Myeongjo', serif;
 }
 .print_table .info_mwn .footer b{
   padding: 5px;
