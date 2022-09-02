@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/app_class_ex.css">
     <link rel="stylesheet" href="./css/main.css">
+    
     <title>Document</title>
 </head>
   <body>
@@ -132,12 +133,7 @@
         }
         ?>
         </table>
-        <ul>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-            <li>4</li>
-        </ul>   
+        <ul class="pageing"  id="pagingul"><script src="page.js"></script></ul>
         </div>
         <div class="app_info">
             <h4>관심과목 안내</h4>

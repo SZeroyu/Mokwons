@@ -33,15 +33,24 @@ body{font-style: initial;}
 .app_box .table_box .app_table tr td input[type="submit"]:hover{
   background: #888888;
 }
-.app_box .table_box ul{width: 100%; margin:10px 0px 10px 0px;}
-.app_box .table_box ul li{
+.app_box .table_box .pageing{
   position: relative;
-  display: inline-block;
+  width: 100%;
   left: 50%;
+}
+.app_box .table_box ul{ margin:10px 0px 10px 0px;}
+.app_box .table_box ul li{
+
+
   width: 25px; height: 25px; line-height: 25px;
   background: gainsboro; border-radius: 20px;
   cursor: pointer;
   text-align: center;
+  display: inline-block;
+}
+.app_box .table_box ul li span{
+  display: inline-block;
+  width: 30px; height: 30px; line-height: 30px;
 }
 .app_box .table_box input[type="radio"]:first-child{margin: 20px 0px 20px 20px;}
 .app_box .table_box ul li:hover{background: black; color: white;}
