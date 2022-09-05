@@ -79,11 +79,11 @@
             <input type="radio" id="subject_name" name="subject"> 
             <label for="subject_name" >과목명</label>
             <input type="radio" id="essential"  name="subject">
-            <label for="essential">교양필수</label>
+            <label for="essential">전공필수</label>
             <input type="radio" id="main point" name="subject">
-            <label for="main point" >교양핵심</label>
+            <label for="main point" >전공</label>
             <input type="radio" id="Select" name="subject">
-            <label for="Select" >교양선택</label>
+            <label for="Select" >전공선택</label>
 
             <label for="search"></label>
             <input type="text"  placeholder="검색">
