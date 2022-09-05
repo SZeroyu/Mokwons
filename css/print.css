@@ -1,4 +1,5 @@
 @media print{
+  body {-webkit-print-color-adjust: exact !important;}
   @import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
   .write_info,
   .info_mwn {
@@ -109,6 +110,19 @@
     padding-top: 20px;
   }
 
-  
-}
+  /* 졸업논문작성계획서 */
+  .graduate{
+    width: 1200x; height: 1008px;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid black;
+    text-align: center;
+  }
+  .graduate tr .title{width: 100px; background: rgb(238, 238, 238); }
+  /* thead */
+  .graduate thead tr td h2{ text-decoration: underline; }
+  .graduate  tr td{width: 150px; border-bottom: 1px solid gainsboro; color: black;}
 
+  .graduate tfoot tr td{border:none; height: 100px; } 
+  .graduate tfoot tr td p{padding-top: 35px;}
+}

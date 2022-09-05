@@ -93,3 +93,7 @@ function yydate(){
   let year = document.getElementById('yy')+1;
   document.getElementById('ee_date').innerHTML = year + "년도 &nbsp";
 }
+
+var currentYear = document.getElementById('year').value;
+var res = currentYear + 1;
+document.getElementById('ee_date').innerText = res + "년도";

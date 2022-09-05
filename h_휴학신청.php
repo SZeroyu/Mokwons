@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/academic_1.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <script src="./js/index.js"></script>
+    
     <script src="https://kit.fontawesome.com/d6d6196cf4.js" crossorigin="anonymous"></script>
 </HEAD>
 <body> 
@@ -120,7 +121,7 @@
                   <td class="title">휴학기간</td>
                   <td colspan="3">
                     <span>
-                      <input type="text" id="yy" class="yy" max="4" placeholder="ex) 2022" onclick="yydate()">
+                      <input type="text" id="year" class="yy" max="4" placeholder="ex) 2022" >
                       <label for="yy">년</label>
                     </span>
                     <span>
@@ -139,13 +140,8 @@
                   <td class="title">복학예정학기</td>
                   <td colspan="3">
                     <p id="ee_date" name="result">
-                    <script>
-                      // 현재 날짜 나오는 script
-                        let today = new Date();
-                        let year = today.getFullYear()+1;
-                        document.getElementById('ee_date').innerHTML = year + "년도 &nbsp";
-                      </script>
                       </p>
+
                   </td>
                   <td class="title">생년월일</td>
                   <td colspan="2"><?=$user_birthday?></td>
@@ -315,6 +311,7 @@
             window.onbeforeprint = beforePrint;
             window.onafterprint = afterPrint;
           </script>
+          
       </div>
       
 </body> 

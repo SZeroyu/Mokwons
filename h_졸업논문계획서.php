@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>목원대학교 종합정보시스템</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/print.css" />
     <link rel="stylesheet" href="./css/academic_1.css" />
+    <script src="./js/index.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="https://kit.fontawesome.com/d6d6196cf4.js" crossorigin="anonymous"></script>
 </head>
@@ -92,35 +94,19 @@
                         </li>
                     </ul>
                 </li>
-                <li>3. 제출방법 : 졸업논문 작성계횏 출력 후 제출자, 지도교수 날인 후 해당학과(부)로 제출</li>
+                <li>3. 제출방법 : 졸업논문 작성계획서 출력 후 제출자, 지도교수 날인 후 해당학과(부)로 제출</li>
                 <li>4. 문의사항 : <span>학사관리계 042)829-7103</span></li>
             </ul>
         </div>
         <div class="plan">
-        <?php
-                if(isset($_SESSION['user_number'])){
-                $user_number = $_SESSION['user_number'];
-                }
-                $con = mysqli_connect("localhost", "root", "", "project") or die("fail");
-                $sql = "select * from graduate_plan where user_number='$user_number'; ";
-                $res = mysqli_query($con, $sql);
-                $row = mysqli_fetch_array($res);
-                $graduate_project = $row["graduate_project"];
-                $project_name = $row["project_name"];
-                $advisor = $row["advisor"];
-                $dean = $row["dean"];
-                $project_name = $row["project_name"];
-                $project_con = $row["project_con"];
-                $project_info= $row["project_info"];
-            ?>
         <form action="graduate_plan.php" method="post">
           <div class="title">
             <p><ion-icon name="ribbon-outline"></ion-icon>본 전공 신청</p>
             
             <div class="btn">
-              <button>조회</button>
+              <button type="button">조회</button>
               <button type="submit">저장</button>
-              <button>인쇄</button>
+              <button type="button" onclick="printArea();">인쇄</button>
             </div>
           </div>
           <div class="content">
@@ -168,5 +154,95 @@
         </div>
       </div>
     </div>
+  
+    <div id="idPrint" media="print">
+    <?php
+                if(isset($_SESSION['user_number'])){
+                $user_number = $_SESSION['user_number'];
+                }
+                $con = mysqli_connect("localhost", "root", "", "project") or die("fail");
+                $sql = "select * from users where user_number='$user_number'; ";
+                $res = mysqli_query($con, $sql);
+                $row = mysqli_fetch_array($res);
+                $user_name = $row["user_name"];
+                $user_class = $row["user_class"];
+                $user_major = $row["user_major"];
+                $user_minor = $row["user_minor"];
+            ?>
+        <table class="graduate">
+            <thead>
+              <tr>
+                <td colspan="5"><h2>졸업작품 작성계획서</h2></td>
+              </tr>
+              <tr>
+              <td class="title">소속</td>
+                  <td colspan="2"><?=$user_major?></td>
+                  <td class="title">전공</td>
+                  <td><?=$user_minor?></td>
+              </tr>
+              <tr>
+                <td class="title">학번/학년</td>
+                <td><?=$user_number?></td>
+                <td><?=$user_class?>학년</td>
+                <td class="title">성명</td>
+                <td><?=$user_name?></td>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="title">전공구분</td>
+                <td colspan="4"></td>
+              </tr>
+              <tr>
+                <td class="title">작품명</td>
+                <td colspan="4"></td>
+              </tr>
+              <tr>
+                <td class="title">작품설명</td>
+                <td colspan="4"></td>
+              </tr>
+              <tr>
+                <td class="title">작품규격/전시장소/기간</td>
+                <td colspan="4"></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="5">
+                  <p>위와 같이 졸업작품 작성계획서를 제출하오니 허가하여 주시기 바랍니다.</p>
+                  <p id="ex_date">
+                      <script>
+                      // 현재 날짜 나오는 script
+                        let today = new Date();
+                        let year = today.getFullYear();
+                        let month = today.getMonth()+1;
+                        let day = today.getDate();
+
+                        document.getElementById('ex_date').innerHTML = year + "년 &nbsp" + month + "월 &nbsp" + day + "일";
+                      </script>
+                  <p>
+                    제 출 자
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?=$user_name?>&nbsp;</span>  
+                    <span>(인 또는 서명)</span>
+                  </p>
+                  <p>
+                    지 도 교 수 
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?=$user_name?>&nbsp;</span>  
+                    <span>(인 또는 서명)</span>
+                  </p>
+                  <p>
+                    학부(과) 장
+                    <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?=$user_name?>&nbsp;</span>  
+                    <span>(인 또는 서명)</span>
+                  </p>
+                  <p>목원대학교 교무처장 귀하</p>
+                </td>
+              </tr>
+            </tfoot>
+          </tr>
+        </table>
+      </div>
+
+
 </body>
 </html>

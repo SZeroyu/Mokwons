@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/app_class_ex.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     
     <title>Document</title>
 </head>
@@ -73,16 +74,23 @@
         $con = mysqli_connect("localhost", "root", "", "project") or die("fail");
         $sql = "select * from subject LIMIT 15;";
         $res = mysqli_query($con, $sql);
-        ?>   
+        ?> 
+        <div class="select_subject">
+            <input type="radio" id="subject_name" name="subject"> 
+            <label for="subject_name" >과목명</label>
+            <input type="radio" id="essential"  name="subject">
+            <label for="essential">교양필수</label>
+            <input type="radio" id="main point" name="subject">
+            <label for="main point" >교양핵심</label>
+            <input type="radio" id="Select" name="subject">
+            <label for="Select" >교양선택</label>
+
+            <label for="search"></label>
+            <input type="text"  placeholder="검색">
+            <span><ion-icon name="search-outline"></ion-icon></span>
+        </div>  
         <form action="app_class_check.php" method="post"> 
-        <input type="radio" id="subject_name" name="subject"> 
-        <label for="subject_name" >과목명</label>
-        <input type="radio" id="essential"  name="subject">
-        <label for="essential">교양필수</label>
-        <input type="radio" id="main point" name="subject">
-        <label for="main point" >교양핵심</label>
-        <input type="radio" id="Select" name="subject">
-        <label for="Select" >교양선택</label>
+
         <table class="app_table" cellspacing="0"> 
             <tr><th colspan="11">개설과목</th></tr>    
             <!--테이블 제목-->
@@ -133,7 +141,9 @@
         }
         ?>
         </table>
-        <ul class="pageing"  id="pagingul"><script src="page.js"></script></ul>
+        <ul class="pageing"  id="pagingul">
+            <li><i class="fi fi-sr-heart"></i></li>
+        </ul>
         </div>
         <div class="app_info">
             <h4>관심과목 안내</h4>

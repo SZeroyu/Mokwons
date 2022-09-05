@@ -77,21 +77,21 @@
                         <td>
                             <p class="pwd_title">현재 비밀번호</p>
                             <label for="current_pwd" ></label>
-                            <input type="password" name="current_password" id="current_pwd" placeholder="현재 비밀번호" >
+                            <input type="password" name="current_password" id="current_pwd" placeholder="현재 비밀번호" onkeyup="check_pw()" >
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p class="pwd_title">새 비밀번호</p>
                             <label for="new_pwd" ></label>
-                            <input type="password"  name="new_password" id="new_pwd" placeholder="새 비밀번호"  onchange="check_pw()">
+                            <input type="password"  name="new_password" id="new_pwd" placeholder="새 비밀번호"  onkeyup="check_pw()">
                         </td>
                     </tr>
                     <tr>
                         <td>
                             <p class="pwd_title">비밀번호 확인</p>
                             <label for="new_pwd_check"></label>
-                            <input type="password" id="new_pwd_check" name="new_password2" placeholder="비밀번호 확인"  onchange="check_pw()">
+                            <input type="password" id="new_pwd_check" name="new_password2" placeholder="비밀번호 확인"  onkeyup="check_pw()">
                             <p class="pwd_title"><span id="check" class="check"></span></p>
                         </td>
                     </tr>
@@ -106,17 +106,18 @@
 <script>
     function check_pw(){
         if(document.getElementById('current_pwd').value == document.getElementById('new_pwd').value){
-                    document.getElementById('check').innerHTML='*기존비밀번호와일치합니다 변경해주세요'
+                    document.getElementById('check').innerHTML='* 기존비밀번호와 동일합니다 변경해주세요'
                     document.getElementById('check').style.color='red';
                     
         }else{
-            if(document.getElementById('new_pwd').value !='' && document.getElementById('new_pwd_check').value!=''){
+      
+            if(document.getElementById('new_pwd').value !='' && document.getElementById('new_pwd_check').value !=''){
                 if(document.getElementById('new_pwd').value==document.getElementById('new_pwd_check').value){
-                    document.getElementById('check').innerHTML='*비밀번호 일치'
+                    document.getElementById('check').innerHTML='* 비밀번호 일치'
                     document.getElementById('check').style.color='blue';
                 }
                 else{
-                    document.getElementById('check').innerHTML='*비밀번호 일치하지 않음';
+                    document.getElementById('check').innerHTML='* 비밀번호 일치하지 않음';
                     document.getElementById('check').style.color='red';
                 }
             }
