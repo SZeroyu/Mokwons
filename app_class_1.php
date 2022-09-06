@@ -84,10 +84,7 @@
             <label for="main point" >전공</label>
             <input type="radio" id="Select" name="subject">
             <label for="Select" >전공선택</label>
-            <section>
-                exec
-            </section>
-
+            
             <label for="search"></label>
             <input type="text"  placeholder="검색">
             <span><ion-icon name="search-outline"></ion-icon></span>
