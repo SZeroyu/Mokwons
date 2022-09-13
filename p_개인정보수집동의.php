@@ -1,6 +1,6 @@
 <!--개인정보 수집 동의 체크박스-->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">

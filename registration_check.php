@@ -14,7 +14,6 @@
 
   $user_email = $_POST["user_email"];
 
-  $user_grade = $_POST["user_grade"];
   $user_status = $_POST["user_status"];
   $user_affiliation = $_POST["user_affiliation"];
 
@@ -30,12 +29,12 @@
   $con = mysqli_connect("localhost", "root", "", "project") or die("fail");
 
   $sql = "insert into users(user_number, user_password, user_name, user_birthday, user_pnumber, user_hnumber, 
-  user_address, user_address_number, user_email, user_grade, user_status,
+  user_address, user_address_number, user_email, user_status,
     user_affiliation, user_major, user_minor, user_double_major, user_admission, user_semester,
     user_class, user_teacher)";
 
   $sql .= "values('$user_number', '$user_password', '$user_name', '$user_birthday', '$user_pnumber', '$user_hnumber',
-  '$user_address', '$user_address_number', '$user_email', '$user_grade', '$user_status',
+  '$user_address', '$user_address_number', '$user_email', '$user_status',
       '$user_affiliation', '$user_major', '$user_minor', '$user_double_major', '$user_admission',
       '$user_semester', '$user_class', '$user_teacher')";
 
@@ -44,6 +43,6 @@
 ?>
            <script>
             alert("완료했습니다");
-            location.href='registration.php';
+            location.href='admin_registration.php';
           </script>
 

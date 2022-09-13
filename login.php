@@ -9,46 +9,37 @@
     <link href="./css/login.css" rel="stylesheet">
 </head>
 <body>
-  
-    <div class="top_header"></div>
-    <div class="top_img"> <img src="./img/로고2.jpg" alt="Logo" width="350"></div>
-    <div class="background_img"><img src="./img/배경.png" width="100%" height="100%"></div>
-    
-
-    <main class="main_mi">
-      <form action="login_check.php" method="post">
-    <div class="main_gnb">
-        <div class="background_box">
-        <div class="box1">
-        <h1 class="h3 mb-3 fw-normal" style="text-align: center;">로그인</h1>
-        <h3 class="h3 mb-3 fw-normal" style="text-align: center;">목원대 종합정보시스템에 오신걸 환영합니다!</h3>
-      
-<!--로그인-->
-  <br />
-        <table align="center" border="0" cellspacing="0" width="300" style="font-weight: bold; ">
-        <div class="box1">
-              <tr>
-                <td colspan="1"><input  type="id"  onKeydown='javascript:handlerNum(this)' name="user_number" class="inph" placeholder="학번"></td>
-              </tr>
-            </div>
-            <div class="box1">
-              <tr>
-                <td colspan="1"><input type="password" name="user_password" class="inph" placeholder="비밀번호"></td>
-              </tr>
-            </div>
-           <tr>
-            <td  colspan="2" width="100%">
-              <input type="submit" class="btn" value="  로그인  ">
-             
-            </td>
-</tr>
-     </table>
-     <p href="#" onclick="location.href='find_id.php'" class="find_id"> 학번/사번 찾기 </p>  
-     <p href="#" onclick="location.href='find_pwd.php'" class="find_pwd"> 비밀번호 재설정 </p>  
-     <footer class="pn">&copy; 시스템 문의 : 042-829-7236</footer>  
-        </div> 
+  <!-- 헤더 -->
+  <div class="top_header"></div>
+  <div class="top_img"> <img src="./img/로고2.jpg" alt="Logo" width="350"></div>
+  <div class="background_img"><img src="./img/배경.png" width="100%" height="100%"></div>
+  <!-- 로그인 -->
+  <form action="login_check.php" method="post">
+    <div class="login_main">
+      <!-- 로그인 헤더 -->
+      <div class="header">
+        <h2>로그인</h2>
+        <h3>목원대 종합정보시스템에 오신걸 환영합니다!</h3>
+      </div>
+      <!-- 로그인 body -->
+      <div class="body">
+        <label for="user_number"></label>
+        <input  type="id"  onKeydown='javascript:handlerNum(this)' name="user_number" placeholder="학번">
+        <label for="user_password"></label>
+        <input type="password" name="user_password" placeholder="비밀번호">
+        <label for="login_btn"></label>
+        <input type="submit" class="login_btn" id="login_btn" value="로그인"> 
+      </div>
+      <!-- 로그인 footer -->
+      <div class="footer">
+        <div class="find">
+          <p href="#" onclick="location.href='find_id.php'" class="find_id"> 학번/사번 찾기 </p>  
+          <p href="#" onclick="location.href='find_pwd.php'" class="find_pwd"> 비밀번호 재설정 </p> 
+        </div>
+          <p class="pn">&copy; 시스템 문의 : 042-829-7236</p>
+      </div>
     </div>
-   </main>
+  </form>
 </body>
 <script>
 function handlerNum( obj ) {

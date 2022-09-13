@@ -7,30 +7,29 @@
     <title>목원대학교 종합정보시스템</title>
     <link rel="stylesheet" href="./css/main.css">
 </head>
+
 <body> 
-    <div><?php include "header_2.php";?>
+    <div><?php include "admin_header_3.php";?>
         <div class="main_page01">
             <!-- 페이지 순 -->
-            <div class="page_info">
-                <p>학사행정<span> &gt </span><span class="page">부서전화번호<span></p>
-            </div>
+            <div class="page_info"><p>수업<span> &gt </span><span class="page">부서전화번호<span></p></div>
             <!-- 사이드 메뉴 -->
             <div class="side_menu">
                 <div class="navigation">
                     <ul>
                         <li class="list ">
-                            <a href="#" onclick="location.href='h_대학일반.php'">
+                            <a href="#" onclick="location.href='admin_대학일반.php'">
                                 <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                                 <span class="title">대학일반</span>
                             </a>
                         </li>
-                        <li class="list active">
-                            <a href="#" onclick="location.href='h_학사행정.php'">
+                        <li class="list ">
+                            <a href="#" onclick="location.href='admin_학사행정.php'">
                                 <span class="icon"><ion-icon name="desktop-outline"></ion-icon></span>
                                 <span class="title">학사행정</span>
                             </a>
                         </li>
-                        <li class="list" onclick="location.href='h_수업.php'">
+                        <li class="list active" onclick="location.href='admin_수업.php'">
                             <a href="#">
                                 <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
                                 <span class="title">수업</span>
@@ -48,6 +47,7 @@
                 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
                 <script src="./js/script.js"></script>
             </div>
+            <!-- //사이드 메뉴 -->
             <!-- 부서전화번호 -->
             <div class="phone_info">
                 <div class="info_box">
@@ -62,29 +62,37 @@
                         </thead>
                         <tbody>
                             <tr>
-                                <td rowspan="4">학적관리</td>
-                                <td>일반복학신청</td>
-                                <td>학사지원과</td>
-                                <td rowspan="2" colspan="2">  829-7977~9</td>
+                                <td rowspan="3">강의정보</td>
+                                <td>공결관리</td>
+                                <td rowspan="6">학사지원과</td>
+                                <td colspan="4" >829-7105</td>
                             </tr>
                             <tr>
-                                <td>일반휴학신청</td>
-                                <td>학사지원계</td>
+                                <td>강의평가입력</td>
+                                <td rowspan="2" colspan="2">829-7097</td>
+                            </tr>
+                            <tr>
+                                <td>시간표조회</td>
                                 <td></td>
                             </tr>
                             <tr>
-                                <td>자퇴신청</td>
-                                <td rowspan="2">학사지원과</td>
-                                <td rowspan="2"  colspan="2">829-7104</td>
-                            </tr>   
+                                <td rowspan="3">성적관리</td>
+                                <td>성적조회</td>
+                                <td rowspan="3">    829-7102~4</td>
+                            </tr>
                             <tr>
-                                <td>국가기술자격증등록</td>
+                                <td>금학기성적열람</td> 
+                                <td rowspan="2"></td>
+                            </tr>
+                            <tr>
+                                <td>계절학기성적열람</td>
                                 <td></td>
-                            </tr> 
+                            </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
+            <!-- //부서전화번호 -->
         </div>
     </div>
 </body>

@@ -19,14 +19,14 @@
             echo '
               <script>
                 alert("로그인 되었습니다.");
-                location.replace("./admin_main.php");
+                location.replace("./admin_대학일반.php");
               </script>';
           } else{
               $_SESSION["user_password"] = $user_password;
             echo '
               <script>
                 alert("로그인 되었습니다.");
-                location.replace("./h_대학일반.php");
+                location.replace("./main_대학일반.php");
               </script>';
           }
 

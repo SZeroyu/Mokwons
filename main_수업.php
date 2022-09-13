@@ -18,18 +18,18 @@
                 <div class="navigation">
                     <ul>
                         <li class="list ">
-                            <a href="#" onclick="location.href='h_대학일반.php'">
+                            <a href="#" onclick="location.href='main_대학일반.php'">
                                 <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
                                 <span class="title">대학일반</span>
                             </a>
                         </li>
                         <li class="list ">
-                            <a href="#" onclick="location.href='h_학사행정.php'">
+                            <a href="#" onclick="location.href='main_학사행정.php'">
                                 <span class="icon"><ion-icon name="desktop-outline"></ion-icon></span>
                                 <span class="title">학사행정</span>
                             </a>
                         </li>
-                        <li class="list active" onclick="location.href='h_수업.php'">
+                        <li class="list active" onclick="location.href='main_수업.php'">
                             <a href="#">
                                 <span class="icon"><ion-icon name="book-outline"></ion-icon></span>
                                 <span class="title">수업</span>

@@ -1,4 +1,4 @@
-<!--비밀번호 찾기-->
+<!--비밀번호 찾기 화면-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,66 +6,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>목원대학교 종합정보시스템</title>
-    <link href="./css/find_pwd.css" rel="stylesheet">
+    <link href="./css/login.css" rel="stylesheet">
 </head>
 <body>
-    <div class="top_header"></div>
-    <div class="top_img"> <img src="./img/로고2.jpg" alt="Logo" width="350"></div>
-    <div class="background_img"><img src="./img/배경.png" width="100%" height="100%"></div>
-    <div class="background_box">
-    <div class="box1">   
-    <!--<script type="text/javascript">
-    function openPop(){
-    var popup = window.open('reset_pwd.php', '인증번호 팝업', 'width=700px,height=800px, scrollbars=yes');}
-    </script>-->
- <form action="find_user_pw.php" method="post">
-    <table align="center" border="0" cellspacing="0" width="300" style="font-weight: bold; ">
-          <tr><th><h2 >비밀번호 재설정</h2></th></tr>
-          <tr><td><input type="text" name="user_number" onKeydown='javascript:handlerNum(this)' class="inph" placeholder="학번"/></td></tr>
-          <tr><td><input type="email" id="user_email" name="user_email" class="inph" placeholder="이메일"/></td></tr>
-          <tr ><td width="100%"> <input type="submit" onClick={this.sendEmail} class="find_pwd" value=" 인증번호 받기 "/></td></tr>
-          <script>
-              class Signup_page extends React.Component {
+  <!-- 헤더 -->
+  <div class="top_header"></div>
+  <div class="top_img"> <img src="./img/로고2.jpg" alt="Logo" width="350"></div>
+  <div class="background_img"><img src="./img/배경.png" width="100%" height="100%"></div>
 
-constructor(props) {
-    super(props);
-    this.state = {
-        email: '',           // 입력받은 email state값
-
-    }
-    this.sendEmail = this.sendEmail.bind(this);
-
-}
-
-
-sendEmail(e){
-    e.preventDefault();
-    console.log(this.state.email);
-    const data = {                      //현재의 email state값을 data객체로 감쌌다
-        email: this.state.email
-    }
-
-    fetch('http://localhost:3001/sendEmail',{      //sendEmail 라우터로 보내버리기
-        method: "post",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-    })
-    .then(res => res.json())
-    .then(json => {
-        
-    })
-    
-}
-
-
-    </script>
-          </table>
-</div>
-
-     <p onclick="location.href='login.php'" class="login" > 로그인 </p>
-     <p href="#" onclick="location.href='find_id.php'" class="find_num"> 학번/사번 찾기 </p>
-     <footer class="pn">&copy; 시스템 문의 : 042-829-7236</footer> 
-</div> 
+  <!-- 비밀번호 찾기 -->
+  <form action="find_user_pw.php" method="post">
+    <div class="find_main">
+      <!-- 비밀번호 찾기 헤더 -->
+      <div class="header">
+        <h2>비밀번호 찾기</h2>
+      </div>
+      <!-- 비밀번호 찾기 body -->
+      <div class="body">
+        <label for="user_number"></label>
+        <input  type="id"  name="user_number" placeholder="이름">
+        <label for="user_email"></label>
+        <input type="text" name="user_email" placeholder="이메일">
+        <label for="find_btn"></label>
+        <input type="submit" class="find_btn" id="find_btn" value="비밀번호 찾기"> 
+      </div>
+      <!-- 비밀번호 찾기 footer -->
+      <div class="footer">
+        <div class="find">
+          <p href="#" onclick="location.href='login.php'" class="login"> 로그인 </p>  
+          <p href="#" onclick="location.href='find_id.php'" class="find_pid"> 학번/사번 찾기 </p> 
+        </div>
+          <p class="pn">&copy; 시스템 문의 : 042-829-7236</p>
+      </div>
+    </div>
+  </form>
 </body>
 <script>
 function handlerNum( obj ) {
@@ -102,4 +76,5 @@ function handlerNum( obj ) {
  }
 }
 </script>
+
 </html>

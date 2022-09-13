@@ -19,7 +19,7 @@
   }
     </script>
   <body>
-  <div><?php include "admin_main.php";?></div> 
+  <div><?php include "admin_header_1.php";?></div> 
 
 
 <!--검색 기능-->

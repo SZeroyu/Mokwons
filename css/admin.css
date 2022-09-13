@@ -1,0 +1,64 @@
+.add_personal{
+  float: left;
+  margin-left: 200px;
+ }
+ /* 탭메뉴 */
+ 
+  .add_personal input[type="radio"]{display: none;}
+  .add_personal label{
+   display: inline-block;
+   width: 120px; height: 32px; line-height: 32px;
+   font-weight: 600; background: rgb(255, 255, 255);
+   color: #707070;
+   text-align: center;
+   cursor: pointer;
+   transition: all 0.5s;
+   margin-right: -2px;
+   border: 2px solid white;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   box-shadow: 2px 3px 3px gainsboro, -2px 0px 3px gainsboro;
+}
+
+.add_personal .content{display: none;}
+ .add_personal input[type="radio"]:checked + label{
+  border: 2px solid #5688fd;
+   color:#5688fd;
+   z-index: 3;
+   
+ }
+ .add_personal #student:checked ~  #student_table,
+ .add_personal #professor:checked ~ #professor_table,
+ .add_personal #file_upload:checked ~ #file_upload_table{display: block;}
+ 
+ 
+ /* 테이블 */
+ .add_personal table{ 
+  width: 800px;
+  position: absolute;
+  left: 50%; top:20%; transform: translateX(-50%);
+ }
+ .add_personal table th{
+   width: 100px; height: 25px; line-height: 25px;
+   background: #DFE6F7;
+ }
+ .add_personal table td
+ 
+ {
+   width: 100px; height: 30px; line-height: 30px;
+   padding: 5px;
+ }
+ .add_personal table td input,
+ .add_personal table select{
+   width: 94%; height: 30px; line-height: 30px;
+   outline: none;
+   border: 2px solid gainsboro;
+   padding-left: 3px;
+ }
+ .add_personal table td input:focus,
+ .add_personal table select:focus{
+   border: 2px solid #5688fd;
+ }
+
+ .add_personal input[type=submit]{
+  float:left;
+ }
