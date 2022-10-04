@@ -24,7 +24,7 @@
       <!-- 비밀번호 찾기 body -->
       <div class="body">
         <label for="user_number"></label>
-        <input  type="id"  name="user_number" placeholder="이름">
+        <input  type="text"  name="user_number" placeholder="이름">
         <label for="user_email"></label>
         <input type="text" name="user_email" placeholder="이메일">
         <label for="find_btn"></label>

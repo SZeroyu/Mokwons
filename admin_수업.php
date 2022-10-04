@@ -51,45 +51,60 @@
             <!-- 부서전화번호 -->
             <div class="phone_info">
                 <div class="info_box">
-                    <table cellspacing="0">
-                        <thead>
-                            <tr>
-                                <th>구분</th>
-                                <th>프로그램</th>
-                                <th>담당부서</th>
-                                <th colspan="4">부서전화번호</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td rowspan="3">강의정보</td>
-                                <td>공결관리</td>
-                                <td rowspan="6">학사지원과</td>
-                                <td colspan="4" >829-7105</td>
-                            </tr>
-                            <tr>
-                                <td>강의평가입력</td>
-                                <td rowspan="2" colspan="2">829-7097</td>
-                            </tr>
-                            <tr>
-                                <td>시간표조회</td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td rowspan="3">성적관리</td>
-                                <td>성적조회</td>
-                                <td rowspan="3">    829-7102~4</td>
-                            </tr>
-                            <tr>
-                                <td>금학기성적열람</td> 
-                                <td rowspan="2"></td>
-                            </tr>
-                            <tr>
-                                <td>계절학기성적열람</td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                   <h3>강의정보</h3>
+                   <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>프로그램</th>
+                            <th>담당부서</th>
+                            <th>부서전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>공결관리</td>
+                            <td>학사지원과</td>
+                            <td>829-7105</td>
+                        </tr>
+                        <tr>
+                            <td>강의평가 입력</td>
+                            <td>//</td>
+                            <td>829-7097</td>
+                        </tr>
+                        <tr>
+                            <td>시간표 조회</td>
+                            <td>//</td>
+                            <td>//</td>
+                        </tr>
+                    </tbody>
+                   </table>
+                   <h3>성적관리</h3>
+                   <table cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>프로그램</th>
+                            <th>담당부서</th>
+                            <th>부서전화번호</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>성적조회</td>
+                            <td>학사지원과</td>
+                            <td>829-7102~4</td>
+                        </tr>
+                        <tr>
+                            <td>금학기 성적열람</td>
+                            <td>//</td>
+                            <td>//</td>
+                        </tr>
+                        <tr>
+                            <td>계절학기성적열람</td>
+                            <td>//</td>
+                            <td>//</td>
+                        </tr>
+                    </tbody>
+                   </table>
                 </div>
             </div>
             <!-- //부서전화번호 -->

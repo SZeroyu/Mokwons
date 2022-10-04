@@ -52,17 +52,20 @@ body {
   top: 45%; left: 50%;
   transform: translate(-50%, -50%);
 }
-.login_main .body input{
+.login_main .body input[type="id"],
+.login_main .body input[type="password"]{
   display: block;
-  outline: none; border: 2px solid #fff9f904;
+  outline: none; border: 2px solid #92929204;
   border-bottom: 2px solid rgb(92, 92, 92);
   margin-top: 10px;
-  width: 250px; padding: 10px;
+  width: 250px; padding:10px;
   font-size: 12pt;
   background: #fff9f904;
   border-radius: 3px;
 }
-.login_main .body input:focus{
+
+.login_main .body input[type="id"]:focus,
+.login_main .body input[type="password"]:focus{
   border: 2px solid #3083ff;
   border-radius: 3px;
 }
@@ -77,6 +80,7 @@ body {
   color: white;
   font-weight: bold;
   cursor: pointer;
+  font-size: 12pt;
   transition: all 0.5s;
   margin-top: 20px;
 }
@@ -116,7 +120,7 @@ body {
   top: 45%; left: 50%;
   transform: translate(-50%, -50%);
 }
-.find_main .body input{
+.find_main .body input[type="text"]{
   display: block;
   outline: none; border: 2px solid #fff9f904;
   border-bottom: 2px solid rgb(92, 92, 92);
@@ -126,13 +130,12 @@ body {
   background: #fff9f904;
   border-radius: 3px;
 }
-.find_main .body input:focus{
+.find_main .body input[type="text"]:focus{
   border: 2px solid #3083ff;
   border-radius: 3px;
 }
 .find_main .body .find_btn{
-  width: 280px; height: 38px;
-  padding: none;
+  width: 280px; height: 38px; 
   border: none;
   border-radius: 20px;
   background: linear-gradient(125deg,#a72b43,#f04164,#c43451);
@@ -142,6 +145,7 @@ body {
   font-weight: bold;
   cursor: pointer;
   transition: all 0.5s;
+  font-size: 12pt;
   margin-top: 20px;
 }
 .find_main .body .find_btn:hover{background-position: right;}

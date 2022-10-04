@@ -145,7 +145,7 @@ a{text-decoration: none;}
   margin-left: 20px;
   width: 90%; 
 }
-
+.phone_info .info_box h3{left: 35%; top:50%; position: relative;}
 .phone_info .info_box table{overflow: hidden; background: white; width: 550px; padding: 20px 0px 20px 0px; left: 52%; top:50%; position: relative; transform: translateX(-50%);}
 .phone_info .info_box table thead tr th{border: 1px solid gainsboro; background: #DFE6F7;}
 .phone_info .info_box table thead tr th:first-child,
@@ -159,4 +159,3 @@ a{text-decoration: none;}
 }
 
 .phone_info .info_box table tbody tr td:last-child{border-right: none;}
-

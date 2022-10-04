@@ -8,6 +8,7 @@
     <title>목원대학교 종합정보시스템</title>
     <link rel="stylesheet" href="./css/admin.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/d6d6196cf4.js" crossorigin="anonymous"></script>
 </head>
@@ -59,8 +60,9 @@
         <label for="file_upload">파일 업로드</label>
 
         <div class="content"  id="student_table">
-            <!-- 학생 -->
+            <!-- 학생 정보 작성 -->
             <form action="registration_check.php" method="post">
+                <input type="submit" class="user_btn" id="user_btn" value="저장">
                 <table>
                     <tr>
                         <th>학번</th>
@@ -188,18 +190,32 @@
                         <td colspan="3"><input type="text" name="user_teacher" placeholder="지도교수" ></td>
                     </tr>
                 </table>
-                <input type="submit" class="user_btn" id="user_btn" value="저장">
+                
             </form>
         </div>
+
+        <!-- 엑셀 파일 업로드  -->
         <div class="content" id="file_upload_table">
-            <table>
-                <tr>
-                    <td><input type="file"></td>
-                </tr>
-            </table>
+            <div class="file_up">
+                <form action="student_upload.php"  method="post">
+                    <input type="submit" class="user_btn" id="user_btn" value="저장">
+                    <div class="info">
+                        <p>
+                            엑셀파일을 이용하여 학생 혹은 교수를 등록할 수 있습니다. 
+                            형식은 <b>등록용 엑셀파일</b>을 다운로드 하여 회원정보를 입력하시면 됩니다.
+                            수정 완료 후 엑셀 파일을 업로드 하시면 등록이 완료됩니다
+                        </p>
+                        <p><a href=""><span><ion-icon name="download-outline"></ion-icon></span>등록용 엑셀파일 다운로드</a></p>  
+                    </div>
+                    <p>
+                        <label for="file_upload">upload</label>
+                        <input type="file" id="file_upload" class="upload_hidden">
+                    </p>
+                </form>
+            </div>
+
         </div>
     </div>
-
 </div>
 
     <!--우편 번호 찾기-->

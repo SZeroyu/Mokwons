@@ -60,9 +60,9 @@
         <div class="main">
           <nav>
             <ul>
-              <li><b onclick="location.href='h_대학일반.php'">대학일반</b></li>
-              <li><b onclick="location.href='h_학사행정.php'">학사행정</b></li>
-              <li><b onclick="location.href='h_수업.php'">수업</b></li>
+              <li><b onclick="location.href='main_대학일반.php'">대학일반</b></li>
+              <li><b onclick="location.href='main_학사행정.php'">학사행정</b></li>
+              <li><b onclick="location.href='main_수업.php'">수업</b></li>
             </ul>
           </nav>
         </div>
