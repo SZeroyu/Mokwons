@@ -286,7 +286,7 @@
       <footer><button><a href="https://mokwon.ac.kr/kr/html/sub09/090501.html" target='_blank' >개인정보처리방침 바로가기</a><ion-icon name="open-outline"></ion-icon></button></footer>
       <div class="btn_box">
           <a href="mailto:rgy0409@gmail.com" title="문의메일보내기"><button type="button" class="mail_btn">메일보내기</button></a>
-          <a href="img/자퇴원.hwp" download><button type="button" class="download_btn">다운로드</button></a>
+          <a href="img/휴학계.hwp" download><button type="button" class="download_btn">다운로드</button></a>
           <button type="button" class="print_btn" onclick="printArea();">인쇄</button>
           <!-- 프린트 js -->
           <script>
