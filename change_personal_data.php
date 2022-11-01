@@ -53,7 +53,7 @@
     }
 </script>
   </head>
-
+/
 <body>
   <?php
   session_start();
@@ -71,6 +71,8 @@
   $user_hnumber = $row["user_hnumber"];
   $user_email = $row["user_email"];
   $user_birthday = $row["user_birthday"];
+  $user_major= $row["user_major"];
+  $user_teacher= $row["user_teacher"];
   ?>
 
 <div><?php include "header_1.php";?></div>
@@ -78,107 +80,139 @@
   <div class="page_info"><p>대학일반<span> &gt </span>개인정보<span> &gt </span><span class="page">개인정보변경<span></p></div>
   <!-- 사이드 메뉴 -->
   <div class="side_menu">
-    <div class="navigation">
-      <ul>
-        <li class="list ">
-          <a href="#" onclick="location.href='h_대학일반.php'">
-            <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
-            <span class="title">대학일반</span>
-          </a>
-        </li>
-        <li class="page_list"><p>개인정보</p></li>
-        <li class="list active">
-          <a href="#">
-            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-            <span class="title">개인정보변경</span>
-          </a>
-        </li>
-        <li class="list ">
-          <a href="#">
-            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-            <span class="title">졸업생정보조회</span>
-          </a>
-        </li>
-        <li class="list ">
-          <a href="#">
-            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-            <span class="title">비밀번호변경</span>
-          </a>
-        </li>
-        <li class="list ">
-          <a href="#">
-            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-            <span class="title">비밀번호이력</span>
-          </a>
-        </li>
-       <li class="list ">
-          <a href="#">
-            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
-            <span class="title">접속이력</span>
-          </a>
-        </li>
-        <li class="list">
-          <a href="#" onclick="location.href='login_out.php'">
-            <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
-            <span class="title">Sign Out</span>
-          </a>
-        </li>
-      </ul>        
+        <div class="navigation">
+            <ul>
+                <li class="list ">
+                    <a href="#" onclick="location.href='h_대학일반.php'">
+                        <span class="icon"><ion-icon name="home-outline"></ion-icon></span>
+                        <span class="title">대학일반</span>
+                    </a>
+                </li>
+                <li class="page_list"><p>개인정보</p></li>
+                <li class="list active">
+                    <a href="#" onclick="location.href='p_개인정보수집동의.php'">
+                            <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
+                            <span class="title">개인정보변경</span>
+                    </a>
+                </li>
+                <li class="list ">
+                    <a href="#">
+                            <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
+                            <span class="title">졸업생정보조회</span>
+                    </a>
+                </li>
+                <li class="list ">
+                    <a href="#" onclick="location.href='password_new.php'">
+                            <span class="icon"><ion-icon name="key-outline"></ion-icon></span>
+                            <span class="title">비밀번호변경</span>
+                    </a>
+                </li>
+                <li class="list ">
+                    <a href="#">
+                            <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
+                            <span class="title">비밀번호이력</span>
+                    </a>
+                </li>
+                <li class="list ">
+                    <a href="#">
+                            <span class="icon"><ion-icon name="link-outline"></ion-icon></span>
+                            <span class="title">접속이력</span>
+                    </a>
+                </li>
+                <li class="list">
+                    <a href="#" onclick="location.href='login_out.php'">
+                            <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+                            <span class="title">Sign Out</span>
+                    </a>
+                </li>
+            </ul>        
+        </div>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="./js/script.js"></script>
     </div>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-    <script src="./js/script.js"></script>
-  </div>
-</div>
     <!--  사이드메뉴 끝 -->
 
     <!-- 사용자정보 수정 -->
-<div>
   <form action="change_personal_data_check.php" method="post">
-    <table id="table_1" align=center cellspacing="10">
-      <div>
-        <tr>
-          <th bgcolor="#DFE6F7">학번/사번</th>
-          <td><input type="text" name="user_number" value = "<?=$user_number?>" class="inph_1" placeholder="학번" readonly></td>
-        </tr>
+    <div class="user_box">
+      <input type="submit" class="btn" value="저장">
+        <div class="user_info">
+
+        <!-- user정보 style -->
+          <div class="box"></div>
+          <div class="box_2"></div>
+        <!-- user저오 style end -->
+
+        <!-- 이미지 start -->
+          <div class="img_box"></div>
+         
+        <!-- img end -->
+
+          <!-- user_정보 -->
+          <div class="user">
+            <table>
+              <tr>
+                <td colspan="2" class="major"><?=$user_major?><span><input type="text" name="user_number" value="<?=$user_number?>" readonly></span></td>
+              </tr>
+              <tr>
+                <td class="title">이름</td>
+                <td><input type="text" name="user_name" value="<?=$user_name?>"></td>
+              </tr>
+              <tr>
+                <td class="title">생년월일</td>
+                <td><?=$user_birthday?></td>
+              </tr>
+              <tr>
+                <td class="">담당교수</td>
+                <td><?=$user_teacher?></td>
+              </tr>
+              <tr>
+              <td rowspan="2">전화번호</td>
+              <td><input type="text" name="user_pnumber" value="<?=$user_pnumber?>"></td>
+            </tr>
+            <tr>
+              <td><input type="text" name="user_hnumber" value="<?=$user_hnumber?>"></td>
+            </tr>
+            <tr>
+              <td  rowspan="2">주소 및 상세주소</td>
+              <td>
+                <input type="text" name="user_address_number" value="<?=$user_address_number?>" id="user_address_number" placeholder="우편번호" class="form-control m-input">
+                <button type="button" class=" btn_1"  onclick="execDaumPostcode()">우편번호 찾기</button>
+              </td>
+            </tr>
+            <tr>
+              <td><input type="text" name="user_address" id="user_address" value="<?=$user_address?>" placeholder="주소+상세주소" class="form-control m-input"></td>
+            </tr>
+            <tr>
+              <td>이메일</td>
+              <td><input type="email"   name="user_email" value="<?=$user_email?>" placeholder="이메일"></td>
+            </tr>
+          </table>
+        </div>  
+        <!-- user info end -->
+        <input type="file" id="image" width="200" height="220" accept="image/*" onchange="setThumbnail(event);" multiple/>
       </div>
-      <div>
-        <tr>
-          <th bgcolor="#DFE6F7">이름</th>
-          <td><input type="text" name="user_name" value = "<?=$user_name?>" class="inph_1" placeholder="이름"></td>
-        </tr>
-      </div>
-      <div>
-        <tr>
-          <th bgcolor="#DFE6F7">생년월일</th>
-          <td><input type="text" name="user_birthday" value="<?=$user_birthday?>" placeholder="ex) 20001127" class="inph_1"></td>
-        </tr>
-      </div>
-      <div>
-        <tr><th rowspan="3" bgcolor="#DFE6F7">주소</th></tr>
-        <tr><td  colspan="3"><input type="text" name="user_address_number" value="<?=$user_address_number?>" id="user_address_number" placeholder="우편번호" class="form-control m-input inph_1"><button type="button" class=" btn_1"  onclick="execDaumPostcode()">우편번호 찾기</button></td>
-        <tr><td colspan="3"><input type="text" name="user_address" id="user_address" value="<?=$user_address?>" placeholder="주소+상세주소" class="form-control m-input inph_2" cols="50"></td></tr>
-      </div>
-      <div>
-        <tr>
-          <th  rowspan="3" bgcolor="#DFE6F7">전화번호</th>
-          <tr> <td colspan="3"><input type="text" name="user_pnumber" value="<?=$user_pnumber?>" placeholder="개인 전화번호" class="inph_2"></td></tr>
-          <tr> <td colspan="3"><input type="text" name="user_hnumber" value="<?=$user_hnumber?>" placeholder="집 전화번호" class="inph_2"></td></tr>
-        </tr>
-      </div>
-      <div>
-        <tr>
-          <th bgcolor="#DFE6F7">이메일</th>
-          <td colspan="3"><input type="email"  class="inph_2" name="user_email" value="<?=$user_email?>" placeholder="이메일"></td>
-          </tr>
-      </div>
-      <div>
-        <tr>
-          <td colspan="4"><input type="submit" class="btn_2" value="저장"></td>
-        </tr>
-      </div>
-    </table>
+      
+    </div>
   </form>
+  <!-- user_info change end -->
 </div>
+<script>
+      function setThumbnail(event) {
+        for (var image of event.target.files) {
+          var reader = new FileReader();
+
+          reader.onload = function(event) {
+            var img = document.createElement("img");
+            img.setAttribute("src", event.target.result);
+            document.querySelector("div.img_box").appendChild(img);
+          };
+
+          console.log(image);
+          reader.readAsDataURL(image);
+        }
+      }
+    </script>
 </body>
 </html>

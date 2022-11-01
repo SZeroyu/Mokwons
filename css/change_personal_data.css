@@ -1,90 +1,36 @@
-html,
-*{margin: 0px; padding: 0px;}
-ul{list-style: none;}
-a{text-decoration: none;}
+*{margin: 0 auto; padding: 0px; text-decoration: none; list-style: none;}
 
-/*테이블*/
- #table_1{
-    position:absolute;
-    font-size: 15pt;
-    border-style: solid;
-    border-width: 1px 0  1px 0; 
-    border-color: rgb(190, 188, 188) rgb(190, 188, 188); 
-  }
+/* user_info 작성 */
+.user_box{margin: 0 auto; width: 800px; height: 100%;}
 
-  #table_1{
-    width: 800px;
-    height: 25px;
-    left: 50%; top: 32%;
-    margin: -5px 0 0 -400px;
-    z-index:1;
-  }
+/* 저장 버튼 */
+.user_box .btn{position: relative; margin: 10px 0px; width: 100px; height: 25px; line-height: 25px; border-radius: 20px; outline: none; border:none; cursor: pointer; right: 0; background: #3083ff; color:white; }
 
-th, td{
-  padding-top: 5px;
-  padding-bottom: 10px;
-}
-
-  table th{
-    border: 1px solid gray; 
-    border-radius: 3%; 
-    width: 150px;
-  }
-    
-  table td{
-    width:150px;
-    height: 10px;
-    padding-right: -5px;}
-input[class*=inph]{
-  height: 30px;
-  font-size: 12pt;
-  padding-left: 5px;
-  margin-left: 5px;
-  vertical-align: middle;
-  border: none;
-  border-bottom: 1px solid gray;
-  outline:none; 
-}
-  /*텍스트*/
-  .inph_1{width: 150px;}
+/* user 정보 */
+.user_box .user_info{width: 100%; height: 500px; box-shadow: 3px 2px 5px gainsboro, -3px -2px 5px gainsboro;  border-radius: 10px;} 
+.user_box .user_info .box{border-radius: 10px; width: 100%; height: 20px; background: #a72b43;}
+.user_box .user_info .box_2{margin-top: -10px; width: 100%; height: 20px; background: #a72b43;}
 
 
-  .inph_2{width: 450px;}
+/* user img */
+.user_box .user_info .img_box{width: 180px; margin: 10px 0px 0px 10px; height: 220px; float: left;  box-shadow: 3px 2px 5px gainsboro;}
 
-  .inph_3{width: 300px;}
+/* user 기본정보 */
+.user_box .user_info .user{width: 600px;  float: right;}
+.user_box .user_info .user table tr td{padding: 5px 30px 5px 10px;}
+.user_box .user_info .user table tr .major{font-size: 0.9rem; font-weight: 600; color: #979797;}
 
-  
-/*우편번호 찾기 버튼*/
-  .btn_1{
-    width: 130px; height: 40px;
-    background:#DFE6F7;
-    color: black;
-    font-size: 13pt;
-    border: solid 1px #DFE6F7;
-    margin-left:8px;
-    font-weight: bold;
-    vertical-align: middle;
-    border-radius: 20px;
-    cursor: pointer;
-  }
-  .btn_1:hover{background-color: #c6ccda;}
+/* 학번 */
+.user_box .user_info .user table tr .major span input[type="text"]{font-size: 0.9rem; font-weight: 600; color: #979797; border: none;}
+.user_box .user_info .user table tr .major span input[type="text"]:focus{border:none;}
 
-  /*수정 버튼*/
-  .btn_2{
-    width: 80px; height: 50px;
-    position: absolute;
-    background:rgb(167, 43, 67);
-    border: solid 1px rgb(167, 43, 67);
-    color: white;
-    font-size: 15pt;
-    top: 560px; right: 0px;
-    border-radius: 30px;
-    cursor: pointer;
-  }
-  .btn_2:hover{background-color: rgb(156, 45, 68);}
- 
+/* input */
+.user_box .user_info .user table tr td input[type="text"],
+.user_box .user_info .user table tr td input[type="email"]{padding: 5px; outline: none; border: 2px solid #c9c9c9; border-radius: 5px;}
+.user_box .user_info .user table tr td input[type="text"]:focus,
+.user_box .user_info .user table tr td input[type="email"]:focus{border: 2px solid #3083ff;}
 
-  
+.user_box .user_info .user table tr td button{cursor: pointer; border:none; border-radius: 20px; padding: 5px 10px; background: #3083ff; color:white;}
 
-
-
+.user_box .btn:hover,
+.user_box .user_info .user table tr td button:hover{transition: all 0.3s; box-shadow: 3px 4px 5px #3083ff, -2px -2px 4px #3083ff;}
