@@ -1,0 +1,10 @@
+*{margin: 0px; padding: 0px; text-decoration: none; list-style: none;}
+
+ .main_page01 .user_info{overflow: hidden; margin: 0 auto; width: 1200px; border:1px solid black;}
+ .main_page01 .user_info table{ width: 1200px; }
+ .main_page01 .user_info table tr th{padding:12px 0px; text-align: left; font-size: 1.2rem;}
+ .main_page01 .user_info table tr td,
+ .main_page01 .user_info table tr td input{padding: 5px 5px; font-size: 1.2rem;}
+
+ .main_page01 .user_info table tr td input[type="text"]{width: 400px;}
+
