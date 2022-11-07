@@ -6,9 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>목원대학교 종합정보시스템</title>
-    <link rel="stylesheet" href="./css/print.css" />
-    <link rel="stylesheet" href="./css/academic_1.css" />
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/academic.css" />
     <script src="./js/index.js"></script>
     
     <script src="https://kit.fontawesome.com/d6d6196cf4.js" crossorigin="anonymous"></script>
@@ -36,7 +35,7 @@
           </a>
         </li>
         <li class="list ">
-          <a href="#" onclick="location.href=''">
+          <a href="#" onclick="location.href='h_복학신청.php'">
             <span class="icon"><ion-icon name="push-outline"></ion-icon></span>
             <span class="title">복학신청</span>
           </a>
@@ -204,12 +203,16 @@
                   <td>유의사항</td>
                   <td colspan="6">
                     <ol type="1">
-                      <li>자퇴절차 : 학과사무실(상담 및 확인) → 장학지원과(장학금 및 학자금대출확인) →
-                          학사지원과(서류접수 및 처리)</li>
-                      <li>부모님 확인전화 후 자퇴처리 되오니 이동번호란에 부모님 번호를 적어주시기 바랍니다.</li>
-                      <li>뒷장 자퇴통지서 반환 게좌번호는 반드시 부모님 계좌번호를 적어주시기 바랍니다.</li>
-                      <li>자퇴처리 1년 이후(자퇴처리 학기부터 2학기 지난 기준) 재입학 지원 가능합니다.
-                          (단, 기존학과로만 재입학 가능하며 해당학과에 여식이 있는 경우 가능합니다.)</li>
+                    <li>
+                         휴학기간은 1회1년(2학기)을 초과할 수 없으며, 재학기간 중 통산하여 3년을 초과할 수 없음
+                        단, 입영 휴학기간 제외(2002힉년도 1학기부터 적용)
+                      </li>
+                      <li>장학생으로 선발된 학생이 등록금을 납부하지 않고 휴학하는 경우 추후 복학시 장학금을 받을 수 없으니 참고 바랍니다.(장학규정 제9조 3항에 의거)</li>
+                      <li>휴학기간 만료 후 미복하자는 학칙 제30조에의거하여 자동 제적처리 됨</li>
+                      <li class="text_b">
+                         병무청공지사항 : 휴학을 해도 본인이 입영신청을 하지 않으면 계속해서 입영 연기자로 관리됩니다. 군입대를 목적으로 휴학하는 학생은 먼저 입영신청을 하고, 
+                           입영일자가 결정된 후 휴학을 해야 학업공백기간을 줄일 수 있습니다.
+                      </li>
                     </ol>
                   </td>
                 </tr>
@@ -286,7 +289,7 @@
       <footer><button><a href="https://mokwon.ac.kr/kr/html/sub09/090501.html" target='_blank' >개인정보처리방침 바로가기</a><ion-icon name="open-outline"></ion-icon></button></footer>
       <div class="btn_box">
           <a href="mailto:rgy0409@gmail.com" title="문의메일보내기"><button type="button" class="mail_btn">메일보내기</button></a>
-          <a href="img/자퇴원.hwp" download><button type="button" class="download_btn">다운로드</button></a>
+          <a href="img/휴학계.hwp" download><button type="button" class="download_btn">다운로드</button></a>
           <button type="button" class="print_btn" onclick="printArea();">인쇄</button>
           <!-- 프린트 js -->
           <script>

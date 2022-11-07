@@ -67,9 +67,12 @@ button[class*=btn]:focus{outline:0;}
 .print_table .write_info table tfoot tr td ol,
 .print_table .write_info table tfoot tr td h1{padding: 20px;}
 
+.print_table .write_info table tfoot tr td ol .text_b{text-decoration: underline; color:#004fff;}
+
 .print_table .write_info table tbody tr td:first-child,
 .print_table .write_info table tfoot tr td:first-child{border-left: 1px solid gainsboro;}
 .print_table .write_info table tbody tr .title{width: 200px;}
+
 
 
 /* input, select */
@@ -127,9 +130,7 @@ button[class*=btn]:focus{outline:0;}
 .print_table .info_mwn .body .title li ul li{
   padding: 5px 0px 5px 15px;
 }
-.print_table .info_mwn .body .title li ul li span {
-  float: right;
-}
+.print_table .info_mwn .body .title li ul li span {float: right;}
 .print_table .info_mwn .footer{
   margin-top: 20px;
   width: 100%; height: 480px;

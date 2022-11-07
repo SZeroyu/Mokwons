@@ -1,4 +1,4 @@
-<!--자퇴신청-->
+<!--휴학신청-->
 <!DOCTYPE html>
 <html lang="ko">
 <head>
@@ -6,75 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>목원대학교 종합정보시스템</title>
-    <link rel="stylesheet" href="./css/print.css" />
-    <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/academic_1.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/academic.css" />
     <script src="./js/index.js"></script>
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+    
     <script src="https://kit.fontawesome.com/d6d6196cf4.js" crossorigin="anonymous"></script>
-</head>
+</HEAD>
 <body> 
-    <div><?php include "header_2.php";?></div> 
-    <div class="main_page01">
-    <!-- 페이지 순 -->
-      <div class="page_info"><p>학사행정<span> &gt </span>학적관리<span> &gt </span><span class="page">자퇴원출력<span></p></div>
-      <!-- 사이드 메뉴 -->
-      <div class="side_menu">
-        <div class="navigation">
-          <ul>
-            <li class="list ">
-              <a href="#" onclick="location.href='h_학사행정.php'">
-                <span class="icon"><ion-icon name="desktop-outline"></ion-icon></span>
-                <span class="title">학사행정</span>
-              </a>
-            </li>
-            <li class="page_list"><p>학적관리</p></li>
-            <li class="list ">
-              <a href="#" onclick="location.href='h_졸업논문계획서.php'">
-                <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
-                <span class="title">졸업논문계획서</span>
-              </a>
-            </li>
-            <li class="list ">
-              <a href="#" onclick="location.href='h_복학신청.php'">
-                <span class="icon"><ion-icon name="push-outline"></ion-icon></span>
-                <span class="title">복학신청</span>
-              </a>
-            </li>
-            <li class="list " >
-              <a href="#" onclick="location.href='h_휴학신청.php'">
-                <span class="icon"><ion-icon name="airplane-outline"></ion-icon></span>
-                <span class="title">휴학신청</span>
-              </a>
-            </li>
-            <li class="list active" >
-              <a href="#" onclick="location.href='h_자퇴신청.php'">
-                <span class="icon"><ion-icon name="create-outline"></ion-icon></span>
-                <span class="title">자퇴신청</span>
-              </a>
-            </li>
-            <li class="list" >
-              <a href="#" onclick="location.href=''">
-                <span class="icon"><ion-icon name="card-outline"></ion-icon></span>
-                <span class="title">국가자격증등록</span>
-              </a>
-            </li>
-            <li class="list">
-              <a href="#" onclick="location.href='login_out.php'">
-                <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
-                <span class="title">Sign Out</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-        <script src="./js/script.js"></script>
-      </div>
-        <!-- 자퇴신청 프린트 영역 -->
-        <div class="print_table"  media="print">
+  <div><?php include "header_2.php";?></div>  
+  <div class="main_page01">
+  <!-- 페이지 순 -->
+  <div class="page_info"><p>학사행정<span> &gt </span>학적관리<span> &gt </span><span class="page">복학신청<span></p></div>
+  <!-- 사이드 메뉴 -->
+  <div class="side_menu">
+    <div class="navigation">
+      <ul>
+        <li class="list ">
+          <a href="#" onclick="location.href='h_학사행정.php'">
+            <span class="icon"><ion-icon name="desktop-outline"></ion-icon></span>
+            <span class="title">학사행정</span>
+          </a>
+        </li>
+        <li class="page_list"><p>학적관리</p></li>
+        <li class="list ">
+          <a href="#" onclick="location.href=''">
+            <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
+            <span class="title">졸업논문계획서</span>
+          </a>
+        </li>
+        <li class="list active">
+          <a href="#" onclick="location.href='h_복학신청.php'">
+            <span class="icon"><ion-icon name="push-outline"></ion-icon></span>
+            <span class="title">복학신청</span>
+          </a>
+        </li>
+        <li class="list " >
+          <a href="#" onclick="location.href='h_휴학신청.php'">
+            <span class="icon"><ion-icon name="airplane-outline"></ion-icon></span>
+            <span class="title">휴학신청</span>
+          </a>
+        </li>
+        <li class="list" >
+          <a href="#" onclick="location.href='h_자퇴신청.php'">
+            <span class="icon"><ion-icon name="create-outline"></ion-icon></span>
+            <span class="title">자퇴신청</span>
+          </a>
+        </li>
+        <li class="list" >
+          <a href="#" onclick="location.href=''">
+            <span class="icon"><ion-icon name="card-outline"></ion-icon></span>
+            <span class="title">국가자격증등록</span>
+          </a>
+        </li>
+        <li class="list">
+          <a href="#" onclick="location.href='login_out.php'">
+            <span class="icon"><ion-icon name="log-out-outline"></ion-icon></span>
+            <span class="title">Sign Out</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./js/script.js"></script>
+  </div>
+    </div>
+<!-- 휴학신청 프린트 영역 -->
+   <div class="print_table"  media="print">
           <div id="idPrint">
-
           <!-- 첫페이지 -->
           <div class="write_info">
             <?php
@@ -94,7 +93,7 @@
                 $user_birthday = $row["user_birthday"];
             ?>
             <table>
-              <thead><th colspan="7"><h1>자 퇴 원</h1></th></thead>
+              <thead><th colspan="7"><h1>복 학 신 청</h1></th></thead>
               <tbody>
                 <tr>
                   <td class="title">학번/학년</td>
@@ -114,57 +113,57 @@
                   <td colspan="3">
                     <input type="text" value="<?=$user_pnumber?>" >
                   </td>
-                  <td class="title">이수학기</td>
-                  <td colspan="2"><?=$user_semester?></td>
+                  <td class="title">국적</td>
+                  <td colspan="2"><input type="" value="국적"></td>
                 </tr>
                 <tr>
-                  <td class="title">보호자연락처</td>
+                  <td class="title">휴학기간</td>
                   <td colspan="3">
-                    <select name="phone" onChange="selectphone(this)">
-                      <option value="1" name="f">010</option>
-                      <option value="2" name="s">011</option>
-                    </select>
-                    <input type="tel" maxlength='4' name="phone2">
-                    <input type="tel" maxlength='4' name="phone3">
+                    <span>
+                      <input type="text" id="year" class="yy" max="4" placeholder="ex) 2022" >
+                      <label for="yy">년</label>
+                    </span>
+                    <span>
+                      <select name="" id="semester" >
+                        <option value="0" selected>선택</option>
+                        <option value="1">1학기</option>
+                        <option value="2">2학기</option>
+                      </select>
+                      <label for="semester">학기</label>
+                    </span>
+                  </td>
+                  <td class="title">휴학구분</td>
+                  <td colspan="2">일 반 휴 학</td>
+                </tr>
+                <tr>
+                  <td class="title">복학예정학기</td>
+                  <td colspan="3">
+                    <p id="ee_date" name="result">
+                      </p>
+
                   </td>
                   <td class="title">생년월일</td>
                   <td colspan="2"><?=$user_birthday?></td>
                 </tr>
                 <tr>
-                  <td class="title">병력사항</td>
-                  <td colspan="3">
-                    <select name="병력사항" id="">
-                      <option value="" selected>병력사항 선택</option>
-                      <option value="">민방위</option>
-                      <option value="">예비군</option>
-                      <option value="">입영대상</option>
-                      <option value="">현역</option>
-                      <option value="">여학생</option>
-                      <option value="">기타</option>
-                    </select>
-                  </td>
-                  <td class="title">국적</td>
-                  <td colspan="2"><input type="" value="국적"></td>
-                </tr>
-                <tr>
-                  <td class="title">자퇴사유</td>
+                  <td class="title">휴학사유</td>
                   <td colspan="6">
-                    <select name="dropout" id="dropout" onChange="dropout(this)">
-                        <option value="사유선택" selected>사유선택</option>
-                        <option value="1">신*편입학</option>
-                        <option value="2">유학</option>
-                        <option value="전공과 적성불일치">전공과 적성불일치</option>
-                        <option value="등록금부담">등록금부담</option>
-                        <option value="취업">취업</option>
-                        <option value="가사">가사</option>
-                        <option value="3">기타</option>
+                    <select name="" id="">
+                    <option value="" selected>휴학사유선택</option>
+                      <option value="">편입학 휴학</option>
+                      <option value="">학비마련 휴학</option>
+                      <option value="">취업 휴학</option>
+                      <option value="">유학 휴학</option>
+                      <option value="">가사 휴학</option>
+                      <option value="">졸업시기 조정</option>
+                      <option value="">사회 경험</option>
+                      <option value="">창업 휴학</option>
                     </select>
-                    <input type="text" name="dropout_res" id="dropout_res"> <span id="check"></span>
                   </td>
                 </tr>
                 <tr class="user_sign">
                   <td colspan="7">
-                    <p>본인은 위와같이 자퇴하고자 하오니 허락하여 주시기 바랍니다.</p>
+                    <p>본인은 위와같이 복학하고자 하오니 허락하여 주시기 바랍니다.</p>
                     <p id="ex_date">
                       <script>
                       // 현재 날짜 나오는 script
@@ -220,20 +219,20 @@
             <div class="head">
               <h2>[개인정보 수집·이용 동의서]</h2>
               <p>
-                목원대학교에서 <b>자퇴 목적의 학적처리</b>와 관련하여 귀하의 개인정보를 아래와 같이 수집·이용하고자 합니다.
+                목원대학교에서 <b>휴학 목적의 학적처리</b>와 관련하여 귀하의 개인정보를 아래와 같이 수집·이용하고자 합니다.
                 다음의 사항에 대해 충분히 읽어보신 후 동의 여부를 체크, 서명하여주시기 바랍니다.
               </p>
             </div>
             <div class="body">
               <h3>개인정보 수집·이용 동의</h3>
               <ul class="title">
-                <li><h3>■ 개인정보 수집·이용 목적 : 자퇴 목적의 학적처리</h3></li>
+                <li><h3>■ 개인정보 수집·이용 목적 : 휴학 목적의 학적처리</h3></li>
                 <li>
                   <h3>■ 수집하는 개인정보의 항목</h3>
                   <ul>
                     <li>
                       ○ 필수정보
-                      <p>- 학번, 성명, 소속 학과(전공), 연락처, 학년, 생년월일, 이수학기, 학적상태, 부모님 성명, 부모님 전화번호, 자퇴유형, 자퇴사유</p>
+                      <p>- 학번, 성명, 소속 학과(전공), 연락처, 생년월일, 이수학기, 학적상태, 부모님 성명,부모님 전화번호, 휴학유형, 휴학사유</p>
                     </li>
                     <li>○ 선택정보 : 계좌번호</li>
                   </ul>
@@ -280,14 +279,13 @@
           </div>
         </div>
       </div>
-
     </div>
    
       <!--버튼-->
-      <footer><button title="새창"><a href="https://mokwon.ac.kr/kr/html/sub09/090501.html" title="새창" target='_blank' >개인정보처리방침 바로가기</a><ion-icon name="open-outline"></ion-icon></button></footer>
+      <footer><button><a href="https://mokwon.ac.kr/kr/html/sub09/090501.html" target='_blank' >개인정보처리방침 바로가기</a><ion-icon name="open-outline"></ion-icon></button></footer>
       <div class="btn_box">
           <a href="mailto:rgy0409@gmail.com" title="문의메일보내기"><button type="button" class="mail_btn">메일보내기</button></a>
-          <a href="img/자퇴원.hwp" download><button type="button" class="download_btn">다운로드</button></a>
+          <a href="img/휴학계.hwp" download><button type="button" class="download_btn">다운로드</button></a>
           <button type="button" class="print_btn" onclick="printArea();">인쇄</button>
           <!-- 프린트 js -->
           <script>
@@ -312,10 +310,8 @@
             window.onbeforeprint = beforePrint;
             window.onafterprint = afterPrint;
           </script>
+          
       </div>
       
 </body> 
 </html>
-
-
-  
