@@ -32,7 +32,7 @@
                     </a>
                 </li>
                 <li class="list ">
-                    <a href="#">
+                    <a href="#" >
                             <span class="icon"><ion-icon name="person-outline"></ion-icon></span>
                             <span class="title">졸업생정보조회</span>
                     </a>

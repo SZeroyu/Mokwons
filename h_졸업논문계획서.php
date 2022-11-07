@@ -21,7 +21,7 @@
         <div class="navigation">
           <ul>
             <li class="list ">
-              <a href="#" onclick="location.href='h_학사행정.php'">
+              <a href="#" onclick="location.href='main_학사행정.php'">
                 <span class="icon"><ion-icon name="desktop-outline"></ion-icon></span>
                 <span class="title">학사행정</span>
               </a>
@@ -34,7 +34,7 @@
               </a>
             </li>
             <li class="list ">
-              <a href="#" onclick="location.href=''">
+              <a href="#" onclick="location.href='h_복학신청.php'">
                 <span class="icon"><ion-icon name="push-outline"></ion-icon></span>
                 <span class="title">복학신청</span>
               </a>

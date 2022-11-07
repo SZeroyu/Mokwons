@@ -3,20 +3,20 @@
 /* user_info 작성 */
 .user_box{margin: 0 auto; width: 800px; height: 100%;}
 
-/* 저장 버튼 */
-.user_box .btn{position: relative; margin: 10px 0px; width: 100px; height: 25px; line-height: 25px; border-radius: 20px; outline: none; border:none; cursor: pointer; right: 0; background: #3083ff; color:white; }
-
 /* user 정보 */
-.user_box .user_info{width: 100%; height: 500px; box-shadow: 3px 2px 5px gainsboro, -3px -2px 5px gainsboro;  border-radius: 10px;} 
+.user_box .user_info{ width: 100%; height: 500px; box-shadow: 3px 2px 5px gainsboro, -3px -2px 5px gainsboro;  border-radius: 10px;} 
 .user_box .user_info .box{border-radius: 10px; width: 100%; height: 20px; background: #a72b43;}
 .user_box .user_info .box_2{margin-top: -10px; width: 100%; height: 20px; background: #a72b43;}
 
 
 /* user img */
-.user_box .user_info .img_box{width: 180px; margin: 10px 0px 0px 10px; height: 220px; float: left;  box-shadow: 3px 2px 5px gainsboro;}
+.user_box .user_info .img_box{width: 180px; margin: 30px 0px 0px 10px; height: 250px; float: left; }
+.user_box .user_info .img_box .dn_img{width: 100%; height: 220px; box-shadow: 3px 2px 5px gainsboro; margin-bottom: 10px;}
+.user_box .user_info .img_box input[type="file"]{}
 
 /* user 기본정보 */
-.user_box .user_info .user{width: 600px;  float: right;}
+.user_box .user_info .user{ margin-top: 30px; width: 600px; float: right; background-repeat : no-repeat; background-size : cover; background-image: url("../img/schoo_logo.jpg");}
+.user_box .user_info .user table{background: #ffffffb6; }
 .user_box .user_info .user table tr td{padding: 5px 30px 5px 10px;}
 .user_box .user_info .user table tr .major{font-size: 0.9rem; font-weight: 600; color: #979797;}
 
@@ -30,6 +30,8 @@
 .user_box .user_info .user table tr td input[type="text"]:focus,
 .user_box .user_info .user table tr td input[type="email"]:focus{border: 2px solid #3083ff;}
 
+/* 개인정보 수정 저장 버튼 및 우편번호 찾기 버튼*/
+.user_box .btn{position: relative; margin: 10px 0px; width: 100px; height: 25px; line-height: 25px; border-radius: 20px; outline: none; border:none; cursor: pointer; right: 0; background: #3083ff; color:white; }
 .user_box .user_info .user table tr td button{cursor: pointer; border:none; border-radius: 20px; padding: 5px 10px; background: #3083ff; color:white;}
 
 .user_box .btn:hover,
