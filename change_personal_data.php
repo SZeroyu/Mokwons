@@ -97,7 +97,7 @@
                     </a>
                 </li>
                 <li class="list ">
-                    <a href="#">
+                    <a href="#" onclick="location.href='change_graduate_data.php'">
                             <span class="icon"><ion-icon name="school-outline"></ion-icon></span>
                             <span class="title">졸업생정보조회</span>
                     </a>
@@ -146,7 +146,10 @@
         <!-- user저오 style end -->
 
         <!-- 이미지 start -->
-          <div class="img_box"></div>
+          <div class="img_box">
+            <div class="dn_img"></div>
+            <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);" multiple/>
+          </div>
          
         <!-- img end -->
 
@@ -165,18 +168,18 @@
                 <td><?=$user_birthday?></td>
               </tr>
               <tr>
-                <td class="">담당교수</td>
+                <td class="title">담당교수</td>
                 <td><?=$user_teacher?></td>
               </tr>
               <tr>
-              <td rowspan="2">전화번호</td>
+              <td class="title" rowspan="2">전화번호</td>
               <td><input type="text" name="user_pnumber" value="<?=$user_pnumber?>"></td>
             </tr>
             <tr>
               <td><input type="text" name="user_hnumber" value="<?=$user_hnumber?>"></td>
             </tr>
             <tr>
-              <td  rowspan="2">주소 및 상세주소</td>
+              <td class="title" rowspan="2">주소 및 상세주소</td>
               <td>
                 <input type="text" name="user_address_number" value="<?=$user_address_number?>" id="user_address_number" placeholder="우편번호" class="form-control m-input">
                 <button type="button" class=" btn_1"  onclick="execDaumPostcode()">우편번호 찾기</button>
@@ -186,13 +189,13 @@
               <td><input type="text" name="user_address" id="user_address" value="<?=$user_address?>" placeholder="주소+상세주소" class="form-control m-input"></td>
             </tr>
             <tr>
-              <td>이메일</td>
+              <td class="title">이메일</td>
               <td><input type="email"   name="user_email" value="<?=$user_email?>" placeholder="이메일"></td>
             </tr>
           </table>
         </div>  
         <!-- user info end -->
-        <input type="file" id="image" width="200" height="220" accept="image/*" onchange="setThumbnail(event);" multiple/>
+        
       </div>
       
     </div>
@@ -207,7 +210,7 @@
           reader.onload = function(event) {
             var img = document.createElement("img");
             img.setAttribute("src", event.target.result);
-            document.querySelector("div.img_box").appendChild(img);
+            document.querySelector("div.dn_img").appendChild(img);
           };
 
           console.log(image);

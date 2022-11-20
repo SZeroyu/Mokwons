@@ -22,14 +22,14 @@
     <div class="navigation">
       <ul>
         <li class="list ">
-          <a href="#" onclick="location.href='h_학사행정.php'">
+          <a href="#" onclick="location.href='main_학사행정.php'">
             <span class="icon"><ion-icon name="desktop-outline"></ion-icon></span>
             <span class="title">학사행정</span>
           </a>
         </li>
         <li class="page_list"><p>학적관리</p></li>
         <li class="list ">
-          <a href="#" onclick="location.href=''">
+          <a href="#" onclick="location.href='h_졸업논문계획서.php'">
             <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
             <span class="title">졸업논문계획서</span>
           </a>
@@ -129,7 +129,6 @@
                         <option value="1">1학기</option>
                         <option value="2">2학기</option>
                       </select>
-                      <label for="semester">학기</label>
                     </span>
                   </td>
                   <td class="title">휴학구분</td>
@@ -138,8 +137,8 @@
                 <tr>
                   <td class="title">복학예정학기</td>
                   <td colspan="3">
-                    <p id="ee_date" name="result">
-                      </p>
+                    <span id="lev_date">
+                    </span>
 
                   </td>
                   <td class="title">생년월일</td>

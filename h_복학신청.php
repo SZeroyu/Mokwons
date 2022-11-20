@@ -22,14 +22,14 @@
     <div class="navigation">
       <ul>
         <li class="list ">
-          <a href="#" onclick="location.href='h_학사행정.php'">
+          <a href="#" onclick="location.href='main_학사행정.php'">
             <span class="icon"><ion-icon name="desktop-outline"></ion-icon></span>
             <span class="title">학사행정</span>
           </a>
         </li>
         <li class="page_list"><p>학적관리</p></li>
         <li class="list ">
-          <a href="#" onclick="location.href=''">
+          <a href="#" onclick="location.href='h_졸업논문계획서.php'">
             <span class="icon"><ion-icon name="document-text-outline"></ion-icon></span>
             <span class="title">졸업논문계획서</span>
           </a>
@@ -117,11 +117,35 @@
                   <td colspan="2"><input type="" value="국적"></td>
                 </tr>
                 <tr>
-                  <td class="title">휴학기간</td>
+                  <td class="title">복학예정일자</td>
                   <td colspan="3">
-                    <span>
-                      <input type="text" id="year" class="yy" max="4" placeholder="ex) 2022" >
-                      <label for="yy">년</label>
+                    <p id="date">
+                    <script>
+                      // 현재 날짜 나오는 script
+                        let next = new Date();
+                        let next_year = next.getFullYear();
+                        let next_month = next.getMonth()+1;
+
+                        document.getElementById('date').innerHTML = next_year + "년 &nbsp" + next_month + "월 &nbsp";
+                    </script> 
+                    </p>
+
+                  
+                  </td>
+                  <td class="title">복학 구분</td>
+                  <td colspan="2">일 반 복 학</td>
+                </tr>
+                <tr>
+                  <td class="title">복학신청학기</td>
+                  <td colspan="3">
+                    <span id="sem_date">
+                      <script>
+                        // 현재 날짜 나오는 script
+                          let sem = new Date();
+                          let sem_year = sem.getFullYear();
+
+                          document.getElementById('sem_date').innerHTML = sem_year + "년 &nbsp";
+                      </script> 
                     </span>
                     <span>
                       <select name="" id="semester" >
@@ -129,37 +153,10 @@
                         <option value="1">1학기</option>
                         <option value="2">2학기</option>
                       </select>
-                      <label for="semester">학기</label>
                     </span>
-                  </td>
-                  <td class="title">휴학구분</td>
-                  <td colspan="2">일 반 휴 학</td>
-                </tr>
-                <tr>
-                  <td class="title">복학예정학기</td>
-                  <td colspan="3">
-                    <p id="ee_date" name="result">
-                      </p>
-
                   </td>
                   <td class="title">생년월일</td>
                   <td colspan="2"><?=$user_birthday?></td>
-                </tr>
-                <tr>
-                  <td class="title">휴학사유</td>
-                  <td colspan="6">
-                    <select name="" id="">
-                    <option value="" selected>휴학사유선택</option>
-                      <option value="">편입학 휴학</option>
-                      <option value="">학비마련 휴학</option>
-                      <option value="">취업 휴학</option>
-                      <option value="">유학 휴학</option>
-                      <option value="">가사 휴학</option>
-                      <option value="">졸업시기 조정</option>
-                      <option value="">사회 경험</option>
-                      <option value="">창업 휴학</option>
-                    </select>
-                  </td>
                 </tr>
                 <tr class="user_sign">
                   <td colspan="7">
@@ -203,12 +200,14 @@
                   <td>유의사항</td>
                   <td colspan="6">
                     <ol type="1">
-                      <li>자퇴절차 : 학과사무실(상담 및 확인) → 장학지원과(장학금 및 학자금대출확인) →
-                          학사지원과(서류접수 및 처리)</li>
-                      <li>부모님 확인전화 후 자퇴처리 되오니 이동번호란에 부모님 번호를 적어주시기 바랍니다.</li>
-                      <li>뒷장 자퇴통지서 반환 게좌번호는 반드시 부모님 계좌번호를 적어주시기 바랍니다.</li>
-                      <li>자퇴처리 1년 이후(자퇴처리 학기부터 2학기 지난 기준) 재입학 지원 가능합니다.
-                          (단, 기존학과로만 재입학 가능하며 해당학과에 여식이 있는 경우 가능합니다.)</li>
+                      <li>
+                        국복학일 경우 병적사항이 기재된 서류(전역증 또는 병적사항이 기재된 주민등록초본, 병적 증명서 중 1부)를 첨뷰하여 학사지원과에 제출
+                        <p>- 단, 첨부서류 중 사진과 담당자 도장이 없는 전역증 사본은 인정하지 않습니다.</p>
+                        <p>- 직접 방문이 어려울 경우 FAX(042-829-7975)로 서류 접수 후 확인전화 바랍니다.</p>
+                      </li>
+                      <li>전역예정자는 개강 후 5주이내 전역자에 한함(전역예정확인서, 휴가증 및 소속장의 허가원을 받아 제출하여 함)</li>
+                      <li>군필자느 예비군 전입신고를 해야함</li>
+            
                     </ol>
                   </td>
                 </tr>
@@ -219,7 +218,7 @@
             <div class="head">
               <h2>[개인정보 수집·이용 동의서]</h2>
               <p>
-                목원대학교에서 <b>휴학 목적의 학적처리</b>와 관련하여 귀하의 개인정보를 아래와 같이 수집·이용하고자 합니다.
+                목원대학교에서 <b>복학 목적의 학적처리</b>와 관련하여 귀하의 개인정보를 아래와 같이 수집·이용하고자 합니다.
                 다음의 사항에 대해 충분히 읽어보신 후 동의 여부를 체크, 서명하여주시기 바랍니다.
               </p>
             </div>
