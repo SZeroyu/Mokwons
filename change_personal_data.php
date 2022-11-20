@@ -53,9 +53,7 @@
     }
 </script>
   </head>
-/
 <body>
-<!-- check -->
   <?php
   session_start();
   if(isset($_SESSION['user_number'])){
@@ -133,7 +131,7 @@
         <script src="./js/script.js"></script>
     </div>
     <!--  사이드메뉴 끝 -->
-  
+
     <!-- 사용자정보 수정 -->
   <form action="change_personal_data_check.php" method="post">
     <div class="user_box">
@@ -147,8 +145,11 @@
 
         <!-- 이미지 start -->
           <div class="img_box">
-            <div class="dn_img"></div>
-            <input type="file" id="image" accept="image/*" onchange="setThumbnail(event);" multiple/>
+            <div class="dn_img">
+              <img id="thumbnailImg" src="" width="180px" height="220px">
+              <input type="file" id="upImgFile"  onChange="uploadImgPreview();" accept="image/*">
+              
+            </div>
           </div>
          
         <!-- img end -->
@@ -203,18 +204,16 @@
   <!-- user_info change end -->
 </div>
 <script>
-      function setThumbnail(event) {
-        for (var image of event.target.files) {
-          var reader = new FileReader();
+      function uploadImgPreview(){
+        let fileInfo = document.getElementById("upImgFile").files[0];
+        let reader = new FileReader();
 
-          reader.onload = function(event) {
-            var img = document.createElement("img");
-            img.setAttribute("src", event.target.result);
-            document.querySelector("div.dn_img").appendChild(img);
-          };
-
-          console.log(image);
-          reader.readAsDataURL(image);
+        reader.onload=function(){
+          document.getElementById("thumbnailImg").src = reader.result;
+          document.getElementById("thumbnailUrl").innerText = reader.result;
+        };
+        if(fileInfo){
+          reader.readAsDataURL(fileInfo);
         }
       }
     </script>

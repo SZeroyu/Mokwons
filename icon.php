@@ -49,28 +49,7 @@
         </div>
 
         <input type="checkbox" id="submn_03">
-        <label for="submn_03">강의정보</label>
-        <div>
-          <ul>
-            <li><a href="#">공결관리</a></li>
-            <li><a href="#">강의평가입력</a></li>
-            <li><a href="#" onclick="location.href='schedule.php'">시간표조회</a></li>
-            <li><a href="#" onclick="location.href='app_class.php'">수강신청</a></li>
-          </ul>
-        </div>
-
-        <input type="checkbox" id="submn_04">
-        <label for="submn_04">성적관리</label>
-        <div>
-          <ul>
-            <li><a href="#">성적조회</a></li>
-            <li><a href="#">금학기성적열람</a></li>
-            <li><a href="#">계절학기성적열람</a></li>
-          </ul>
-        </div>
-
-        <input type="checkbox" id="submn_05">
-        <label for="submn_05">장학관리</label>
+        <label for="submn_03">장학관리</label>
         <div>
           <ul>
             <li><a href="#">장학이력조회</a></li>
@@ -79,8 +58,8 @@
           </ul>
         </div>
 
-        <input type="checkbox" id="submn_06">
-        <label for="submn_06">등록관리</label>
+        <input type="checkbox" id="submn_04">
+        <label for="submn_04">등록관리</label>
         <div>
           <ul>
             <li><a href="#">등록금처리요청</a></li>
@@ -88,8 +67,8 @@
           </ul>
         </div>
 
-        <input type="checkbox" id="submn_07">
-        <label for="submn_07">상담 및 포토폴리오 관리</label>
+        <input type="checkbox" id="submn_05">
+        <label for="submn_05">상담관리</label>
         <div>
           <ul>
             <li><a href="#">학업계획등록</a></li>
@@ -99,8 +78,8 @@
           </ul>
         </div>
 
-        <input type="checkbox" id="submn_08">
-        <label for="submn_08">생활관</label>
+        <input type="checkbox" id="submn_06">
+        <label for="submn_06">생활관</label>
         <div>
           <ul>
             <li><a href="#" onclick="location.href='dormitory.php'">생활관입사신쳥</a></li>
@@ -110,14 +89,39 @@
           </ul>
         </div>
 
-        <input type="checkbox" id="submn_09">
-        <label for="submn_09">부가서비스</label>
+        <input type="checkbox" id="submn_07">
+        <label for="submn_07">부가서비스</label>
         <div>
           <ul>
             <li><a href="#">봉사자료입력</a></li>
             <li><a href="#">학습단체활동신청</a></li>
             <li><a href="#">사물함신청</a></li>
             <li><a href="#">기초요양클리닉신청</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <input type="checkbox" id="answer03">
+      <label for="answer03">수업</label>
+      <div>
+        <input type="checkbox" id="submn_08">
+        <label for="submn_08">강의정보</label>
+        <div>
+          <ul>
+            <li><a href="#">공결관리</a></li>
+            <li><a href="#">강의평가입력</a></li>
+            <li><a href="#" onclick="location.href='schedule.php'">시간표조회</a></li>
+            <li><a href="#" onclick="location.href='app_class.php'">수강신청</a></li>
+          </ul>
+        </div>
+
+        <input type="checkbox" id="submn_09">
+        <label for="submn_09">성적관리</label>
+        <div>
+          <ul>
+            <li><a href="#">성적조회</a></li>
+            <li><a href="#">금학기성적열람</a></li>
+            <li><a href="#">계절학기성적열람</a></li>
           </ul>
         </div>
       </div>
