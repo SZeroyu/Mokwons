@@ -36,7 +36,7 @@
     } else {
         echo '
           <script>
-            alert("아이디 혹은 비밀번호가 틀립니다.");
+            alert("학번 혹은 비밀번호가 틀립니다.");
             history.back();
           </script>';
       }

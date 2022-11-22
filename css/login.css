@@ -134,7 +134,8 @@ body {
   border: 2px solid #3083ff;
   border-radius: 3px;
 }
-.find_main .body .find_btn{
+.find_main .body .find_btn,
+.find_main .reset_body .find_btn{
   width: 280px; height: 38px; 
   border: none;
   border-radius: 20px;
@@ -148,7 +149,8 @@ body {
   font-size: 12pt;
   margin-top: 20px;
 }
-.find_main .body .find_btn:hover{background-position: right;}
+.find_main .body .find_btn:hover,
+.find_main .reset_body .find_btn:hover{background-position: right;}
 
 /* login footer */
 .find_main .footer{
@@ -161,3 +163,43 @@ body {
 .find_main .footer .find p:first-child{padding-right: 5px; border-right: 1px solid rgb(172, 172, 172);}
 .find_main .footer .find p:hover{ color:  rgb(167, 43, 67); font-weight: bold;}
 .find_main .footer .pn{margin-top: 60px;}
+
+/* 비번변경 */
+.find_main .reset_body{  
+  position: absolute;
+  top: 45%; left: 50%;
+  transform: translate(-50%, -50%);
+}
+.find_main .reset_body input[type="text"],
+.find_main .reset_body input[type="password"]{
+  display: block;
+  outline: none; border: 2px solid #fff9f904;
+  border-bottom: 2px solid rgb(92, 92, 92);
+  margin-top: 10px;
+  width: 250px; padding: 10px;
+  font-size: 12pt;
+  background: #fff9f904;
+  border-radius: 3px;
+}
+.find_main .reset_body  span{
+  position: relative;
+  top: -30px; left:250px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+.find_main .reset_body input[type="text"]:focus,
+.find_main .reset_body input[type="password"]:focus{
+  border: 2px solid #3083ff;
+  border-radius: 3px;
+}
+
+.find_main .footer_pw{
+  position: relative;
+  top: 63%; left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.find_main .footer_pw .find p{display: inline-block; cursor: pointer; transition: all 0.5s;}
+.find_main .footer_pw .find p:first-child{padding-right: 5px; border-right: 1px solid rgb(172, 172, 172);}
+.find_main .footer_pw .find p:hover{ color:  rgb(167, 43, 67); font-weight: bold;}
+.find_main .footer_pw .pn{margin-top: 60px;}

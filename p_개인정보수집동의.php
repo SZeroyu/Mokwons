@@ -104,25 +104,25 @@
 </div>
 
 <script>
-$(function(){
-    agree_CheckedChanged();
-});
+    $(function(){
+        agree_CheckedChanged();
+    });
 
-//체크박스 체크 선택 또는 해체할 때 상태 업데이트
-$("#agree").change(function(){
-    agree_CheckedChanged();
-});
-function agree_CheckedChanged(){
-//페이지 로드할 때 체크박스 상태 확인
-if($("#agree").prop("checked")){
-    console.log("체크");
-    $("#check_btn").prop("disabled", false); // 활성화
-}
-else{
-    console.log("no 체크");
-    $("#check_btn").prop("disabled", true); // 비활성화
+    //체크박스 체크 선택 또는 해체할 때 상태 업데이트
+    $("#agree").change(function(){
+        agree_CheckedChanged();
+    });
+    function agree_CheckedChanged(){
+    //페이지 로드할 때 체크박스 상태 확인
+    if($("#agree").prop("checked")){
+        console.log("체크");
+        $("#check_btn").prop("disabled", false); // 활성화
     }
-}
+    else{
+        console.log("no 체크");
+        $("#check_btn").prop("disabled", true); // 비활성화
+        }
+    }
 </script>
 </body>
 </html>
